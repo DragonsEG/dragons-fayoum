@@ -1,0 +1,20 @@
+    .logo_container {
+position:relative;      
+        background-size: 100% 100%;
+        animation: ring_light 2s linear infinite;
+    }
+
+    @keyframes ring_light {
+        0% {
+            transform: scale(1);
+        }
+
+        50% {
+            transform: scale(1.02);
+        }
+
+        100% {
+            transform: scale(1);
+        }
+    }
+

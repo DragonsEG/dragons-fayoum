@@ -1,8 +1,44 @@
 import "../styles/globals.css";
 import Footer from "../components/Footer";
-import Header from "../components/Header";
+import HeaderComp from "../components/HeaderComp/Header";
 import Head from "next/head";
+import Join from './Join';
 function MyApp({ Component, pageProps }) {
+ 
+ let nav_links = [
+  {
+    id: 1,
+    name: "Tracks",
+    link: "/tracks",
+  },
+  {
+    id: 2,
+    name: "Talents",
+    link: "/talents",
+  },
+  {
+    id: 3,
+    name: "Blog",
+    link: "/blog",
+  },
+  {
+    id: 4,
+    name: "Board",
+    link: "/board",
+  },
+  {
+    id: 5,
+    name: "Contact",
+    link: "/contact",
+  },
+  ];
+let Join = [
+  {
+    id: 1,
+    name: "Join user",
+    link: "/join",
+  }];
+ 
   return (
     <>
           <Head>
@@ -12,20 +48,18 @@ function MyApp({ Component, pageProps }) {
           content='Dragons'
           key='Dragons'
         />       
-        <link rel='shortcut icon' href='/images/dragonsEG.png' />
+        <link rel='shortcut icon' href='/Identity/test.svg' />
       </Head>
-      <Header
-        className='select-none'
-        herfFacebook='https://www.facebook.com/profile.php?id=100086806926973'
-        herfGithub='https://github.com/DragonsEG'
-        HerfDash='/Join'
-        Herfabout='/about'
-        HerfActivity='/Activities'
-        HerfService='/Team'
-        herflogoLink="/"
-        herflogo='/images/dragonsEG.png'
-        herflogo2='/images/logotext.png'
-      />
+
+  <HeaderComp
+        nav_links={nav_links}
+        Join={Join}
+  />
+
+
+
+
+    
       <Component {...pageProps} />
       <div id='wrap'>
         <div id='lightings'>

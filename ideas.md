@@ -5,3 +5,10 @@
 5- blog part for dragons (read only - md structure).
 6- form for dragons 
 
+---
+our main tools section 👍
+🥇 jetbrains
+🥇 getkraken
+🥇  
+🥇
+🥇
