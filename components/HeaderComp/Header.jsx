@@ -1,16 +1,17 @@
 import Image from "next/image";
 import Link from "next/link";
-import Styles from "./Header.module.css";
 
 function Header(props) {
     return (
         <div 
-      
+      style ={{
+ border : "1px solid rgb(255,255,255,0.05)"
+}}
         
         
-        className={`${"text-amber-50 h-[88px] bg-[#030014]/40 z-50 grid-cols-1  md:grid-cols-3 place-items-center grid fixed w-full backdrop-blur-3xl"}`}
+        className={`${"text-amber-50 h-[88px]    bg-[#030014]/40 z-50 grid-cols-1  md:grid-cols-3 place-items-center grid fixed w-full backdrop-blur-3xl"} ${"select-none"}`}
         >
-            <div className={`${"Mobol_Logo"} ${"md:hidden block py-2 "}`}>
+            <div className={`${"Mobol_Logo"} ${"  md:hidden block py-2 "}`}>
             <span className={`${" "}`}>
                 <Image
                   src="/Identity/logotext.png"
@@ -22,7 +23,7 @@ function Header(props) {
 />
               </span>
             </div>
-          <div className={`${Styles.logo_container} ${"hidden md:block"}`}>
+          <div className={` ${"hidden md:block"}`}>
             <Link  className={`${"flex relative"}`} href="/">  
             <div className={`${"grid place-items-center"}`}>
               {" "}

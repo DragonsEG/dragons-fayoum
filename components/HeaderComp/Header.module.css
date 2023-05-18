@@ -1,19 +1,4 @@
-.Drag3DBoubce{
-    animation: bounce 4s infinite alternate;
-    -webkit-animation: bounce 4s infinite alternate;
-    -moz-animation: bounce 4s infinite alternate;
-    -o-animation: bounce 4s infinite alternate;
-    
+.Border_Gradient{
+ border-bottom : 1px solid rgb(255,255,255,0.05);
 }
 
-@keyframes bounce {
-    0% {
-        transform: translate3d(0, 0, 0);
-    }
-    50% {
-        transform: translate3d(0, -5px, 0);
-    }
-    100% {
-        transform: translate3d(0, 0, 0);
-    }
-}

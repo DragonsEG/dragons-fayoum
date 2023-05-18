@@ -2,7 +2,7 @@ import React from 'react'
 import Image from "next/image"
 import Link from 'next/link'
 import { useRouter } from 'next/router'
-import Styles from "../HeaderComp/Header.module.css"
+import Styles from "./Hero.module.css"
 
 
 
@@ -47,7 +47,7 @@ function Hero() {
             </div>
 
             <div className="max-w-[1400px] sm:mt-10  md:mt-3 lg:-mt-20  relative  m-auto flex justify-center">
-                <Image style={{ fontFamily: "interV" }} className={`${"absolute z-50 top-12 filter "} ${Styles.Drag3DBoubce}`} src={"/drag_3d_color.png"} alt='Header Image' height='1160' width='1240' placeholder='blur' blurDataURL={`/_next/image?url=/ico/S1.png&w=16&q=1`} priority />
+                <Image style={{ fontFamily: "interV" }} className={`${"absolute z-50 top-12 filter "} ${Styles.Drag3DBoubce}`} src={"/Identity/Images/drag_3d_color.png"} alt='Header Image' height='1160' width='1240' placeholder='blur' blurDataURL={`/_next/image?url=/ico/S1.png&w=16&q=1`} priority />
                 <video autoPlay loop muted src="/Hero/q-c3d7becf.webm" />
             </div>
         </div>

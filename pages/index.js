@@ -55,39 +55,9 @@ export default function Home() {
         </div>
       </motion.div>
 <div className="relative">
-<motion.div className=" overflow-hidden"
-      style={{ scale }}>
-      <div className="flex  justify-center mx-auto">
-      <Image
-                  className='relative z-20  bounce-2 box2  '
-                  src={"/images/dragonsEG2023.png"}
-                  alt='Header Image'
-                  height='240'
-                  width='240'
-                  placeholder='blur'
-                  blurDataURL={`/_next/image?url=/ico/S1.png&w=16&q=1`}
-                  priority
-                />
-      </div>
-     
-      <div className=" mb-96">
-     
-      
-      </div>
 
-      </motion.div>
       <div className="absolute left-0 right-0 lg:hidden bottom-0">
-      <div className="mx-auto flex rotate-90 h-80 w-40  overflow-hidden justify-center">
-      <Image
-                  className='relative z-20  bounce-2 box2  '
-                  src={"/images/line.png"}
-                  alt='Header Image'
-layout="fill"
-                  placeholder='blur'
-                  blurDataURL={`/_next/image?url=/ico/S1.png&w=16&q=1`}
-                  priority
-                />
-      </div>
+ 
       
       </div>  
   </div>    
