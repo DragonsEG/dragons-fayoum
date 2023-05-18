@@ -9,7 +9,7 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import SectionOneAnnounce from "../components/SectionOneAnnounce";
 import Founders from './../components/Founders';
 import  Link  from 'next/link';
-
+import Hero from "../components/Hero/Hero";
 export default function Home() {
   const [EmpState,setEmpState]= useState(teamData)
   
@@ -50,17 +50,9 @@ export default function Home() {
             },
           },
         }}>
-        <div className='grid pt-20 place-items-center mb-20 lg:grid-flow-col grid-flow-row'>
-        <SectionOneAnnounce
-        MainText="Join more than 1000+ people that interested in tech"
-        partner="/Partner"
-        action="/Join"
-        ActionButton="Join Us"
-        action2="https://chat.whatsapp.com/EBstbSoXHg63rZ5HiomOT0"
-        ActionButton2="Whatsapp Group 👨🏻‍🚀"
-        
-        />
-        </div>{" "}
+        <div className='relative w-full  pt-12'>
+     <Hero/>
+        </div>
       </motion.div>
 <div className="relative">
 <motion.div className=" overflow-hidden"

@@ -4,8 +4,11 @@ import Styles from "./Header.module.css";
 
 function Header(props) {
     return (
-        <div
-          className={`${"text-amber-50 h-[88px] bg-[#030014]/40 z-50 grid-cols-1  md:grid-cols-3 place-items-center grid fixed w-full backdrop-blur-3xl"}`}
+        <div 
+      
+        
+        
+        className={`${"text-amber-50 h-[88px] bg-[#030014]/40 z-50 grid-cols-1  md:grid-cols-3 place-items-center grid fixed w-full backdrop-blur-3xl"}`}
         >
             <div className={`${"Mobol_Logo"} ${"md:hidden block py-2 "}`}>
             <span className={`${" "}`}>
@@ -57,7 +60,7 @@ function Header(props) {
                 props.nav_links.map((nav_link) => (
                     <li key={nav_link.id}>
                         <Link href={nav_link.link}>
-                            <span className={`${"text-amber-50 capitalize "}`}>
+                            <span   style={{ fontFamily: "interV" }} className={`${"text-amber-50 capitalize "}`}>
                                 {nav_link.name}
                             </span>
                         </Link>
@@ -73,7 +76,7 @@ function Header(props) {
             >
                 {props.Join.map((Join) => (
                     <Link key={Join.id} href={Join.link}>
-                        <span className={`${"text-amber-50 capitalize "}`}>
+                        <span       style={{ fontFamily: "interV" }} className={`${"text-amber-50 capitalize "}`}>
                             {Join.name}
                         </span>
                     </Link>

@@ -35,7 +35,7 @@ function MyApp({ Component, pageProps }) {
 let Join = [
   {
     id: 1,
-    name: "Join user",
+    name: "Join Us",
     link: "/join",
   }];
  

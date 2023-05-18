@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 @font-face {
   font-family: "Poppins-Bold";
   font-weight: 400;
@@ -11,30 +12,17 @@
   font-style: normal;
 }
 
-@font-face {
-  font-family: "dragons";
-  font-weight: 200;
-  src: url("../public/fonts/RedDragons-mB3a.ttf") format("truetype");
 
-  font-weight: 400;
+@font-face {
+  font-family: "interV";
+  font-weight: 300;
+  src: url("../public/fonts/Inter-Light.ttf") format("truetype");
 
   font-style: normal;
 }
-input {
-  accent-color: #ff4d6e;
-}
-@font-face {
-  font-family: "tatris";
-  font-weight: 400;
-  src: url("../public/fonts/Silkscreen-Regular.ttf") format("truetype");
 
-  font-weight: 400;
 
-  font-style: normal;
-}
-input {
-  accent-color: #ff4d6e;
-}
+
 
 html,
 body {
