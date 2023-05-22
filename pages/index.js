@@ -12,6 +12,7 @@ import  Link  from 'next/link';
 import Hero from "../components/Hero/Hero";
 import TechStack from "../components/TechStack/TechStack";
 import Trusted from "../components/Trusted/Trusted";
+import WhatWeDo from "../components/WhatWeDo/WhatWeDo";
 export default function Home() {
   const [EmpState,setEmpState]= useState(teamData)
 
@@ -189,6 +190,43 @@ See All
                 />
 
       </div>
+
+
+<div className={"w-full flex justify-center"}>
+<div>
+    <div className="mt-28 mb-6 p-2 flex justify-center ">
+        <div>
+
+
+            <div   className="flex active:scale-95 duration-200  gap-1 text-md bg-purple-400/10 shadow-gray-200/20 shadow-inner px-4  py-2 rounded-full min-w-[30px]">
+                <div className="grid place-content-center ">
+                    <Image style={{ fontFamily: "interV" }} src="/SVG/Stars.svg" alt="f" width={30} height={30} />
+                </div>
+                <span className="text-purple-400/70 hover:underline duration-300  grid place-content-center">Find your passion with us  </span>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+    <div style={{ fontFamily: "interV" }} className="text-6xl  content-center  max-w-4xl text-center md:text-7xl   z-10 flex justify-center m-auto relative  mb-3 text-gray-200  font-semibold	">
+        <h1>   Our Bootcamp Prepare You To  <span className={"text-yellow-400 " }>Succeed In Tech.</span></h1>
+    </div>
+
+    <p style={{ fontFamily: "interV" }} className="text-lg flex mb-28 relative z-10 text-purple-300/50 justify-center m-auto">Technical tracks will push you to learn, Non-technical tracks Will simulates the real work environment.</p>
+
+    <WhatWeDo
+        hrefWebdev='/Services/Webdevelopment'
+        hrefUiux='Services/UiUXDesign'
+        hrefAppdev='/Services/Appdevelopment'
+        hrefHiredev='Hire'
+    />
+</div>
+</div>
+
 <motion.div
           initial='hidden'
           animate='visible'
@@ -211,6 +249,7 @@ See All
               boxSizing: "border-box",
               filter: "drop-shadow(0px 0px 10px #121245)",
             }}>
+
             <Sec2Summary
               MainPTexe='Dragons is a Bootcamp and activity program, that helps people to take their first step toward their career,
               Listen from people of the same age, speakers working in top companies and people can help you grow as a person.'
