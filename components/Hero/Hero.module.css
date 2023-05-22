@@ -3,8 +3,11 @@
     -webkit-animation: bounce 4s infinite alternate;
     -moz-animation: bounce 4s infinite alternate;
     -o-animation: bounce 4s infinite alternate;
-    
+
+  
 }
+
+
 
 @keyframes bounce {
     0% {

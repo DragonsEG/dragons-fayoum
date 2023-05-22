@@ -36,7 +36,7 @@ function WhatWeDo(props) {
       <div className='pt-32  hover:scale-95 duration-1000  md:pt-24 pl-10 text-white relative hidden lg:block'>
         <Image
           className='relative  bounce-2 box2 '
-          src={"https://i.ibb.co/6W9HF64/Reduce-Image-Size-net-20kb-48204-removebg-preview.png"}
+          src={"/images/eventImagel.png "}
           alt='Event Image'
           height='530'
           width='730'     

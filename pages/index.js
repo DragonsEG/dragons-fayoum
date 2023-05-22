@@ -10,9 +10,11 @@ import SectionOneAnnounce from "../components/SectionOneAnnounce";
 import Founders from './../components/Founders';
 import  Link  from 'next/link';
 import Hero from "../components/Hero/Hero";
+import TechStack from "../components/TechStack/TechStack";
+import Trusted from "../components/Trusted/Trusted";
 export default function Home() {
   const [EmpState,setEmpState]= useState(teamData)
-  
+
   function randomArrayShuffle(teamData) {
     let currentIndex = teamData.length, temporaryValue, randomIndex;
     while (0 !== currentIndex) {
@@ -28,7 +30,7 @@ export default function Home() {
     setEmpState( randomArrayShuffle(teamData).slice(0,4))
 
   ),[])
-  
+
   const { scrollYProgress } = useScroll();
   const scale = useTransform(scrollYProgress, [0, 1], [0.6, 1]);
   return (
@@ -56,11 +58,88 @@ export default function Home() {
       </motion.div>
 <div className="relative">
 
-      <div className="absolute left-0 right-0 lg:hidden bottom-0">
- 
-      
-      </div>  
-  </div>    
+<div className={"relative "}>
+  <div  className={"z-10   flex opacity-5 absolute w-full  justify-center m-auto "} >
+      <Image src={"/Random/waterfall.png"} alt={"hart"}
+             width={1000}
+             height={1000}
+      />
+  </div>
+
+    <div className={"z-20 pt-[70px]"}>
+        <div className="mt-28 mb-6 p-2 flex justify-center ">
+            <div>
+                <div   className="flex active:scale-95 duration-200  gap-1 text-md bg-purple-400/10 shadow-gray-200/20 shadow-inner px-4  py-2 rounded-full min-w-[30px]">
+
+                    <span className="text-purple-400/70 hover:underline duration-300  grid place-content-center">We Will Push and give it 120% together </span>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+
+        <div style={{ fontFamily: "interV" }} className="text-5xl opacity-25 blur-sm  content-center  max-w-4xl text-center md:text-7xl   z-10 flex justify-center m-auto relative  mb-3 text-purple-900-200/20     font-semibold	">
+            <h1 className={"text-purple-900 "}> Ready For a <span className={"text-yellow-400/20 " }>Sprint ? </span></h1>
+        </div>
+        <div style={{ fontFamily: "interV" }} className="text-5xl -mt-6  md:-mt-16  content-center  max-w-4xl text-center md:text-7xl   z-10 flex justify-center m-auto relative  mb-3 text-purple-400 grayscale    font-semibold	">
+            <h1> Ready For a <span className={"text-purple-400  " }>Sprint ? </span></h1>
+        </div>
+
+    </div>
+</div>
+    <div className={"justify-center border-4 m-2 border-amber-50/20 relative flex max-w-7xl rounded-3xl overflow-clip aspect-video m-auto "}>
+
+
+     <div  data-allowfullscreen="true"
+           data-autoplay="true" className={"absolute z-20 pb-4  px-7 font-thin hover:animate-pulse select-none bg-amber-50/20 rounded-b-full cursor-pointer"}>Don&apos;t Speak Arabic?</div>
+     <iframe  data-allowfullscreen="true"
+              data-autoplay="true" className={"z-10 h-full w-full"} style={{border:"none" ,overflow:"hidden"}}
+         src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2FDragons.Egypt%2Fvideos%2F229997402815626%2F&show_text=false&width=560&t=0&mute=0&autoplay=1"
+         width="560" height="314"
+              data-lazy={true}
+              allowFullScreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+     >
+
+
+     </iframe>
+
+ </div>
+
+    <div className='pt-24 w-auto  relative'>
+
+
+        <TechStack
+            MainText={[
+                <span key='coloredText' className=' header text-red-400'>
+                Technologies
+              </span>,
+                " You Will explore with us",
+            ]}
+        />
+    </div>
+  </div>
+
+<div className={"relative px-2"}>
+
+
+    <div className={"relative z-10 saturate-50 contrast-150 opacity-50  overflow-clip  w-full"} >
+        <div className={"bg-[#030014]/10 overflow-hidden h-full z-30  absolute w-full"}>
+
+        </div>
+        <Image className={"z-10  flex rounded-t-3xl justify-center m-auto "}  src={"/images/eventImagel.png   "} alt={"hart"}
+               width={1000}
+               height={1000}
+        />
+        <Trusted/>
+
+    </div>
+
+</div>
+
+
       <div className='-pt-20  relative flex justify-center mx-auto flex-col max-w-[1400px]'>
     <Founders/>
       <div class='grid mt-12 place-items-center text-xl font-bold md:text-3xl lg:text-7xl'>
@@ -87,15 +166,15 @@ export default function Home() {
               href={"/Team"}
             passHref>
               <div               className='select-none font-bold max-w-sm  bg-white mt-4 sm:mt-0 shadow-md  hover:shadow-red-500/50  ring-2  ring-slate-900 hover:bg-gray-300 focus:outline-none focus:ring-2 opacity-90  focus:ring-offset-2 active:scale-95 duration-100 0  text-gray-900  h-12 px-3  sm:px-16 rounded-lg w-full flex items-center justify-center sm:w-auto highlight-white/20 '
-> 
-See All 
+>
+See All
 
 </div>
           </Link>
         </div></div>
 
         </div>{" "}
-       
+
 <div className="relative pt-20 ">
 <div className="absolute right-2 -top-[50px]  sepia-0 backdrop-opacity-95 ">
       <Image
@@ -108,7 +187,7 @@ See All
                   blurDataURL={`/_next/image?url=/ico/S1.png&w=16&q=1`}
                   priority
                 />
-      
+
       </div>
 <motion.div
           initial='hidden'
