@@ -5,12 +5,11 @@ import teamData from "../components/JSON/teamData"
 import CardTeam from "../components/CardTeam";
 import {useState, useEffect} from "react";
 import Image from "next/image";
-import {motion, useScroll, useTransform} from "framer-motion";
+import {useScroll, useTransform} from "framer-motion";
 import Founders from './../components/Founders';
 import Link from 'next/link';
 import Hero from "../components/Hero/Hero";
 import TechStack from "../components/TechStack/TechStack";
-import Trusted from "../components/Trusted/Trusted";
 import WhatWeDo from "../components/WhatWeDo/WhatWeDo";
 import {VideoSection} from "../components/VideoSection/VideoSection";
 import {TrustedSection} from "../components/Trusted/TrustedSection";

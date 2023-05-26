@@ -2,7 +2,6 @@ import "../styles/globals.css";
 import Footer from "../components/Footer";
 import HeaderComp from "../components/HeaderComp/Header";
 import Head from "next/head";
-import Join from './Join';
 
 
 function MyApp({Component, pageProps}) {
@@ -60,8 +59,7 @@ function MyApp({Component, pageProps}) {
             />
 
 
-
-                <Component {...pageProps} />
+            <Component {...pageProps} />
 
 
             <Footer/>
