@@ -9,10 +9,10 @@ function Header(props) {
 }}
         
         
-        className={`${"text-amber-50 h-[88px]    bg-[#030014]/40 z-50 grid-cols-1  md:grid-cols-3 place-items-center grid fixed w-full backdrop-blur-3xl"} ${"select-none"}`}
+        className={`${"text-amber-50 h-[88px] z-50   bg-[#030014]/40 z-50 grid-cols-1  md:grid-cols-3 place-items-center grid fixed w-full backdrop-blur-3xl"} ${"select-none"}`}
         >
-            <div className={`${"Mobol_Logo"} ${"  md:hidden block py-2 "}`}>
-            <span className={`${" "}`}>
+            <div className={`${"Mobol_Logo "} ${"  md:hidden block py-2 "}`}>
+            <span >
                 <Image
                   src="/Identity/logotext.png"
                   alt="logo"
@@ -36,7 +36,7 @@ function Header(props) {
               />
             </div>
             <span
-              className={`${" pt-[6px] text-xl text-gray-200"}${"select-none"}`}
+              className={`${" pt-[6px] text-xl text-gray-200 "}${"select-none"}`}
             >
               <span className={`${"text-amber-50 uppercase "}`}>
                 <Image
@@ -52,10 +52,10 @@ function Header(props) {
             </Link>
           </div>
           <div
-            className={`${"w-[400px] grid  h-[44px] rounded-full bg-gray-400/5 border-[0.01rem] border-gray-200/10"} ${"select-none"}`}
+            className={`${"w-[400px] grid  h-[44px] rounded-full bg-gray-400/5 border-[0.01rem] border-gray-200/10 "} ${"select-none"}`}
           >
             <ul
-              className={`${"grid grid-cols-5 place-items-center"}${" font-light text-gray-200 hover:text-white"}${"select-none cursor-pointer"}`}
+              className={`${"grid grid-cols-5 place-items-center "}${" font-light text-gray-200 hover:text-white"}${" select-none cursor-pointer"}`}
             >
                {
                 props.nav_links.map((nav_link) => (
@@ -73,11 +73,11 @@ function Header(props) {
           </div>
           <div>
             <button
-              className={`${"w-[100px] md:grid hidden place-items-center  h-[44px] "}${"shadow-inner shadow-3xl shadow-purple-700 hover:shadow-purple-400 duration-500 rounded-full bg-purple-900/5"}${"select-none"}`}
+              className={`${"w-[100px] md:grid hidden place-items-center  h-[44px] "}${" shadow-inner shadow-3xl shadow-purple-700 hover:shadow-purple-400 duration-500 rounded-full bg-purple-900/5 "}${"select-none"}`}
             >
                 {props.Join.map((Join) => (
                     <Link key={Join.id} href={Join.link}>
-                        <span       style={{ fontFamily: "interV" }} className={`${"text-amber-50 capitalize "}`}>
+                        <span       style={{ fontFamily: "interV" }} className={`${" text-amber-50 capitalize "}`}>
                             {Join.name}
                         </span>
                     </Link>
