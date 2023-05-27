@@ -64,9 +64,8 @@ export default function Home() {
                     />
                 </div>
             </div>
-           
-            <Numbers/>
             <TrustedSection/>
+            <Numbers/>
 
 
             <div className='-pt-20  relative flex justify-center mx-auto flex-col max-w-[1400px]'>
