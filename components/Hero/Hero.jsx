@@ -44,7 +44,8 @@ function Hero() {
                 </div>
                 <p style={{fontFamily: "interV"}}
                    className="text-lg flex pt-6 relative z-10 text-purple-300/50 justify-center m-auto">Never miss a
-                    note, idea or connection.</p>
+                    note, idea or connection.
+                </p>
 
             </div>
 
