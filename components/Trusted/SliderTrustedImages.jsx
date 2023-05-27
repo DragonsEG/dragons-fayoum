@@ -26,7 +26,7 @@ export default function App() {
         ,
         {
             id: 2,
-            src: "/Identity/Images/2.jpg",
+            src: "/slider/webp.webp",
             alt: "some of of our work",
 
 
@@ -34,10 +34,24 @@ export default function App() {
         ,
         {
             id: 3,
-            src: "/Identity/Images/3.jpg",
+            src: "/slider/Teamgitgitub.png.webp",
             alt: "some of of our work",
 
         }
+        ,
+        {
+            id: 4,
+            src: "/slider/boda.jpg",
+            alt: "some of of our work",
+
+        }
+        ,
+        {
+            id: 5,
+            src: "/slider/people.jpg",
+            alt: "some of of our work",
+        }
+
     ]
 
     return (
