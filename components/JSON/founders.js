@@ -24,6 +24,43 @@ const teamData = [{
         , image: '/images/Founders/Salah.jpg'
         , Pos: 'Head Java'
     }
-  
+    ,
+    {
+        herfFacebook: 'https://www.facebook.com/profile.php?id=100010052953257'
+        , herfLinkedIn: 'https://www.linkedin.com/in/hatem-ali-hassan-042798225/'
+        , herfGithub: 'https://github.com/Hatem2002'
+        , name: 'Hatem Ali'
+        , work: 'Frontend Engineer'
+        , image: '/images/Founders/HatemAliFormal.jpg '
+        , Pos: 'CEO'
+    }, {
+        herfFacebook: 'https://www.facebook.com/profile.php?id=100012624398938'
+        , herfLinkedIn: 'https://www.linkedin.com/in/salaheldin-mohamed/'
+        , herfGithub: 'https://github.com/salah-mo'
+        , name: 'Salah Mohamed'
+        , work: 'Backend Engineer'
+        , image: '/images/Founders/Salah.jpg'
+        , Pos: 'Head Java'
+    }
+    ,
+    {
+        herfFacebook: 'https://www.facebook.com/profile.php?id=100010052953257'
+        , herfLinkedIn: 'https://www.linkedin.com/in/hatem-ali-hassan-042798225/'
+        , herfGithub: 'https://github.com/Hatem2002'
+        , name: 'Hatem Ali'
+        , work: 'Frontend Engineer'
+        , image: '/images/Founders/HatemAliFormal.jpg '
+        , Pos: 'CEO'
+    }, {
+        herfFacebook: 'https://www.facebook.com/profile.php?id=100012624398938'
+        , herfLinkedIn: 'https://www.linkedin.com/in/salaheldin-mohamed/'
+        , herfGithub: 'https://github.com/salah-mo'
+        , name: 'Salah Mohamed'
+        , work: 'Backend Engineer'
+        , image: '/images/Founders/Salah.jpg'
+        , Pos: 'Head Java'
+    }
+    
+
 ]
 export default teamData
