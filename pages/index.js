@@ -70,11 +70,7 @@ export default function Home() {
 
             <div className='-pt-20  relative flex justify-center mx-auto flex-col max-w-[1400px]'>
                 <Founders/>
-                <div className='grid mt-12 place-items-center text-xl font-bold md:text-3xl lg:text-7xl'>
-                    <p className={`${"z-20 "}${Styles.pHeaderTeam}`}>
-                        <span style={{fontFamily: "dragons"}} className={Styles.SpanHeaderTeam}>Our Team </span>
-                    </p>
-                </div>
+
             </div>
             <div className='w-full flex-wrap gap-2 mb-20 mt-12 max-w-[1400px]  flex mx-auto justify-center '>
 
