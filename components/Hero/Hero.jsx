@@ -50,7 +50,7 @@ function Hero() {
             </div>
 
             <div
-                className=" max-w-[1400px] container_3d sm:mt-10  md:mt-3 lg:-mt-20  relative  m-auto flex justify-center">
+                className=" max-w-[1400px]  container_3d sm:mt-10  md:mt-3 lg:-mt-20  relative  m-auto flex justify-center">
                 <Image style={{fontFamily: "interV"}}
                        className={`${" absolute z-40 top-12 filter "} ${Styles.Drag3DBoubce}`}
                        src={"/Identity/Images/drag_3d_color.png"} alt='Header Image' height='1160' width='1240'
