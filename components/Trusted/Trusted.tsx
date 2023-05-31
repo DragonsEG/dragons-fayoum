@@ -45,8 +45,8 @@ const Trusted = () => {
 
                     <div className=" flex p-3 gap-7 text-purple-50  ">
                         {SVG_Brands.map((brand) => (
-                            <div className={"flex"}>
-                                <Image key={brand.id} className={"svg_property"} src={brand.img} alt={brand.name}
+                            <div key={brand.id} className={"flex"}>
+                                <Image className={"svg_property"} src={brand.img} alt={brand.name}
                                        width={100} height={100}/>
                             </div>
                         ))}
