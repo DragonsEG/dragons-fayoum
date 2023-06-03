@@ -39,7 +39,7 @@ const Trusted = () => {
             <section className={Styles.sec3}>
                 <div className={Styles.sec3_main_container_title}>Trusted by 30+ Partners</div>
                 <div className={Styles.boujee_text}>
-                    <p>Thank You For Trusted Us</p>
+                    <p>Thank You For Trusting Us</p>
                 </div>
                 <div className={Styles.sec3_main_container}>
 
