@@ -43,8 +43,8 @@ function Hero() {
                     <h1> Boost Your Experiences in only <span className={" text-yellow-400 "}>6 Months </span></h1>
                 </div>
                 <p style={{fontFamily: "interV"}}
-                   className="text-lg flex pt-6 relative z-10 text-purple-300/50 justify-center m-auto">Never miss a
-                    note, idea or connection.
+                   className="text-lg flex pt-6 relative z-10 text-purple-300/50 justify-center m-auto">
+                    We are a team of passionate and creative people who are willing to help you to boost your career
                 </p>
 
             </div>

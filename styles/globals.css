@@ -39,12 +39,13 @@ body {
 
 /* Track */
 ::-webkit-scrollbar-track {
-    background: #11182c;
+    background: #090d18;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-    background: #090d18;
+
+    background: #11182c;
 }
 
 /* Handle on hover */

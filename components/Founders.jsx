@@ -20,9 +20,9 @@ function founders() {
 
                 </div>
                 <p style={{fontFamily: "interV"}}
-                   className="text-lg px-4 flex text-center  mb-16 pt-6 relative z-10 text-purple-300/50 justify-center m-auto">Never
-                    miss a
-                    chance to learn, join our events and meet our community.
+                   className="text-lg px-4 flex text-center  mb-16 pt-6 relative z-10 text-purple-300/50 justify-center m-auto">
+                    The success, often depends on the vision and leadership provided by its founders and
+                    high board members.
 
                 </p>
 
