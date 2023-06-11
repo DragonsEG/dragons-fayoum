@@ -3,82 +3,135 @@ import Image from "next/image";
 import React from "react";
 import Link from "next/link";
 
+
 function cardTeam(props) {
-  function getRandomInt(max) {
-    return Math.floor(Math.random() * max);
-  }
+    function getRandomInt(max) {
+        return Math.floor(Math.random() * max);
+    }
 
-  let bgcardColor = [
-    "bg-[#90BB94]",
-    "bg-[#E2AD5E]",
-    "bg-[#5347DE]",
-    "bg-[#E2815E]",
-  ];
-  return (
-    <div>
-      <div className='relative h-[420px] w-[320px]'>
-        <div
-          className={`${
-            bgcardColor[getRandomInt(4)]
-          }${" h-[400px] w-[300px] "}`}>
-          <div className='border-4 border-dashed hover:scale-105 absolute h-[400px] select-none hover:backdrop-blur-sm w-[300px] rotateonhover15 duration-500 border-gray-800 right-0 bottom-0'>
-            <Image
-              src={props.image}
-              alt=''
-              height='300'
-              width='300'
-              objectFit='cover'
-              placeholder='blur'
-              blurDataURL='data:...'
-            />
-          </div>
-          <div className='bg-gray-200  text-gray-900 absolute rotateonhover15text  duration-500 w-full bottom-[20px] h-[150px]'>
-            <div
-              style={{ fontFamily: "tatris", width: "400" }}
-              className='text-gray-900  relative text-left h-full'>
-              <h1 className='text-2xl font-bold pl-2 p-1'>{props.name}</h1>
-              <h1 className='text-lg font-bold pl-2 text-gray-700 p-1 pt-0'>
-                {props?.work}
-              </h1>
-              <h1 className='text-md text-blue-600 font-bold pl-2 p-1 pt-0'>
-                {props.Pos}
-              </h1>
+    let bgcardColor = [
+        "bg-[#90BB94]/5",
+        "bg-[#E2AD5E]/5",
+        "bg-[#5347DE]/5",
+        "bg-[#E2815E]/5",
+    ];
+    return (
+        <div>
+            <div className='relative h-[420px]  w-[320px]'>
+                <div
+                    className={`${
+                        bgcardColor[getRandomInt(4)]
+                    }${" h-[400px] w-[300px] rounded-3xl "}`}>
+                    <div
+                        className='border-4 border-dashed h-[280px] overflow-hidden top-0  hover:scale-105 absolute h-[400px] select-none hover:backdrop-blur-sm hover:brightness-[0.2] hover:opacity-90 cursor-pointer w-[300px] rotateonhover15 duration-500 border-gray-800 right-0 bottom-0'>
+                        <Image
+                            src={props.image}
+                            alt=''
+                            height='300'
+                            width='300'
+                            cover
+                            placeholder='blur'
+                            blurDataURL='data:...'
+                            className={""}
+                        />
+                    </div>
+                    <div
+                        className=' backdrop-blur-xl bg-[#030012]/20  text-gray-900 absolute   duration-500 w-full bottom-[20px] h-[150px]'>
+                        <div
+                            style={{fontFamily: "inherit", width: "400"}}
+                            className='text-gray-200  backdrop-blur-[200px]  bg-[#030014]/40  relative text-left h-full'>
+                            <dev className='text-2xl flex gap-2 font-bold pl-2 p-1 capitalize'>
+                                <h1>{props.name}</h1>
+                                {
+                                    props?.ismintainer ? (<div className={"h-12 w-12"}>
+                                            <svg
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                width="200"
+                                                height="200"
+                                                x="0"
+                                                y="0"
+                                                version="1.1"
+                                                viewBox="0 0 100 100"
+                                                xmlSpace="preserve"
+                                                style={{height: "100%", width: "100%"}}
+                                            >
+                                                <g
+                                                    className="ldl-scale"
+                                                    style={{
+                                                        WebkitTransformOrigin: "50% 50%",
+                                                        MsTransformOrigin: "50% 50%",
+                                                        transformOrigin: "50% 50%",
+                                                    }}
+                                                >
+                                                    <g className="ldl-ani">
+                                                        <g className="ldl-layer">
+                                                            <circle
+                                                                cx="50"
+                                                                cy="50"
+                                                                r="40"
+                                                                fill="#333"
+                                                                className="0"
+                                                                transform="scale(.8) scale(.91)"
+                                                            ></circle>
+                                                        </g>
+                                                        <g className="ldl-layer">
+                                                            <path
+                                                                fill="#FFF"
+                                                                d="M62.483 34.407l-7.505-4.333a1.323 1.323 0 00-1.807.484l-.19.328a.737.737 0 01-1.004.269l-.375-.217a.732.732 0 01-.269-1.005 1.324 1.324 0 00-.484-1.807l-3.377-1.95a1.323 1.323 0 00-1.807.484l-4.658 8.068a1.324 1.324 0 00.484 1.807l3.377 1.95a1.322 1.322 0 001.807-.484.735.735 0 011.004-.269l.375.217a.732.732 0 01.269 1.005l-.189.328a1.322 1.322 0 00.485 1.806l.637.368-1.793 3.106a2.255 2.255 0 00-.354.059 2.253 2.253 0 00-1.377 1.057L32.593 68.434a2.27 2.27 0 00.83 3.098l3.747 2.164a2.265 2.265 0 003.098-.832L53.406 50.11a2.26 2.26 0 00-.021-2.282l1.726-2.99 1.012.584a1.323 1.323 0 001.807-.484l1.564-2.709c2.079 1.504 2.592 2.676 3.317 4.331.192.439.393.896.63 1.381a1.927 1.927 0 002.013 1.082c.91-.12 1.643-.823 1.823-1.749.908-4.655.957-9.436-4.794-12.867z"
+                                                                transform="scale(.8) scale(.91)"
+                                                                className="0"
+                                                            ></path>
+                                                        </g>
+                                                    </g>
+                                                </g>
+                                            </svg>
+                                        </div>
+                                    ) : null
+                                }
 
-              <div className='flex gap-2 justify-center  right-4 pl-2 absolute bottom-4'>
-                <div className='duration-500 active:scale-95 mt-[6px]  hover:text-gray-400'>
-                  {" "}
-                  {props.herfLinkedIn?<Link legacyBehavior href={props.herfLinkedIn} passHref>
-                    <svg
-                      width='23px'
-                      height='23px'
-                      viewBox='0 0 48 48'
-                      fill='black'>
-                      <path
-                        fillRule='evenodd'
-                        className='opacity-50 mt-1 hover:opacity-30 duration-300'
-                        clipRule='evenodd'
-                        d='M0 24C0 10.7452 10.7452 0 24 0C37.2548 0 48 10.7452 48 24C48 37.2548 37.2548 48 24 48C10.7452 48 0 37.2548 0 24ZM16.9605 19.8778H11.5216V36.2196H16.9605V19.8778ZM17.3188 14.8227C17.2835 13.2204 16.1377 12 14.277 12C12.4164 12 11.2 13.2204 11.2 14.8227C11.2 16.3918 12.3805 17.6473 14.2064 17.6473H14.2412C16.1377 17.6473 17.3188 16.3918 17.3188 14.8227ZM36.5754 26.8497C36.5754 21.8303 33.8922 19.4941 30.3131 19.4941C27.4254 19.4941 26.1326 21.0802 25.4107 22.1929V19.8783H19.9711C20.0428 21.4117 19.9711 36.22 19.9711 36.22H25.4107V27.0934C25.4107 26.605 25.446 26.1178 25.5898 25.7681C25.9829 24.7924 26.8779 23.7822 28.3805 23.7822C30.3494 23.7822 31.1365 25.2807 31.1365 27.4767V36.2196H36.5752L36.5754 26.8497Z'
-                        fill='black'></path>
-                    </svg>
-                  </Link>:null}
-                  
-                </div>
-                <div className='duration-500 active:scale-95 mt-[6px]  hover:text-gray-400'>
-                  {" "}
-                 {props.herfGithub? <Link legacyBehavior href={props?.herfGithub} passHref>
-                    <svg
-                      version='1.1'
-                      id='Capa_1'
-                      width='23px'
-                      height='23px'
-                      viewBox='0 0 438.549 438.549'>
-                      <g>
-                        <path
-                          fill='black'
-                          fillRule='evenodd'
-                          className='opacity-50 mt-1 hover:opacity-30 duration-300'
-                          clipRule='evenodd'
-                          d='M409.132,114.573c-19.608-33.596-46.205-60.194-79.798-79.8C295.736,15.166,259.057,5.365,219.271,5.365
+                            </dev>
+                            <h1 className='text-lg capitalize font-bold pl-2 text-gray-200/70 p-1 pt-0'>
+                                {props?.work}
+                            </h1>
+                            <h1 className='text-md capitalize text-yellow-400/70 font-bold pl-2 p-1 pt-0'>
+                                {props.Pos}
+                            </h1>
+
+                            <div className='flex gap-2 justify-center  right-4 pl-2 absolute bottom-4'>
+                                <div className='duration-500 active:scale-95 mt-[6px]  hover:text-gray-400'>
+                                    {" "}
+                                    {props.herfLinkedIn ? <Link legacyBehavior href={props.herfLinkedIn} passHref>
+                                        <svg
+                                            width='23px'
+                                            height='23px'
+                                            viewBox='0 0 48 48'
+                                            fill='white'>
+                                            <path
+                                                fillRule='evenodd'
+                                                className='opacity-50 mt-1 hover:opacity-30 duration-300'
+                                                clipRule='evenodd'
+                                                d='M0 24C0 10.7452 10.7452 0 24 0C37.2548 0 48 10.7452 48 24C48 37.2548 37.2548 48 24 48C10.7452 48 0 37.2548 0 24ZM16.9605 19.8778H11.5216V36.2196H16.9605V19.8778ZM17.3188 14.8227C17.2835 13.2204 16.1377 12 14.277 12C12.4164 12 11.2 13.2204 11.2 14.8227C11.2 16.3918 12.3805 17.6473 14.2064 17.6473H14.2412C16.1377 17.6473 17.3188 16.3918 17.3188 14.8227ZM36.5754 26.8497C36.5754 21.8303 33.8922 19.4941 30.3131 19.4941C27.4254 19.4941 26.1326 21.0802 25.4107 22.1929V19.8783H19.9711C20.0428 21.4117 19.9711 36.22 19.9711 36.22H25.4107V27.0934C25.4107 26.605 25.446 26.1178 25.5898 25.7681C25.9829 24.7924 26.8779 23.7822 28.3805 23.7822C30.3494 23.7822 31.1365 25.2807 31.1365 27.4767V36.2196H36.5752L36.5754 26.8497Z'
+                                                fill='white'></path>
+                                        </svg>
+                                    </Link> : null}
+
+                                </div>
+                                <div className='duration-500 active:scale-95 mt-[6px]  hover:text-gray-400'>
+                                    {" "}
+                                    {props.herfGithub ? <Link legacyBehavior href={props?.herfGithub} passHref>
+                                        <svg
+                                            version='1.1'
+                                            id='Capa_1'
+                                            width='23px'
+                                            height='23px'
+                                            viewBox='0 0 438.549 438.549'>
+                                            <g>
+                                                <path
+                                                    fill='white'
+                                                    fillRule='evenodd'
+                                                    className='opacity-50 mt-1 hover:opacity-30 duration-300'
+                                                    clipRule='evenodd'
+                                                    d='M409.132,114.573c-19.608-33.596-46.205-60.194-79.798-79.8C295.736,15.166,259.057,5.365,219.271,5.365
 		c-39.781,0-76.472,9.804-110.063,29.408c-33.596,19.605-60.192,46.204-79.8,79.8C9.803,148.168,0,184.854,0,224.63
 		c0,47.78,13.94,90.745,41.827,128.906c27.884,38.164,63.906,64.572,108.063,79.227c5.14,0.954,8.945,0.283,11.419-1.996
 		c2.475-2.282,3.711-5.14,3.711-8.562c0-0.571-0.049-5.708-0.144-15.417c-0.098-9.709-0.144-18.179-0.144-25.406l-6.567,1.136
@@ -98,49 +151,34 @@ function cardTeam(props) {
 		c9.894,8.562,14.842,22.077,14.842,40.539v60.237c0,3.422,1.19,6.279,3.572,8.562c2.379,2.279,6.136,2.95,11.276,1.995
 		c44.163-14.653,80.185-41.062,108.068-79.226c27.88-38.161,41.825-81.126,41.825-128.906
 		C438.536,184.851,428.728,148.168,409.132,114.573z'
-                        />
-                      </g>
-                      <g></g>
-                      <g></g>
-                      <g></g>
-                      <g></g>
-                      <g></g>
-                      <g></g>
-                      <g></g>
-                      <g></g>
-                      <g></g>
-                      <g></g>
-                      <g></g>
-                      <g></g>
-                      <g></g>
-                      <g></g>
-                      <g></g>
-                    </svg>
-                  </Link>:""}
+                                                />
+                                            </g>
+                                            <g></g>
+                                            <g></g>
+                                            <g></g>
+                                            <g></g>
+                                            <g></g>
+                                            <g></g>
+                                            <g></g>
+                                            <g></g>
+                                            <g></g>
+                                            <g></g>
+                                            <g></g>
+                                            <g></g>
+                                            <g></g>
+                                            <g></g>
+                                            <g></g>
+                                        </svg>
+                                    </Link> : ""}
+                                </div>
+                               
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div className='duration-500 active:scale-95  hover:text-gray-400'>
-                  {" "}
-                {  props.herfFacebook? <Link legacyBehavior href={props.herfFacebook} passHref>
-                    <svg
-                      fill='black'
-                      xmlns='http://www.w3.org/2000/svg'
-                      viewBox='0 0 50 50'
-                      width='25px'
-                      height='25px'
-                      className='opacity-50 mt-1 hover:opacity-30 duration-300'>
-                      {" "}
-                      <path d='M25,3C12.85,3,3,12.85,3,25c0,11.03,8.125,20.137,18.712,21.728V30.831h-5.443v-5.783h5.443v-3.848 c0-6.371,3.104-9.168,8.399-9.168c2.536,0,3.877,0.188,4.512,0.274v5.048h-3.612c-2.248,0-3.033,2.131-3.033,4.533v3.161h6.588 l-0.894,5.783h-5.694v15.944C38.716,45.318,47,36.137,47,25C47,12.85,37.15,3,25,3z' />
-                    </svg>
-                  </Link>:null}
-                 
-                </div>
-              </div>
             </div>
-          </div>
         </div>
-      </div>
-    </div>
-  );
+    );
 }
 
 export default cardTeam;

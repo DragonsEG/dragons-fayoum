@@ -93,9 +93,9 @@ export default function Home() {
                               href={"/Team"}
                               passHref>
                             <div
-                                className='select-none font-bold max-w-sm  bg-white mt-4 sm:mt-0 shadow-md  hover:shadow-red-500/50
-                                 ring-2  ring-slate-900 hover:bg-gray-300 focus:outline-none focus:ring-2 opacity-90  focus:ring-offset-2
-                                  active:scale-95 duration-100 0  text-gray-900  h-12 px-3  sm:px-16 rounded-lg w-full flex items-center
+                                className='select-none font-bold max-w-sm   mt-4 sm:mt-0 shadow-md  hover:shadow-gray-500/50
+                                 ring-2  ring-slate-900 hover:bg-purple-300/10 focus:outline-none focus:ring-2 opacity-90  focus:ring-offset-2
+                                  active:scale-95 duration-100 0  text-gray-200  h-12 px-3  sm:px-16 rounded-lg w-full flex items-center
                                   justify-center sm:w-auto highlight-white/20 '
                             >
                                 See All
