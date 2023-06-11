@@ -13,7 +13,7 @@ const teamData = [{
         , herfGithub: 'https://github.com/Hatem2002'
         , name: 'Hatem Ali'
         , work: 'Frontend Engineer'
-        , image: '/images/Founders/HatemAliFormal.jpg '
+        , image: '/images/Founders/HatemAliFormal.jpg'
         , Pos: 'CEO'
     }, {
         herfFacebook: 'https://www.facebook.com/profile.php?id=100012624398938'
@@ -60,7 +60,7 @@ const teamData = [{
         , image: '/images/Founders/Salah.jpg'
         , Pos: 'Head Java'
     }
-    
+
 
 ]
 export default teamData
