@@ -19,14 +19,14 @@ export default function App() {
     const ImagesArray = [
         {
             id: 1,
-            src: "/images/eventImage.jpg",
+            src: "/slider/WEBP/eventImage.webp",
             alt: "some of of our work",
 
         }
         ,
         {
             id: 2,
-            src: "/slider/webp.webp",
+            src: "/slider/WEBP/webp.webp",
             alt: "some of of our work",
 
 
@@ -34,21 +34,21 @@ export default function App() {
         ,
         {
             id: 3,
-            src: "/slider/Teamgitgitub.png.webp",
+            src: "/slider/WEBP/photography.webp",
             alt: "some of of our work",
 
         }
         ,
         {
             id: 4,
-            src: "/slider/boda.jpg",
+            src: "/slider/WEBP/boda.webp",
             alt: "some of of our work",
 
         }
         ,
         {
             id: 5,
-            src: "/slider/people.jpg",
+            src: "/slider/WEBP/people.webp",
             alt: "some of of our work",
         }
 

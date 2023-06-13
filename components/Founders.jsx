@@ -28,7 +28,7 @@ function founders() {
 
             </div>
             <div
-                class='grid overflow-hidden mt-12 relative place-items-center text-xl font-bold md:text-3xl lg:text-7xl'>
+                className='grid overflow-hidden mt-12 relative place-items-center text-xl font-bold md:text-3xl lg:text-7xl'>
 
 
                 <div className={"relative w-full grid   text-center"}>

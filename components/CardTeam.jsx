@@ -9,30 +9,42 @@ function cardTeam(props) {
         return Math.floor(Math.random() * max);
     }
 
-    let bgcardColor = [
+    let bgCardColor = [
         "bg-[#90BB94]/5",
         "bg-[#E2AD5E]/5",
         "bg-[#5347DE]/5",
         "bg-[#E2815E]/5",
     ];
+
+    let borderCardColor = [
+        "border-[#90BB94]/10",
+        "border-[#E2AD5E]/10",
+        "border-[#5347DE]/10",
+        "border-[#E2815E]/10",
+    ];
     return (
         <div>
+
+
             <div className='relative h-[420px]  w-[320px]'>
                 <div
                     className={`${
-                        bgcardColor[getRandomInt(4)]
+                        bgCardColor[getRandomInt(4)]
                     }${" h-[400px] w-[300px] rounded-3xl "}`}>
                     <div
-                        className='border-4 border-dashed h-[280px] overflow-hidden top-0  hover:scale-105 absolute h-[400px] select-none hover:backdrop-blur-sm hover:brightness-[0.2] hover:opacity-90 cursor-pointer w-[300px] rotateonhover15 duration-500 border-gray-800 right-0 bottom-0'>
+                        className={` ${borderCardColor[getRandomInt(4)]} ${"border-r-8 border-t-4 border-l-2 rounded-tr-3xl border-dashed  "} {
+                            '  hover:animate-pulse   h-[280px] overflow-hidden top-0  hover:scale-105 absolute h-[400px] select-none hover:backdrop-blur-sm hover:brightness-[1.1]   md:brightness-[0.2] hover:opacity-90 cursor-pointer w-[300px] rotateonhover15 duration-500 border-gray-800 right-0 bottom-0'
+                        }`}
+                    >
                         <Image
                             src={props.image}
                             alt=''
                             height='300'
                             width='300'
-                            cover
+
                             placeholder='blur'
                             blurDataURL='data:...'
-                            className={""}
+                            className={"rounded-tr-3xl backdrop-blur-3xl opacity-90"}
                         />
                     </div>
                     <div
@@ -171,7 +183,7 @@ function cardTeam(props) {
                                         </svg>
                                     </Link> : ""}
                                 </div>
-                               
+
                             </div>
                         </div>
                     </div>

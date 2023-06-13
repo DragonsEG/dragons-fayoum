@@ -56,7 +56,7 @@ export const VideoSection = () => {
                         src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2FDragons.Egypt%2Fvideos%2F229997402815626%2F&show_text=false&width=560&t=0&mute=0&autoplay=1"
                         width="560" height="314"
                         data-lazy={true}
-                        allowFullScreen="true"
+                        allowFullScreen={true}
                         allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
                 >
 

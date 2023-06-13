@@ -18,6 +18,7 @@
     "emailjs": "^4.0.1",
     "framer-motion": "^7.5.3",
     "lottie-react": "^2.3.1",
+    "million": "^2.4.6-beta.0",
     "next": "^13.2.4",
     "next-images": "^1.8.5",
     "next-transpile-modules": "^10.0.0",

@@ -16,7 +16,7 @@ function Hero() {
 
 
     return (
-        <div Styles={{fontFamily: "interV;"}}
+        <div style={{fontFamily: "interV"}}
              className="w-full mt-12">
             <div className="mt-28 mb-6 p-2 flex justify-center ">
                 <div>

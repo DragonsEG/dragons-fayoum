@@ -1,6 +1,5 @@
 import styles from "../styles/Home.module.css";
 import Sec2Summary from "../components/WhatWeDo";
-import Styles from "../styles/Team.module.css";
 import teamData from "../components/JSON/teamData"
 import CardTeam from "../components/CardTeam";
 import React, {useState, useEffect} from "react";
