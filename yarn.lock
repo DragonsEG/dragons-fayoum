@@ -51,6 +51,11 @@
     "@babel/helper-validator-identifier" "^7.19.1"
     to-fast-properties "^2.0.0"
 
+"@builder.io/partytown@^0.8.0":
+  version "0.8.0"
+  resolved "https://registry.npmjs.org/@builder.io/partytown/-/partytown-0.8.0.tgz"
+  integrity sha512-M6H7nSMwW2dHd1/MQ+9J1Jqdw22uhl1nKv90kIiL9G7gjFVqqouQp4qSS1oZclmtW1XjAa4Q5UnbHB4iytmxZA==
+
 "@emailjs/browser@^3.7.0":
   version "3.10.0"
   resolved "https://registry.npmjs.org/@emailjs/browser/-/browser-3.10.0.tgz"

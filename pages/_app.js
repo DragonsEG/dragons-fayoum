@@ -2,6 +2,7 @@ import "../styles/globals.css";
 import Footer from "../components/Footer";
 import HeaderComp from "../components/HeaderComp/Header";
 import Head from "next/head";
+import {Partytown} from '@builder.io/partytown/react';
 
 
 function MyApp({Component, pageProps}) {
@@ -51,6 +52,7 @@ function MyApp({Component, pageProps}) {
                     key='Dragons'
                 />
                 <link rel='shortcut icon' href='/Identity/test.svg'/>
+                <Partytown debug={true} forward={['dataLayer.push']}/>
             </Head>
 
             <HeaderComp
