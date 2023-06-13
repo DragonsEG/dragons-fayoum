@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "partytown": "partytown copylib public/~partytown",
     "start": "next start",
     "lint": "next lint"
   },
