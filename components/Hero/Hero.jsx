@@ -55,7 +55,12 @@ function Hero() {
                        className={`${" absolute z-40 top-12 filter "} ${Styles.Drag3DBoubce}`}
                        src={"/Identity/Images/drag_3d_color.png"} alt='Header Image' height='1160' width='1240'
                        placeholder='blur' blurDataURL={`/_next/image?url=/ico/S1.png&w=16&q=1`} priority/>
-                <video autoPlay loop muted src="/Hero/q-c3d7becf.webm"/>
+                <div>
+                    <div className={"mt-80"}>
+
+                    </div>
+                </div>
+
             </div>
         </div>
     )

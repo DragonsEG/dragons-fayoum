@@ -25,8 +25,8 @@ function MyApp({Component, pageProps}) {
         },
         {
             id: 4,
-            name: "Board",
-            link: "/board",
+            name: "Team",
+            link: "/Team",
         },
         {
             id: 5,
@@ -38,7 +38,7 @@ function MyApp({Component, pageProps}) {
         {
             id: 1,
             name: "Join Us",
-            link: "/join",
+            link: "/Join",
         }];
 
     return (

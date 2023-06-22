@@ -1,7 +1,6 @@
 import React from "react";
 import CardTeam from "../components/CardTeam";
 import {motion} from "framer-motion";
-import Styles from "../styles/Team.module.css";
 import Lottie from "lottie-react";
 import dragchil from "../public/JSON/dragchil.json";
 import teamData from "../components/JSON/teamData"
@@ -11,7 +10,7 @@ import styles from "../styles/founders.module.css";
 function Team() {
 
     return (
-        <div className='pt-20  relative flex justify-center mx-auto flex-col max-w-[1400px]'>
+        <div className='pt-20  relative flex justify-center mx-auto flex-col '>
 
             <div className='grid  mt-12 place-items-center text-xl font-bold md:text-3xl lg:text-7xl'>
                 <div
@@ -80,6 +79,9 @@ function Team() {
                                   work={index.work}
                                   image={index.image}
                                   Pos={index.Pos}
+                                  isMaintainer={index.isMaintainer}
+                                  isBoard={index.isFounder}
+
                         />
 
                     ))}

@@ -1,6 +1,6 @@
-import { useState, React } from "react";
+import React, {useState} from "react";
 
-import { motion } from "framer-motion";
+import {motion} from "framer-motion";
 
 function TechStack(props) {
     const [toggleState, setToggleState] = useState(1);
@@ -12,12 +12,14 @@ function TechStack(props) {
         <div
 
             className='mx-auto z-20  md:px-4 px-1 relative   max-w-[1100px] min-h-[600px] pb-20   justify-center    text-gray-200 '>
-            <h1 style={{ fontFamily: "SfproText", width: "600" }} className='text-slate-200 select-none tracking-tight mb-11   font-extrabold text-4xl sm:text-4xl lg:text-5xl  text-center '>
+            <h1 style={{fontFamily: "SfproText", width: "600"}}
+                className='text-slate-200 select-none tracking-tight mb-11   font-extrabold text-4xl sm:text-4xl lg:text-5xl  text-center '>
                 {props.MainText}
 
             </h1>
             <div className='containerTechstack'>
-                <div className='bloc-tabsTechstack relative box-border  align-middle justify-center mx-auto text-center grid gap-1 gap-y-3 select-none cursir-pointer sm:grid-cols-3 grid-cols-3 text-xs sm:text-lg font-bold lg:grid-cols-6 md:grid-cols-4'>
+                <div
+                    className='bloc-tabsTechstack relative box-border  align-middle justify-center mx-auto text-center grid gap-1 gap-y-3 select-none cursir-pointer sm:grid-cols-3 grid-cols-3 text-xs sm:text-lg font-bold lg:grid-cols-6 md:grid-cols-4'>
                     <button
                         className={
                             toggleState === 1
@@ -26,7 +28,7 @@ function TechStack(props) {
                         }
                         onClick={() => toggleTab(1)}>
                         <h5
-                            style={{ fontFamily: "Poppins-Bold", width: "400" }}
+                            style={{fontFamily: "Poppins-Bold", width: "400"}}
                             className=' font-bold'>
                             {" "}
                             Front End
@@ -39,7 +41,7 @@ function TechStack(props) {
                                 : "tabsTechstack"
                         }
                         onClick={() => toggleTab(2)}>
-                        <h5 style={{ fontFamily: "Poppins-Bold", width: "400" }}>
+                        <h5 style={{fontFamily: "Poppins-Bold", width: "400"}}>
                             Back End
                         </h5>
                     </button>
@@ -50,7 +52,7 @@ function TechStack(props) {
                                 : "tabsTechstack"
                         }
                         onClick={() => toggleTab(3)}>
-                        <h5 style={{ fontFamily: "Poppins-Bold", width: "400" }}>
+                        <h5 style={{fontFamily: "Poppins-Bold", width: "400"}}>
                             Database
                         </h5>
                     </button>
@@ -61,7 +63,7 @@ function TechStack(props) {
                                 : "tabsTechstack"
                         }
                         onClick={() => toggleTab(4)}>
-                        <h5 style={{ fontFamily: "Poppins-Bold", width: "400" }}>Mobile</h5>
+                        <h5 style={{fontFamily: "Poppins-Bold", width: "400"}}>Mobile</h5>
                     </button>
                     <button
                         className={
@@ -70,7 +72,7 @@ function TechStack(props) {
                                 : "tabsTechstack"
                         }
                         onClick={() => toggleTab(5)}>
-                        <h5 style={{ fontFamily: "Poppins-Bold", width: "400" }}>
+                        <h5 style={{fontFamily: "Poppins-Bold", width: "400"}}>
                             Infra and DevOps
                         </h5>
                     </button>
@@ -81,12 +83,12 @@ function TechStack(props) {
                                 : "tabsTechstack"
                         }
                         onClick={() => toggleTab(6)}>
-                        <h5 style={{ fontFamily: "Poppins-Bold", width: "400" }}>
+                        <h5 style={{fontFamily: "Poppins-Bold", width: "400"}}>
                             Testing
                         </h5>
                     </button>
                 </div>
-                <hr />
+                <hr/>
 
                 <div className='content-tabsTechstack'>
                     <div
@@ -96,8 +98,10 @@ function TechStack(props) {
                                 : "contentTechstack"
                         }>
                         <div className='justify-center flex'>
-                            <div className='grid grid-cols-3 duration-500 md:grid-cols-4 lg:grid-cols-6 max-w-[1000px]   gap-2 items-center justify-center  '>
-                                <div className='hover:bg-gray-700/40 cursor-pointer select-none duration-500 text-gray-500 hover:text-gray-200  rounded-md relative flex   max-w-[125] min-w-[100px] sm:min-w-[125px] text-center justify-center min-h-[125px]'>
+                            <div
+                                className='grid grid-cols-3 duration-500 md:grid-cols-4 lg:grid-cols-6 max-w-[1000px]   gap-2 items-center justify-center  '>
+                                <div
+                                    className='hover:bg-gray-700/40 cursor-pointer select-none duration-500 text-gray-500 hover:text-gray-200  rounded-md relative flex   max-w-[125] min-w-[100px] sm:min-w-[125px] text-center justify-center min-h-[125px]'>
                                     <div className=' m-auto '>
                                         <svg
                                             className={`m-auto mb-2 `}
@@ -130,7 +134,8 @@ function TechStack(props) {
                                     </div>
                                 </div>
                                 {/*2*/}
-                                <div className='hover:bg-gray-700/40 cursor-pointer select-none duration-500 text-gray-500 hover:text-gray-200  rounded-md relative flex   max-w-[125] min-w-[100px] sm:min-w-[125px] text-center justify-center min-h-[125px]'>
+                                <div
+                                    className='hover:bg-gray-700/40 cursor-pointer select-none duration-500 text-gray-500 hover:text-gray-200  rounded-md relative flex   max-w-[125] min-w-[100px] sm:min-w-[125px] text-center justify-center min-h-[125px]'>
                                     <div className=' m-auto '>
                                         <svg
                                             className={`m-auto mb-2 `}
@@ -151,7 +156,8 @@ function TechStack(props) {
                                         <h6>WebAssembly </h6>
                                     </div>
                                 </div>
-                                <div className='hover:bg-gray-700/40 cursor-pointer select-none duration-500 text-gray-500 hover:text-gray-200  rounded-md relative flex   max-w-[125] min-w-[100px] sm:min-w-[125px] text-center justify-center min-h-[125px]'>
+                                <div
+                                    className='hover:bg-gray-700/40 cursor-pointer select-none duration-500 text-gray-500 hover:text-gray-200  rounded-md relative flex   max-w-[125] min-w-[100px] sm:min-w-[125px] text-center justify-center min-h-[125px]'>
                                     <div className=' m-auto '>
                                         <svg
                                             version='1.1'
@@ -205,7 +211,8 @@ function TechStack(props) {
                                     </div>
                                 </div>
 
-                                <div className='hover:bg-gray-700/40 cursor-pointer select-none duration-500 text-gray-500 hover:text-gray-200  rounded-md relative flex   max-w-[125] min-w-[100px] sm:min-w-[125px] text-center justify-center min-h-[125px]'>
+                                <div
+                                    className='hover:bg-gray-700/40 cursor-pointer select-none duration-500 text-gray-500 hover:text-gray-200  rounded-md relative flex   max-w-[125] min-w-[100px] sm:min-w-[125px] text-center justify-center min-h-[125px]'>
                                     <div className=' m-auto '>
                                         <svg
                                             version='1.1'
@@ -216,7 +223,6 @@ function TechStack(props) {
                                             width='45px'
                                             height='48px'
                                             viewBox='0 0 32 32'
-                                            style={{ enableBackground: "new 0 0 32 32" }}
                                             xmlSpace='preserve'
                                             fill='#dbd9d9'>
                                             <title>svelte</title>
@@ -235,7 +241,8 @@ function TechStack(props) {
                                         <h5>svelte</h5>
                                     </div>
                                 </div>
-                                <div className='hover:bg-gray-700/40 cursor-pointer select-none duration-500 text-gray-500 hover:text-gray-200  rounded-md relative flex   max-w-[125] min-w-[100px] sm:min-w-[125px] text-center justify-center min-h-[125px]'>
+                                <div
+                                    className='hover:bg-gray-700/40 cursor-pointer select-none duration-500 text-gray-500 hover:text-gray-200  rounded-md relative flex   max-w-[125] min-w-[100px] sm:min-w-[125px] text-center justify-center min-h-[125px]'>
                                     <div className=' m-auto '>
                                         <svg
                                             className='m-auto mb-2'
@@ -269,7 +276,8 @@ function TechStack(props) {
                                         <h5>React .JS</h5>
                                     </div>
                                 </div>
-                                <div className='hover:bg-gray-700/40  cursor-pointer select-none duration-500 text-gray-500 hover:text-gray-200  rounded-md relative flex   max-w-[125] min-w-[100px] sm:min-w-[125px] text-center justify-center min-h-[125px]'>
+                                <div
+                                    className='hover:bg-gray-700/40  cursor-pointer select-none duration-500 text-gray-500 hover:text-gray-200  rounded-md relative flex   max-w-[125] min-w-[100px] sm:min-w-[125px] text-center justify-center min-h-[125px]'>
                                     <div className=' m-auto '>
                                         <svg
                                             className='m-auto mb-2'
@@ -302,7 +310,8 @@ function TechStack(props) {
                                         <h5>TypeScript</h5>
                                     </div>
                                 </div>
-                                <div className='hover:bg-gray-700/40 cursor-pointer select-none  duration-500 text-gray-500 hover:text-gray-200  rounded-md relative flex   max-w-[125] min-w-[100px] sm:min-w-[125px] text-center justify-center min-h-[125px]'>
+                                <div
+                                    className='hover:bg-gray-700/40 cursor-pointer select-none  duration-500 text-gray-500 hover:text-gray-200  rounded-md relative flex   max-w-[125] min-w-[100px] sm:min-w-[125px] text-center justify-center min-h-[125px]'>
                                     <div className=' m-auto '>
                                         <svg
                                             className='m-auto mb-2'
@@ -335,7 +344,8 @@ function TechStack(props) {
                                         <h5>Vue</h5>
                                     </div>
                                 </div>
-                                <div className='hover:bg-gray-700/40  cursor-pointer select-none duration-500 text-gray-500 hover:text-gray-200  rounded-md relative flex   max-w-[125] min-w-[100px] sm:min-w-[125px] text-center justify-center min-h-[125px]'>
+                                <div
+                                    className='hover:bg-gray-700/40  cursor-pointer select-none duration-500 text-gray-500 hover:text-gray-200  rounded-md relative flex   max-w-[125] min-w-[100px] sm:min-w-[125px] text-center justify-center min-h-[125px]'>
                                     <div className=' m-auto '>
                                         <svg
                                             xmlns='http://www.w3.org/2000/svg'
@@ -354,9 +364,9 @@ function TechStack(props) {
                                                 y1={3}
                                                 x2={152}
                                                 y2='63.5'>
-                                                <stop offset='.1' stopColor='#0b1121' />
-                                                <stop offset='.5' stopColor='#0b1121' />
-                                                <stop offset={1} stopColor='#0b1121' />
+                                                <stop offset='.1' stopColor='#0b1121'/>
+                                                <stop offset='.5' stopColor='#0b1121'/>
+                                                <stop offset={1} stopColor='#0b1121'/>
                                             </linearGradient>
                                             <path
                                                 d='M163 35S110-4 69 5l-3 1c-6 2-11 5-14 9l-2 3-15 26 26 5c11 7 25 10 38 7l46 9 18-30z'
@@ -375,9 +385,9 @@ function TechStack(props) {
                                                 y1='32.6'
                                                 x2={74}
                                                 y2='105.2'>
-                                                <stop offset={0} stopColor='#0b1121' />
-                                                <stop offset='.5' stopColor='#0b1121' />
-                                                <stop offset={1} stopColor='#0b1121' />
+                                                <stop offset={0} stopColor='#0b1121'/>
+                                                <stop offset='.5' stopColor='#0b1121'/>
+                                                <stop offset={1} stopColor='#0b1121'/>
                                             </linearGradient>
                                             <path
                                                 d='m52 35-4 1c-17 5-22 21-13 35 10 13 31 20 48 15l62-21S92 26 52 35z'
@@ -391,9 +401,9 @@ function TechStack(props) {
                                                 y1='64.2'
                                                 x2='144.3'
                                                 y2='149.8'>
-                                                <stop offset={0} stopColor='#dbd9d9' />
-                                                <stop offset='.5' stopColor='#dbd9d9' />
-                                                <stop offset={1} stopColor='#0b1121' />
+                                                <stop offset={0} stopColor='#dbd9d9'/>
+                                                <stop offset='.5' stopColor='#dbd9d9'/>
+                                                <stop offset={1} stopColor='#0b1121'/>
                                             </linearGradient>
                                             <path
                                                 d='M134 80a45 45 0 0 0-48-15L24 85 4 120l112 19 20-36c4-7 3-15-2-23z'
@@ -406,9 +416,9 @@ function TechStack(props) {
                                                 y1='74.5'
                                                 x2='24.4'
                                                 y2='260.8'>
-                                                <stop offset={0} stopColor='#dbd9d9' />
-                                                <stop offset='.5' stopColor='#dbd9d9' />
-                                                <stop offset={1} stopColor='#0b1121' />
+                                                <stop offset={0} stopColor='#dbd9d9'/>
+                                                <stop offset='.5' stopColor='#dbd9d9'/>
+                                                <stop offset={1} stopColor='#0b1121'/>
                                             </linearGradient>
                                             <path
                                                 d='M114 115a45 45 0 0 0-48-15L4 120s53 40 94 30l3-1c17-5 23-21 13-34z'
@@ -418,7 +428,8 @@ function TechStack(props) {
                                         <h5>Solid .JS</h5>
                                     </div>
                                 </div>
-                                <div className='hover:bg-gray-700/40 cursor-pointer select-none  duration-500 text-gray-500 hover:text-gray-200  rounded-md relative flex   max-w-[125] min-w-[100px] sm:min-w-[125px] text-center justify-center min-h-[125px]'>
+                                <div
+                                    className='hover:bg-gray-700/40 cursor-pointer select-none  duration-500 text-gray-500 hover:text-gray-200  rounded-md relative flex   max-w-[125] min-w-[100px] sm:min-w-[125px] text-center justify-center min-h-[125px]'>
                                     <div className=' m-auto '>
                                         <svg
                                             className='m-auto mb-2'
@@ -427,15 +438,17 @@ function TechStack(props) {
                                             viewBox='0 0 256 256'
                                             xmlns='http://www.w3.org/2000/svg'
                                             preserveAspectRatio='xMinYMin meet'>
-                                            <path d='M0 0h256v256H0V0z' fill='#dbd9d9' />
-                                            <path d='M67.312 213.932l19.59-11.856c3.78 6.701 7.218 12.371 15.465 12.371 7.905 0 12.89-3.092 12.89-15.12v-81.798h24.057v82.138c0 24.917-14.606 36.259-35.916 36.259-19.245 0-30.416-9.967-36.087-21.996M152.381 211.354l19.588-11.341c5.157 8.421 11.859 14.607 23.715 14.607 9.969 0 16.325-4.984 16.325-11.858 0-8.248-6.53-11.17-17.528-15.98l-6.013-2.58c-17.357-7.387-28.87-16.667-28.87-36.257 0-18.044 13.747-31.792 35.228-31.792 15.294 0 26.292 5.328 34.196 19.247L210.29 147.43c-4.125-7.389-8.591-10.31-15.465-10.31-7.046 0-11.514 4.468-11.514 10.31 0 7.217 4.468 10.14 14.778 14.608l6.014 2.577c20.45 8.765 31.963 17.7 31.963 37.804 0 21.654-17.012 33.51-39.867 33.51-22.339 0-36.774-10.654-43.819-24.574' />
+                                            <path d='M0 0h256v256H0V0z' fill='#dbd9d9'/>
+                                            <path
+                                                d='M67.312 213.932l19.59-11.856c3.78 6.701 7.218 12.371 15.465 12.371 7.905 0 12.89-3.092 12.89-15.12v-81.798h24.057v82.138c0 24.917-14.606 36.259-35.916 36.259-19.245 0-30.416-9.967-36.087-21.996M152.381 211.354l19.588-11.341c5.157 8.421 11.859 14.607 23.715 14.607 9.969 0 16.325-4.984 16.325-11.858 0-8.248-6.53-11.17-17.528-15.98l-6.013-2.58c-17.357-7.387-28.87-16.667-28.87-36.257 0-18.044 13.747-31.792 35.228-31.792 15.294 0 26.292 5.328 34.196 19.247L210.29 147.43c-4.125-7.389-8.591-10.31-15.465-10.31-7.046 0-11.514 4.468-11.514 10.31 0 7.217 4.468 10.14 14.778 14.608l6.014 2.577c20.45 8.765 31.963 17.7 31.963 37.804 0 21.654-17.012 33.51-39.867 33.51-22.339 0-36.774-10.654-43.819-24.574'/>
                                         </svg>
 
                                         <h5> JavaScript</h5>
                                     </div>
                                 </div>
 
-                                <div className='hover:bg-gray-700/40 cursor-pointer select-none  duration-500 text-gray-500 hover:text-gray-200  rounded-md relative flex   max-w-[125] min-w-[100px] sm:min-w-[125px] text-center justify-center min-h-[125px]'>
+                                <div
+                                    className='hover:bg-gray-700/40 cursor-pointer select-none  duration-500 text-gray-500 hover:text-gray-200  rounded-md relative flex   max-w-[125] min-w-[100px] sm:min-w-[125px] text-center justify-center min-h-[125px]'>
                                     <div className=' m-auto '>
                                         <svg
                                             className='m-auto mb-2'
@@ -462,7 +475,8 @@ function TechStack(props) {
                                     </div>
                                 </div>
 
-                                <div className='hover:bg-gray-700/40  cursor-pointer select-none duration-500 text-gray-500 hover:text-gray-200  rounded-md relative flex   max-w-[125] min-w-[100px] sm:min-w-[125px] text-center justify-center min-h-[125px]'>
+                                <div
+                                    className='hover:bg-gray-700/40  cursor-pointer select-none duration-500 text-gray-500 hover:text-gray-200  rounded-md relative flex   max-w-[125] min-w-[100px] sm:min-w-[125px] text-center justify-center min-h-[125px]'>
                                     <div className=' m-auto '>
                                         <svg
                                             className='m-auto mb-2'
@@ -496,7 +510,8 @@ function TechStack(props) {
                                         <h5>HTML5</h5>
                                     </div>
                                 </div>
-                                <div className='hover:bg-gray-700/40  cursor-pointer select-none duration-500 text-gray-500 hover:text-gray-200  rounded-md relative flex   max-w-[125] min-w-[100px] sm:min-w-[125px] text-center justify-center min-h-[125px]'>
+                                <div
+                                    className='hover:bg-gray-700/40  cursor-pointer select-none duration-500 text-gray-500 hover:text-gray-200  rounded-md relative flex   max-w-[125] min-w-[100px] sm:min-w-[125px] text-center justify-center min-h-[125px]'>
                                     <div className=' m-auto '>
                                         <svg
                                             className='m-auto mb-2'
@@ -529,8 +544,10 @@ function TechStack(props) {
                                 : "contentTechstack"
                         }>
                         <div className='justify-center flex'>
-                            <div className='grid grid-cols-3 duration-500 md:grid-cols-4 lg:grid-cols-6 max-w-[1000px]  gap-1 sm:gap-2 items-center justify-center  '>
-                                <div className='hover:bg-gray-700/40 cursor-pointer select-none duration-500 text-gray-500 hover:text-gray-200  rounded-md relative flex   max-w-[125] min-w-[100px] sm:min-w-[125px] text-center justify-center min-h-[125px]'>
+                            <div
+                                className='grid grid-cols-3 duration-500 md:grid-cols-4 lg:grid-cols-6 max-w-[1000px]  gap-1 sm:gap-2 items-center justify-center  '>
+                                <div
+                                    className='hover:bg-gray-700/40 cursor-pointer select-none duration-500 text-gray-500 hover:text-gray-200  rounded-md relative flex   max-w-[125] min-w-[100px] sm:min-w-[125px] text-center justify-center min-h-[125px]'>
                                     <div className=' m-auto '>
                                         <svg
                                             className='m-auto mb-2'
@@ -564,10 +581,11 @@ function TechStack(props) {
                                     </div>
                                 </div>
                                 {/*2*/}
-                                <div className='hover:bg-gray-700/40 cursor-pointer select-none duration-500 text-gray-500 hover:text-gray-200  rounded-md relative flex   max-w-[125] min-w-[100px] sm:min-w-[125px] text-center justify-center min-h-[125px]'>
+                                <div
+                                    className='hover:bg-gray-700/40 cursor-pointer select-none duration-500 text-gray-500 hover:text-gray-200  rounded-md relative flex   max-w-[125] min-w-[100px] sm:min-w-[125px] text-center justify-center min-h-[125px]'>
                                     <div className=' m-auto '>
                                         <svg
-                                            version={1.0}
+
                                             xmlns='http://www.w3.org/2000/svg'
                                             className='m-auto mb-2'
                                             width='42px'
@@ -668,11 +686,13 @@ c29 0 31 -2 36 -52z m-786 -350 c7 -7 12 -32 12 -57 0 -26 12 -161 25 -301 38
 -126 184 -218 128z'
                                                 />
                                             </g>
-                                        </svg>{" "}
+                                        </svg>
+                                        {" "}
                                         <h5>Deno</h5>
                                     </div>
                                 </div>
-                                <div className='hover:bg-gray-700/40  cursor-pointer select-none duration-500 text-gray-500 hover:text-gray-200  rounded-md relative flex   max-w-[125] min-w-[100px] sm:min-w-[125px] text-center justify-center min-h-[125px]'>
+                                <div
+                                    className='hover:bg-gray-700/40  cursor-pointer select-none duration-500 text-gray-500 hover:text-gray-200  rounded-md relative flex   max-w-[125] min-w-[100px] sm:min-w-[125px] text-center justify-center min-h-[125px]'>
                                     <div className=' m-auto '>
                                         <svg
                                             className='m-auto mb-2'
@@ -705,7 +725,8 @@ c29 0 31 -2 36 -52z m-786 -350 c7 -7 12 -32 12 -57 0 -26 12 -161 25 -301 38
                                         <h5>Node .JS</h5>
                                     </div>
                                 </div>
-                                <div className='hover:bg-gray-700/40 cursor-pointer select-none  duration-500 text-gray-500 hover:text-gray-200  rounded-md relative flex   max-w-[125] min-w-[100px] sm:min-w-[125px] text-center justify-center min-h-[125px]'>
+                                <div
+                                    className='hover:bg-gray-700/40 cursor-pointer select-none  duration-500 text-gray-500 hover:text-gray-200  rounded-md relative flex   max-w-[125] min-w-[100px] sm:min-w-[125px] text-center justify-center min-h-[125px]'>
                                     <div className=' m-auto '>
                                         <svg
                                             className='m-auto mb-2'
@@ -739,7 +760,8 @@ c29 0 31 -2 36 -52z m-786 -350 c7 -7 12 -32 12 -57 0 -26 12 -161 25 -301 38
                                     </div>
                                 </div>
 
-                                <div className='hover:bg-gray-700/40 cursor-pointer select-none  duration-500 text-gray-500 hover:text-gray-200  rounded-md relative flex   max-w-[125] min-w-[100px] sm:min-w-[125px] text-center justify-center min-h-[125px]'>
+                                <div
+                                    className='hover:bg-gray-700/40 cursor-pointer select-none  duration-500 text-gray-500 hover:text-gray-200  rounded-md relative flex   max-w-[125] min-w-[100px] sm:min-w-[125px] text-center justify-center min-h-[125px]'>
                                     <div className=' m-auto '>
                                         <svg
                                             id='Layer_1'
@@ -763,7 +785,8 @@ c29 0 31 -2 36 -52z m-786 -350 c7 -7 12 -32 12 -57 0 -26 12 -161 25 -301 38
                                     </div>
                                 </div>
 
-                                <div className='hover:bg-gray-700/40  cursor-pointer select-none duration-500 text-gray-500 hover:text-gray-200  rounded-md relative flex   max-w-[125] min-w-[100px] sm:min-w-[125px] text-center justify-center min-h-[125px]'>
+                                <div
+                                    className='hover:bg-gray-700/40  cursor-pointer select-none duration-500 text-gray-500 hover:text-gray-200  rounded-md relative flex   max-w-[125] min-w-[100px] sm:min-w-[125px] text-center justify-center min-h-[125px]'>
                                     <div className=' m-auto '>
                                         <svg
                                             className='m-auto mb-2'
@@ -796,7 +819,8 @@ c29 0 31 -2 36 -52z m-786 -350 c7 -7 12 -32 12 -57 0 -26 12 -161 25 -301 38
                                         <h5>Python</h5>
                                     </div>
                                 </div>
-                                <div className='hover:bg-gray-700/40  cursor-pointer select-none duration-500 text-gray-500 hover:text-gray-200  rounded-md relative flex   max-w-[125] min-w-[100px] sm:min-w-[125px] text-center justify-center min-h-[125px]'>
+                                <div
+                                    className='hover:bg-gray-700/40  cursor-pointer select-none duration-500 text-gray-500 hover:text-gray-200  rounded-md relative flex   max-w-[125] min-w-[100px] sm:min-w-[125px] text-center justify-center min-h-[125px]'>
                                     <div className=' m-auto '>
                                         <svg
                                             version='1.1'
@@ -807,7 +831,6 @@ c29 0 31 -2 36 -52z m-786 -350 c7 -7 12 -32 12 -57 0 -26 12 -161 25 -301 38
                                             width='42px'
                                             height='48px'
                                             viewBox='0 0 122.88 122.88'
-                                            style={{ enableBackground: "new 0 0 122.88 122.88" }}
                                             xmlSpace='preserve'>
                                             <style
                                                 type='text/css'
@@ -827,7 +850,8 @@ c29 0 31 -2 36 -52z m-786 -350 c7 -7 12 -32 12 -57 0 -26 12 -161 25 -301 38
                                         <h5>Rust</h5>
                                     </div>
                                 </div>
-                                <div className='hover:bg-gray-700/40 cursor-pointer select-none duration-500 text-gray-500 hover:text-gray-200  rounded-md relative flex   max-w-[125] min-w-[100px] sm:min-w-[125px] text-center justify-center min-h-[125px]'>
+                                <div
+                                    className='hover:bg-gray-700/40 cursor-pointer select-none duration-500 text-gray-500 hover:text-gray-200  rounded-md relative flex   max-w-[125] min-w-[100px] sm:min-w-[125px] text-center justify-center min-h-[125px]'>
                                     <div className=' m-auto '>
                                         <svg
                                             version='1.1'
@@ -838,7 +862,6 @@ c29 0 31 -2 36 -52z m-786 -350 c7 -7 12 -32 12 -57 0 -26 12 -161 25 -301 38
                                             width='42px'
                                             height='48px'
                                             viewBox='0 0 122.88 45.91'
-                                            style={{ enableBackground: "new 0 0 122.88 45.91" }}
                                             xmlSpace='preserve'>
                                             <style
                                                 type='text/css'
@@ -873,7 +896,8 @@ c29 0 31 -2 36 -52z m-786 -350 c7 -7 12 -32 12 -57 0 -26 12 -161 25 -301 38
                                         <h5>Golang</h5>
                                     </div>
                                 </div>
-                                <div className='hover:bg-gray-700/40 cursor-pointer select-none duration-500 text-gray-500 hover:text-gray-200  rounded-md relative flex   max-w-[125] min-w-[100px] sm:min-w-[125px] text-center justify-center min-h-[125px]'>
+                                <div
+                                    className='hover:bg-gray-700/40 cursor-pointer select-none duration-500 text-gray-500 hover:text-gray-200  rounded-md relative flex   max-w-[125] min-w-[100px] sm:min-w-[125px] text-center justify-center min-h-[125px]'>
                                     <div className=' m-auto '>
                                         <svg
                                             className='m-auto mb-2'
@@ -884,7 +908,8 @@ c29 0 31 -2 36 -52z m-786 -350 c7 -7 12 -32 12 -57 0 -26 12 -161 25 -301 38
                                             fill='#dbd9d9'
                                             xmlns='http://www.w3.org/2000/svg'>
                                             <title>GraphQL icon</title>
-                                            <path d='M14.051 2.751l4.935 2.85c.816-.859 2.173-.893 3.032-.077.148.14.274.301.377.477.589 1.028.232 2.339-.796 2.928-.174.1-.361.175-.558.223v5.699c1.146.273 1.854 1.423 1.58 2.569-.048.204-.127.4-.232.581-.592 1.023-1.901 1.374-2.927.782-.196-.113-.375-.259-.526-.429l-4.905 2.832c.372 1.124-.238 2.335-1.361 2.706-.217.071-.442.108-.67.108-1.181.001-2.139-.955-2.14-2.136 0-.205.029-.41.088-.609l-4.936-2.847c-.816.854-2.171.887-3.026.07-.854-.816-.886-2.171-.07-3.026.283-.297.646-.506 1.044-.603l.001-5.699c-1.15-.276-1.858-1.433-1.581-2.584.047-.198.123-.389.224-.566.592-1.024 1.902-1.374 2.927-.782.177.101.339.228.48.377l4.938-2.85C9.613 1.612 10.26.423 11.39.088 11.587.029 11.794 0 12 0c1.181-.001 2.139.954 2.14 2.134.001.209-.03.418-.089.617zm-.515.877c-.019.021-.037.039-.058.058l6.461 11.19c.026-.009.056-.016.082-.023V9.146c-1.145-.283-1.842-1.442-1.558-2.588.006-.024.012-.049.019-.072l-4.946-2.858zm-3.015.059l-.06-.06-4.946 2.852c.327 1.135-.327 2.318-1.461 2.645-.026.008-.051.014-.076.021v5.708l.084.023 6.461-11.19-.002.001zm2.076.507c-.39.112-.803.112-1.192 0l-6.46 11.189c.294.283.502.645.6 1.041h12.911c.097-.398.307-.761.603-1.044L12.597 4.194zm.986 16.227l4.913-2.838c-.015-.047-.027-.094-.038-.142H5.542l-.021.083 4.939 2.852c.388-.404.934-.653 1.54-.653.627 0 1.19.269 1.583.698z' />
+                                            <path
+                                                d='M14.051 2.751l4.935 2.85c.816-.859 2.173-.893 3.032-.077.148.14.274.301.377.477.589 1.028.232 2.339-.796 2.928-.174.1-.361.175-.558.223v5.699c1.146.273 1.854 1.423 1.58 2.569-.048.204-.127.4-.232.581-.592 1.023-1.901 1.374-2.927.782-.196-.113-.375-.259-.526-.429l-4.905 2.832c.372 1.124-.238 2.335-1.361 2.706-.217.071-.442.108-.67.108-1.181.001-2.139-.955-2.14-2.136 0-.205.029-.41.088-.609l-4.936-2.847c-.816.854-2.171.887-3.026.07-.854-.816-.886-2.171-.07-3.026.283-.297.646-.506 1.044-.603l.001-5.699c-1.15-.276-1.858-1.433-1.581-2.584.047-.198.123-.389.224-.566.592-1.024 1.902-1.374 2.927-.782.177.101.339.228.48.377l4.938-2.85C9.613 1.612 10.26.423 11.39.088 11.587.029 11.794 0 12 0c1.181-.001 2.139.954 2.14 2.134.001.209-.03.418-.089.617zm-.515.877c-.019.021-.037.039-.058.058l6.461 11.19c.026-.009.056-.016.082-.023V9.146c-1.145-.283-1.842-1.442-1.558-2.588.006-.024.012-.049.019-.072l-4.946-2.858zm-3.015.059l-.06-.06-4.946 2.852c.327 1.135-.327 2.318-1.461 2.645-.026.008-.051.014-.076.021v5.708l.084.023 6.461-11.19-.002.001zm2.076.507c-.39.112-.803.112-1.192 0l-6.46 11.189c.294.283.502.645.6 1.041h12.911c.097-.398.307-.761.603-1.044L12.597 4.194zm.986 16.227l4.913-2.838c-.015-.047-.027-.094-.038-.142H5.542l-.021.083 4.939 2.852c.388-.404.934-.653 1.54-.653.627 0 1.19.269 1.583.698z'/>
                                         </svg>
 
                                         <h5>GraphQL</h5>
@@ -901,8 +926,10 @@ c29 0 31 -2 36 -52z m-786 -350 c7 -7 12 -32 12 -57 0 -26 12 -161 25 -301 38
                                 : "contentTechstack"
                         }>
                         <div className='justify-center flex'>
-                            <div className='grid grid-cols-3 duration-500 md:grid-cols-4 lg:grid-cols-6 max-w-[1000px]   gap-2 items-center justify-center  '>
-                                <div className='hover:bg-gray-700/40 cursor-pointer select-none duration-500 text-gray-500 hover:text-gray-200  rounded-md relative flex   max-w-[125] min-w-[100px] sm:min-w-[125px] text-center justify-center min-h-[125px]'>
+                            <div
+                                className='grid grid-cols-3 duration-500 md:grid-cols-4 lg:grid-cols-6 max-w-[1000px]   gap-2 items-center justify-center  '>
+                                <div
+                                    className='hover:bg-gray-700/40 cursor-pointer select-none duration-500 text-gray-500 hover:text-gray-200  rounded-md relative flex   max-w-[125] min-w-[100px] sm:min-w-[125px] text-center justify-center min-h-[125px]'>
                                     <div className=' m-auto '>
                                         <svg
                                             className='m-auto mb-2'
@@ -915,7 +942,7 @@ c29 0 31 -2 36 -52z m-786 -350 c7 -7 12 -32 12 -57 0 -26 12 -161 25 -301 38
                                             {/* Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch */}
                                             <title>ic-technology-mango-db</title>
                                             <desc>Created with Sketch.</desc>
-                                            <defs />
+                                            <defs/>
                                             <g
                                                 id='Page-1'
                                                 stroke='none'
@@ -937,7 +964,8 @@ c29 0 31 -2 36 -52z m-786 -350 c7 -7 12 -32 12 -57 0 -26 12 -161 25 -301 38
                                     </div>
                                 </div>
 
-                                <div className='hover:bg-gray-700/40 cursor-pointer select-none duration-500 text-gray-500 hover:text-gray-200  rounded-md relative flex   max-w-[125] min-w-[100px] sm:min-w-[125px] text-center justify-center min-h-[125px]'>
+                                <div
+                                    className='hover:bg-gray-700/40 cursor-pointer select-none duration-500 text-gray-500 hover:text-gray-200  rounded-md relative flex   max-w-[125] min-w-[100px] sm:min-w-[125px] text-center justify-center min-h-[125px]'>
                                     <div className=' m-auto '>
                                         <svg
                                             className='m-auto mb-2'
@@ -970,7 +998,8 @@ c29 0 31 -2 36 -52z m-786 -350 c7 -7 12 -32 12 -57 0 -26 12 -161 25 -301 38
                                         <h5>MySQL</h5>
                                     </div>
                                 </div>
-                                <div className='hover:bg-gray-700/40 cursor-pointer select-none duration-500 text-gray-500 hover:text-gray-200  rounded-md relative flex   max-w-[125] min-w-[100px] sm:min-w-[125px] text-center justify-center min-h-[125px]'>
+                                <div
+                                    className='hover:bg-gray-700/40 cursor-pointer select-none duration-500 text-gray-500 hover:text-gray-200  rounded-md relative flex   max-w-[125] min-w-[100px] sm:min-w-[125px] text-center justify-center min-h-[125px]'>
                                     <div className=' m-auto '>
                                         <svg
                                             className='m-auto mb-2'
@@ -1004,7 +1033,8 @@ c29 0 31 -2 36 -52z m-786 -350 c7 -7 12 -32 12 -57 0 -26 12 -161 25 -301 38
                                         <h5>Firebase</h5>
                                     </div>
                                 </div>
-                                <div className='hover:bg-gray-700/40 cursor-pointer select-none duration-500 text-gray-500 hover:text-gray-200  rounded-md relative flex   max-w-[125] min-w-[100px] sm:min-w-[125px] text-center justify-center min-h-[125px]'>
+                                <div
+                                    className='hover:bg-gray-700/40 cursor-pointer select-none duration-500 text-gray-500 hover:text-gray-200  rounded-md relative flex   max-w-[125] min-w-[100px] sm:min-w-[125px] text-center justify-center min-h-[125px]'>
                                     <div className=' m-auto '>
                                         <svg
                                             className='m-auto mb-2'
@@ -1038,7 +1068,8 @@ c29 0 31 -2 36 -52z m-786 -350 c7 -7 12 -32 12 -57 0 -26 12 -161 25 -301 38
                                         <h5>DynamoDB</h5>
                                     </div>
                                 </div>
-                                <div className='hover:bg-gray-700/40 cursor-pointer select-none duration-500 text-gray-500 hover:text-gray-200  rounded-md relative flex   max-w-[125] min-w-[100px] sm:min-w-[125px] text-center justify-center min-h-[125px]'>
+                                <div
+                                    className='hover:bg-gray-700/40 cursor-pointer select-none duration-500 text-gray-500 hover:text-gray-200  rounded-md relative flex   max-w-[125] min-w-[100px] sm:min-w-[125px] text-center justify-center min-h-[125px]'>
                                     <div className=' m-auto '>
                                         <svg
                                             className='m-auto mb-2'
@@ -1064,7 +1095,8 @@ c29 0 31 -2 36 -52z m-786 -350 c7 -7 12 -32 12 -57 0 -26 12 -161 25 -301 38
                                                     <g
                                                         id='ic-technology-oracle'
                                                         transform='translate(1250.000000, 5024.000000)'>
-                                                        <path d='M92.6550181,0.00289357085 L95.3760656,0.00289357085 L95.3760656,13.3856587 L107.172797,13.3856587 L105.440399,16 L92.6550181,16 L92.6550181,0.00289357085 L92.6550181,0.00289357085 Z M71.2890312,16 L61.2246974,0.755221991 C60.6060378,-0.234379239 58.9565299,-0.234379239 58.2549805,0.79500859 L48.2735365,16 L51.5733057,16 L54.5844676,11.4064563 L61.0189799,11.4064563 L62.7106862,8.79283841 L56.2761739,8.79283841 L59.7824142,3.52726286 L67.9907691,16 L71.2890312,16 L71.2890312,16 Z M77.4130834,0.00795731983 C72.8149578,0.00795731983 69.7879716,3.58658107 69.7879716,8.00144679 C69.7879716,12.4155891 72.8157114,15.9956596 77.4130834,15.9956596 L88.5941695,15.9826386 L90.3438986,13.3914459 L77.4952197,13.3914459 C74.3958932,13.3914459 72.5821127,10.9782078 72.5821127,8.00144679 C72.5821127,5.02468578 74.3951396,2.61144769 77.4952197,2.61144769 L88.9407997,2.61144769 L90.6302454,0 L77.4130834,0.00795731983 L77.4130834,0.00795731983 Z M7.6258654,2.61144769 L19.4218434,2.61144769 C22.522677,2.61144769 24.3357039,5.02468578 24.3357039,8.00144679 C24.3357039,10.9782078 22.5234305,13.3914459 19.4218434,13.3914459 L7.6258654,13.3914459 C4.52503179,13.3914459 2.71275844,10.9782078 2.71275844,8.00144679 C2.71275844,5.02468578 4.52503179,2.61144769 7.6258654,2.61144769 Z M7.6258654,0.00795731983 C3.02698629,0.00795731983 0,3.58658107 0,8.00144679 C0,12.4155891 3.02698629,15.9956596 7.6258654,15.9956596 L19.4218434,15.9956596 C24.0207225,15.9956596 27.0477088,12.4155891 27.0477088,8.00144679 C27.0477088,3.58658107 24.0207225,0.00795731983 19.4218434,0.00795731983 L7.6258654,0.00795731983 Z M110.080723,9.26883082 C110.523807,11.634325 112.219281,13.3914459 114.865728,13.3914459 L127.714407,13.3914459 L125.963171,15.9826386 L114.783592,15.9956596 C110.183959,15.9956596 107.15848,12.4155891 107.15848,8.00144679 C107.15848,3.58658107 110.184712,0.00795731983 114.783592,0.00795731983 L128,0.000723392712 L126.312061,2.61217108 L114.866481,2.61217108 C112.256959,2.61217108 110.553949,4.33963288 110.081477,6.65593634 L126.229925,6.65593634 L124.497527,9.26955421 L110.080723,9.26955421 L110.080723,9.26883082 L110.080723,9.26883082 Z M42.4373381,9.50031648 C45.1341881,9.45511332 47.2957712,7.34347333 47.2957712,4.7541369 C47.2957712,2.16480048 45.1341881,0.0531604822 42.4373381,0.00795731983 L28.557811,0.00217017814 L28.557811,15.9992766 L31.6104177,15.9992766 L31.6104177,2.61217108 L42.4373381,2.61217108 C43.66962,2.61217108 44.6685819,3.57116185 44.6685819,4.7541369 C44.6685819,5.93711196 43.66962,6.89610272 42.4373381,6.89610272 L33.755004,6.89610272 L43.5495691,15.9811918 L47.4898507,15.9811918 L40.4781237,9.50610363 L42.4373381,9.50031648 L42.4373381,9.50031648 Z' />
+                                                        <path
+                                                            d='M92.6550181,0.00289357085 L95.3760656,0.00289357085 L95.3760656,13.3856587 L107.172797,13.3856587 L105.440399,16 L92.6550181,16 L92.6550181,0.00289357085 L92.6550181,0.00289357085 Z M71.2890312,16 L61.2246974,0.755221991 C60.6060378,-0.234379239 58.9565299,-0.234379239 58.2549805,0.79500859 L48.2735365,16 L51.5733057,16 L54.5844676,11.4064563 L61.0189799,11.4064563 L62.7106862,8.79283841 L56.2761739,8.79283841 L59.7824142,3.52726286 L67.9907691,16 L71.2890312,16 L71.2890312,16 Z M77.4130834,0.00795731983 C72.8149578,0.00795731983 69.7879716,3.58658107 69.7879716,8.00144679 C69.7879716,12.4155891 72.8157114,15.9956596 77.4130834,15.9956596 L88.5941695,15.9826386 L90.3438986,13.3914459 L77.4952197,13.3914459 C74.3958932,13.3914459 72.5821127,10.9782078 72.5821127,8.00144679 C72.5821127,5.02468578 74.3951396,2.61144769 77.4952197,2.61144769 L88.9407997,2.61144769 L90.6302454,0 L77.4130834,0.00795731983 L77.4130834,0.00795731983 Z M7.6258654,2.61144769 L19.4218434,2.61144769 C22.522677,2.61144769 24.3357039,5.02468578 24.3357039,8.00144679 C24.3357039,10.9782078 22.5234305,13.3914459 19.4218434,13.3914459 L7.6258654,13.3914459 C4.52503179,13.3914459 2.71275844,10.9782078 2.71275844,8.00144679 C2.71275844,5.02468578 4.52503179,2.61144769 7.6258654,2.61144769 Z M7.6258654,0.00795731983 C3.02698629,0.00795731983 0,3.58658107 0,8.00144679 C0,12.4155891 3.02698629,15.9956596 7.6258654,15.9956596 L19.4218434,15.9956596 C24.0207225,15.9956596 27.0477088,12.4155891 27.0477088,8.00144679 C27.0477088,3.58658107 24.0207225,0.00795731983 19.4218434,0.00795731983 L7.6258654,0.00795731983 Z M110.080723,9.26883082 C110.523807,11.634325 112.219281,13.3914459 114.865728,13.3914459 L127.714407,13.3914459 L125.963171,15.9826386 L114.783592,15.9956596 C110.183959,15.9956596 107.15848,12.4155891 107.15848,8.00144679 C107.15848,3.58658107 110.184712,0.00795731983 114.783592,0.00795731983 L128,0.000723392712 L126.312061,2.61217108 L114.866481,2.61217108 C112.256959,2.61217108 110.553949,4.33963288 110.081477,6.65593634 L126.229925,6.65593634 L124.497527,9.26955421 L110.080723,9.26955421 L110.080723,9.26883082 L110.080723,9.26883082 Z M42.4373381,9.50031648 C45.1341881,9.45511332 47.2957712,7.34347333 47.2957712,4.7541369 C47.2957712,2.16480048 45.1341881,0.0531604822 42.4373381,0.00795731983 L28.557811,0.00217017814 L28.557811,15.9992766 L31.6104177,15.9992766 L31.6104177,2.61217108 L42.4373381,2.61217108 C43.66962,2.61217108 44.6685819,3.57116185 44.6685819,4.7541369 C44.6685819,5.93711196 43.66962,6.89610272 42.4373381,6.89610272 L33.755004,6.89610272 L43.5495691,15.9811918 L47.4898507,15.9811918 L40.4781237,9.50610363 L42.4373381,9.50031648 L42.4373381,9.50031648 Z'/>
                                                     </g>
                                                 </g>
                                             </g>
@@ -1072,7 +1104,8 @@ c29 0 31 -2 36 -52z m-786 -350 c7 -7 12 -32 12 -57 0 -26 12 -161 25 -301 38
                                         <h5>Oracle</h5>
                                     </div>
                                 </div>
-                                <div className='hover:bg-gray-700/40 cursor-pointer select-none duration-500 text-gray-500 hover:text-gray-200  rounded-md relative flex   max-w-[125] min-w-[100px] sm:min-w-[125px] text-center justify-center min-h-[125px]'>
+                                <div
+                                    className='hover:bg-gray-700/40 cursor-pointer select-none duration-500 text-gray-500 hover:text-gray-200  rounded-md relative flex   max-w-[125] min-w-[100px] sm:min-w-[125px] text-center justify-center min-h-[125px]'>
                                     <div className=' m-auto '>
                                         <svg
                                             className='m-auto mb-2'
@@ -1104,7 +1137,8 @@ c29 0 31 -2 36 -52z m-786 -350 c7 -7 12 -32 12 -57 0 -26 12 -161 25 -301 38
                                         <h5>PostgreSQL</h5>
                                     </div>
                                 </div>
-                                <div className='hover:bg-gray-700/40 cursor-pointer select-none duration-500 text-gray-500 hover:text-gray-200  rounded-md relative flex   max-w-[125] min-w-[100px] sm:min-w-[125px] text-center justify-center min-h-[125px]'>
+                                <div
+                                    className='hover:bg-gray-700/40 cursor-pointer select-none duration-500 text-gray-500 hover:text-gray-200  rounded-md relative flex   max-w-[125] min-w-[100px] sm:min-w-[125px] text-center justify-center min-h-[125px]'>
                                     <div className=' m-auto '>
                                         <svg
                                             className='m-auto mb-2'
@@ -1136,7 +1170,8 @@ c29 0 31 -2 36 -52z m-786 -350 c7 -7 12 -32 12 -57 0 -26 12 -161 25 -301 38
                                         <h5>Redis</h5>
                                     </div>
                                 </div>
-                                <div className='hover:bg-gray-700/40 cursor-pointer select-none duration-500 text-gray-500 hover:text-gray-200  rounded-md relative flex   max-w-[125] min-w-[100px] sm:min-w-[125px] text-center justify-center min-h-[125px]'>
+                                <div
+                                    className='hover:bg-gray-700/40 cursor-pointer select-none duration-500 text-gray-500 hover:text-gray-200  rounded-md relative flex   max-w-[125] min-w-[100px] sm:min-w-[125px] text-center justify-center min-h-[125px]'>
                                     <div className=' m-auto '>
                                         <svg
                                             className='m-auto mb-2'
@@ -1168,8 +1203,10 @@ c29 0 31 -2 36 -52z m-786 -350 c7 -7 12 -32 12 -57 0 -26 12 -161 25 -301 38
                                 : "contentTechstack"
                         }>
                         <div className='justify-center flex'>
-                            <div className='grid grid-cols-3 duration-500 md:grid-cols-4 lg:grid-cols-6 max-w-[1000px]   gap-2 items-center justify-center  '>
-                                <div className='hover:bg-gray-700/40 cursor-pointer select-none duration-500 text-gray-500 hover:text-gray-200  rounded-md relative flex   max-w-[125] min-w-[100px] sm:min-w-[125px] text-center justify-center min-h-[125px]'>
+                            <div
+                                className='grid grid-cols-3 duration-500 md:grid-cols-4 lg:grid-cols-6 max-w-[1000px]   gap-2 items-center justify-center  '>
+                                <div
+                                    className='hover:bg-gray-700/40 cursor-pointer select-none duration-500 text-gray-500 hover:text-gray-200  rounded-md relative flex   max-w-[125] min-w-[100px] sm:min-w-[125px] text-center justify-center min-h-[125px]'>
                                     <div className=' m-auto '>
                                         <svg
                                             className='m-auto mb-2'
@@ -1203,7 +1240,8 @@ c29 0 31 -2 36 -52z m-786 -350 c7 -7 12 -32 12 -57 0 -26 12 -161 25 -301 38
                                         <h5>React Native</h5>
                                     </div>
                                 </div>
-                                <div className='hover:bg-gray-700/40 cursor-pointer select-none duration-500 text-gray-500 hover:text-gray-200  rounded-md relative flex   max-w-[125] min-w-[100px] sm:min-w-[125px] text-center justify-center min-h-[125px]'>
+                                <div
+                                    className='hover:bg-gray-700/40 cursor-pointer select-none duration-500 text-gray-500 hover:text-gray-200  rounded-md relative flex   max-w-[125] min-w-[100px] sm:min-w-[125px] text-center justify-center min-h-[125px]'>
                                     <div className=' m-auto '>
                                         <svg
                                             xmlns='http://www.w3.org/2000/svg'
@@ -1220,7 +1258,8 @@ c29 0 31 -2 36 -52z m-786 -350 c7 -7 12 -32 12 -57 0 -26 12 -161 25 -301 38
                                         <h5>Nativescript</h5>
                                     </div>
                                 </div>
-                                <div className='hover:bg-gray-700/40 cursor-pointer select-none duration-500 text-gray-500 hover:text-gray-200  rounded-md relative flex   max-w-[125] min-w-[100px] sm:min-w-[125px] text-center justify-center min-h-[125px]'>
+                                <div
+                                    className='hover:bg-gray-700/40 cursor-pointer select-none duration-500 text-gray-500 hover:text-gray-200  rounded-md relative flex   max-w-[125] min-w-[100px] sm:min-w-[125px] text-center justify-center min-h-[125px]'>
                                     <div className=' m-auto '>
                                         <svg
                                             className='m-auto mb-2'
@@ -1243,7 +1282,8 @@ c29 0 31 -2 36 -52z m-786 -350 c7 -7 12 -32 12 -57 0 -26 12 -161 25 -301 38
                                                     id='ic-technology-ios'
                                                     fill='#dbd9d9'
                                                     fillRule='nonzero'>
-                                                    <path d='M32.5716099,25.5008908 C32.638918,32.7648937 38.9302972,35.1821425 39,35.212912 C38.9468035,35.3833013 37.9947409,38.6576394 35.6853988,42.0397993 C33.6889921,44.9639307 31.6171526,47.8771771 28.3532676,47.9375162 C25.1461711,47.996741 24.1149124,46.0316925 20.4482909,46.0316925 C16.7827812,46.0316925 15.6370048,47.8772628 12.6011291,47.9968267 C9.45065004,48.1163907 7.05150686,44.8349388 5.03867944,41.921521 C0.925532668,35.9621794 -2.21776226,25.0818599 2.00288924,17.7374621 C4.09961655,14.0902045 7.84663142,11.7806061 11.9136803,11.7213812 C15.0073708,11.662242 17.9273604,13.8071936 19.818657,13.8071936 C21.7087562,13.8071936 25.2571824,11.2276978 28.9876054,11.6065312 C30.5492892,11.67167 34.9330367,12.2387203 37.7478306,16.3678335 C37.5210187,16.5087389 32.5172161,19.4279849 32.5716099,25.5008908 M26.5442459,7.66392068 C28.2168554,5.63493329 29.3426191,2.81039566 29.0354993,0 C26.6245537,0.0971082123 23.7091825,1.61004216 21.97987,3.63791533 C20.4300741,5.43368874 19.0727947,8.30793755 19.4390121,11.0627081 C22.1262885,11.2710665 24.8715508,9.6941937 26.5442459,7.66392068' />
+                                                    <path
+                                                        d='M32.5716099,25.5008908 C32.638918,32.7648937 38.9302972,35.1821425 39,35.212912 C38.9468035,35.3833013 37.9947409,38.6576394 35.6853988,42.0397993 C33.6889921,44.9639307 31.6171526,47.8771771 28.3532676,47.9375162 C25.1461711,47.996741 24.1149124,46.0316925 20.4482909,46.0316925 C16.7827812,46.0316925 15.6370048,47.8772628 12.6011291,47.9968267 C9.45065004,48.1163907 7.05150686,44.8349388 5.03867944,41.921521 C0.925532668,35.9621794 -2.21776226,25.0818599 2.00288924,17.7374621 C4.09961655,14.0902045 7.84663142,11.7806061 11.9136803,11.7213812 C15.0073708,11.662242 17.9273604,13.8071936 19.818657,13.8071936 C21.7087562,13.8071936 25.2571824,11.2276978 28.9876054,11.6065312 C30.5492892,11.67167 34.9330367,12.2387203 37.7478306,16.3678335 C37.5210187,16.5087389 32.5172161,19.4279849 32.5716099,25.5008908 M26.5442459,7.66392068 C28.2168554,5.63493329 29.3426191,2.81039566 29.0354993,0 C26.6245537,0.0971082123 23.7091825,1.61004216 21.97987,3.63791533 C20.4300741,5.43368874 19.0727947,8.30793755 19.4390121,11.0627081 C22.1262885,11.2710665 24.8715508,9.6941937 26.5442459,7.66392068'/>
                                                 </g>
                                             </g>
                                         </svg>
@@ -1251,7 +1291,8 @@ c29 0 31 -2 36 -52z m-786 -350 c7 -7 12 -32 12 -57 0 -26 12 -161 25 -301 38
                                         <h5>IOS</h5>
                                     </div>
                                 </div>
-                                <div className='hover:bg-gray-700/40 cursor-pointer select-none duration-500 text-gray-500 hover:text-gray-200  rounded-md relative flex   max-w-[125] min-w-[100px] sm:min-w-[125px] text-center justify-center min-h-[125px]'>
+                                <div
+                                    className='hover:bg-gray-700/40 cursor-pointer select-none duration-500 text-gray-500 hover:text-gray-200  rounded-md relative flex   max-w-[125] min-w-[100px] sm:min-w-[125px] text-center justify-center min-h-[125px]'>
                                     <div className=' m-auto '>
                                         <svg
                                             className='m-auto mb-2'
@@ -1274,7 +1315,8 @@ c29 0 31 -2 36 -52z m-786 -350 c7 -7 12 -32 12 -57 0 -26 12 -161 25 -301 38
                                                     id='ic-technology-kotlin'
                                                     fill='#dbd9d9'
                                                     fillRule='nonzero'>
-                                                    <path d='M24.7545,24.6 L47.2795047,47.2850657 L2.1135,47.2845 L24.7545,24.6 Z M47.2795047,-1.7079671e-12 L-4.60165239e-12,47.2795047 L-4.60165239e-12,27 L25.5,0.0111219724 L47.2795047,-1.7079671e-12 Z M23.7454111,0.0111219724 L-6.98907598e-12,24.9632671 L-6.98907598e-12,0.0111219724 L23.7454111,0.0111219724 Z' />
+                                                    <path
+                                                        d='M24.7545,24.6 L47.2795047,47.2850657 L2.1135,47.2845 L24.7545,24.6 Z M47.2795047,-1.7079671e-12 L-4.60165239e-12,47.2795047 L-4.60165239e-12,27 L25.5,0.0111219724 L47.2795047,-1.7079671e-12 Z M23.7454111,0.0111219724 L-6.98907598e-12,24.9632671 L-6.98907598e-12,0.0111219724 L23.7454111,0.0111219724 Z'/>
                                                 </g>
                                             </g>
                                         </svg>
@@ -1282,7 +1324,8 @@ c29 0 31 -2 36 -52z m-786 -350 c7 -7 12 -32 12 -57 0 -26 12 -161 25 -301 38
                                         <h5>Kotlin</h5>
                                     </div>
                                 </div>
-                                <div className='hover:bg-gray-700/40 cursor-pointer select-none duration-500 text-gray-500 hover:text-gray-200  rounded-md relative flex   max-w-[125] min-w-[100px] sm:min-w-[125px] text-center justify-center min-h-[125px]'>
+                                <div
+                                    className='hover:bg-gray-700/40 cursor-pointer select-none duration-500 text-gray-500 hover:text-gray-200  rounded-md relative flex   max-w-[125] min-w-[100px] sm:min-w-[125px] text-center justify-center min-h-[125px]'>
                                     <div className=' m-auto '>
                                         <svg
                                             className='m-auto mb-2'
@@ -1316,7 +1359,8 @@ c29 0 31 -2 36 -52z m-786 -350 c7 -7 12 -32 12 -57 0 -26 12 -161 25 -301 38
                                         <h5>Android</h5>
                                     </div>
                                 </div>
-                                <div className='hover:bg-gray-700/40 cursor-pointer select-none duration-500 text-gray-500 hover:text-gray-200  rounded-md relative flex   max-w-[125] min-w-[100px] sm:min-w-[125px] text-center justify-center min-h-[125px]'>
+                                <div
+                                    className='hover:bg-gray-700/40 cursor-pointer select-none duration-500 text-gray-500 hover:text-gray-200  rounded-md relative flex   max-w-[125] min-w-[100px] sm:min-w-[125px] text-center justify-center min-h-[125px]'>
                                     <div className=' m-auto '>
                                         <svg
                                             className='m-auto mb-2'
@@ -1350,7 +1394,8 @@ c29 0 31 -2 36 -52z m-786 -350 c7 -7 12 -32 12 -57 0 -26 12 -161 25 -301 38
                                         <h5>Flutter</h5>
                                     </div>
                                 </div>
-                                <div className='hover:bg-gray-700/40 cursor-pointer select-none duration-500 text-gray-500 hover:text-gray-200  rounded-md relative flex   max-w-[125] min-w-[100px] sm:min-w-[125px] text-center justify-center min-h-[125px]'>
+                                <div
+                                    className='hover:bg-gray-700/40 cursor-pointer select-none duration-500 text-gray-500 hover:text-gray-200  rounded-md relative flex   max-w-[125] min-w-[100px] sm:min-w-[125px] text-center justify-center min-h-[125px]'>
                                     <div className=' m-auto '>
                                         <svg
                                             className='m-auto mb-2'
@@ -1385,7 +1430,8 @@ c29 0 31 -2 36 -52z m-786 -350 c7 -7 12 -32 12 -57 0 -26 12 -161 25 -301 38
                                     </div>
                                 </div>
 
-                                <div className='hover:bg-gray-700/40 cursor-pointer select-none duration-500 text-gray-500 hover:text-gray-200  rounded-md relative flex   max-w-[125] min-w-[100px] sm:min-w-[125px] text-center justify-center min-h-[125px]'>
+                                <div
+                                    className='hover:bg-gray-700/40 cursor-pointer select-none duration-500 text-gray-500 hover:text-gray-200  rounded-md relative flex   max-w-[125] min-w-[100px] sm:min-w-[125px] text-center justify-center min-h-[125px]'>
                                     <div className=' m-auto '>
                                         <svg
                                             className='m-auto mb-2'
@@ -1397,7 +1443,8 @@ c29 0 31 -2 36 -52z m-786 -350 c7 -7 12 -32 12 -57 0 -26 12 -161 25 -301 38
                                             xmlnsXlink='http://www.w3.org/1999/xlink'
                                             preserveAspectRatio='xMidYMid'>
                                             <g fill='#dbd9d9'>
-                                                <path d='M166.872326,131.23686 L212.781118,51.9623472 L234.965569,131.23686 L212.781118,210.493243 L166.872326,131.23686 L166.872326,131.23686 Z M144.495923,144.110517 L190.412179,223.373299 L110.445569,202.886567 L52.6751399,144.110517 L144.495923,144.110517 L144.495923,144.110517 Z M190.401515,39.0780261 L144.495923,118.352539 L52.6751399,118.352539 L110.445569,59.5732891 L190.401515,39.0780261 L190.401515,39.0780261 Z M255.940714,104.258913 L227.932619,0.0603519323 L123.392808,27.9852677 L107.918186,55.1924919 L76.5167858,54.9674802 L0,131.244325 L76.5167858,207.50304 L76.519985,207.50304 L107.907522,207.270564 L123.404539,234.477788 L227.932619,262.398438 L255.940714,158.219072 L240.035264,131.23686 L255.940714,104.258913 L255.940714,104.258913 Z' />
+                                                <path
+                                                    d='M166.872326,131.23686 L212.781118,51.9623472 L234.965569,131.23686 L212.781118,210.493243 L166.872326,131.23686 L166.872326,131.23686 Z M144.495923,144.110517 L190.412179,223.373299 L110.445569,202.886567 L52.6751399,144.110517 L144.495923,144.110517 L144.495923,144.110517 Z M190.401515,39.0780261 L144.495923,118.352539 L52.6751399,118.352539 L110.445569,59.5732891 L190.401515,39.0780261 L190.401515,39.0780261 Z M255.940714,104.258913 L227.932619,0.0603519323 L123.392808,27.9852677 L107.918186,55.1924919 L76.5167858,54.9674802 L0,131.244325 L76.5167858,207.50304 L76.519985,207.50304 L107.907522,207.270564 L123.404539,234.477788 L227.932619,262.398438 L255.940714,158.219072 L240.035264,131.23686 L255.940714,104.258913 L255.940714,104.258913 Z'/>
                                             </g>
                                         </svg>
 
@@ -1414,8 +1461,10 @@ c29 0 31 -2 36 -52z m-786 -350 c7 -7 12 -32 12 -57 0 -26 12 -161 25 -301 38
                                 : "contentTechstack"
                         }>
                         <div className='justify-center flex'>
-                            <div className='grid grid-cols-3 duration-500 md:grid-cols-4 lg:grid-cols-6 max-w-[1000px]   gap-2 items-center justify-center  '>
-                                <div className='hover:bg-gray-700/40 cursor-pointer select-none duration-500 text-gray-500 hover:text-gray-200  rounded-md relative flex   max-w-[125] min-w-[100px] sm:min-w-[125px] text-center justify-center min-h-[125px]'>
+                            <div
+                                className='grid grid-cols-3 duration-500 md:grid-cols-4 lg:grid-cols-6 max-w-[1000px]   gap-2 items-center justify-center  '>
+                                <div
+                                    className='hover:bg-gray-700/40 cursor-pointer select-none duration-500 text-gray-500 hover:text-gray-200  rounded-md relative flex   max-w-[125] min-w-[100px] sm:min-w-[125px] text-center justify-center min-h-[125px]'>
                                     <div className=' m-auto '>
                                         <svg
                                             className='m-auto mb-2'
@@ -1449,7 +1498,8 @@ c29 0 31 -2 36 -52z m-786 -350 c7 -7 12 -32 12 -57 0 -26 12 -161 25 -301 38
                                         <h5>AWS</h5>
                                     </div>
                                 </div>
-                                <div className='hover:bg-gray-700/40 cursor-pointer select-none duration-500 text-gray-500 hover:text-gray-200  rounded-md relative flex   max-w-[125] min-w-[100px] sm:min-w-[125px] text-center justify-center min-h-[125px]'>
+                                <div
+                                    className='hover:bg-gray-700/40 cursor-pointer select-none duration-500 text-gray-500 hover:text-gray-200  rounded-md relative flex   max-w-[125] min-w-[100px] sm:min-w-[125px] text-center justify-center min-h-[125px]'>
                                     <div className=' m-auto '>
                                         <svg
                                             className='m-auto mb-2'
@@ -1482,7 +1532,8 @@ c29 0 31 -2 36 -52z m-786 -350 c7 -7 12 -32 12 -57 0 -26 12 -161 25 -301 38
                                         <h5>Google Cloud</h5>
                                     </div>
                                 </div>
-                                <div className='hover:bg-gray-700/40 cursor-pointer select-none duration-500 text-gray-500 hover:text-gray-200  rounded-md relative flex   max-w-[125] min-w-[100px] sm:min-w-[125px] text-center justify-center min-h-[125px]'>
+                                <div
+                                    className='hover:bg-gray-700/40 cursor-pointer select-none duration-500 text-gray-500 hover:text-gray-200  rounded-md relative flex   max-w-[125] min-w-[100px] sm:min-w-[125px] text-center justify-center min-h-[125px]'>
                                     <div className=' m-auto '>
                                         <svg
                                             className='m-auto mb-2'
@@ -1491,14 +1542,16 @@ c29 0 31 -2 36 -52z m-786 -350 c7 -7 12 -32 12 -57 0 -26 12 -161 25 -301 38
                                             fill='#dbd9d9'
                                             viewBox='0 0 32 32'
                                             xmlns='http://www.w3.org/2000/svg'>
-                                            <path d='M 6.5839844 9.0097656 C 5.2239844 9.0097656 3.8432813 9.5400781 3.6132812 9.8300781 C 3.5532812 9.9500781 3.4141406 10.919922 3.7441406 10.919922 C 3.8541406 10.919922 3.9046094 10.939062 4.2246094 10.789062 C 5.4246094 10.319062 6.1849219 10.330078 6.2949219 10.330078 C 7.6449219 10.200078 8.4246875 11.120547 8.3046875 12.310547 L 8.3046875 13.009766 C 7.1646875 12.739766 6.5133594 12.730469 6.1933594 12.730469 C 4.5333594 12.630469 3 13.505688 3 15.429688 C 3 17.539687 4.8832812 17.990937 5.6132812 17.960938 C 6.7032812 17.970938 7.7435937 17.480859 8.4335938 16.630859 C 8.9835938 17.860859 9.33375 17.779297 9.34375 17.779297 C 9.44375 17.779297 9.5235156 17.739453 9.6035156 17.689453 L 10.173828 17.289062 C 10.273828 17.229063 10.353281 17.129766 10.363281 17.009766 C 10.353281 16.719766 9.8330469 16.269766 9.8730469 15.259766 L 9.8730469 12.140625 C 9.9330469 11.280625 9.6542187 10.439062 9.0742188 9.7890625 C 8.3842188 9.2090625 7.4739844 8.9297656 6.5839844 9.0097656 z M 25.957031 9.0097656 C 23.957031 9.0097656 22.807891 10.259297 22.837891 11.529297 C 22.837891 13.269297 24.596875 13.820859 24.796875 13.880859 C 26.486875 14.410859 26.7175 14.430078 27.1875 14.830078 C 27.5875 15.240078 27.537266 16.040625 26.947266 16.390625 C 26.777266 16.490625 26.046484 16.929844 24.396484 16.589844 C 23.846484 16.479844 23.557422 16.350156 23.107422 16.160156 C 22.987422 16.120156 22.707031 16.049922 22.707031 16.419922 L 22.707031 16.910156 C 22.707031 17.140156 22.846641 17.349219 23.056641 17.449219 C 24.106641 17.979219 25.366719 18 25.636719 18 C 25.676719 18 27.976094 18.001219 28.746094 16.449219 C 28.905094 16.129219 29.316875 14.960937 28.546875 13.960938 C 27.906875 13.210938 27.356797 13.130859 25.716797 12.630859 C 25.576797 12.590859 24.366953 12.279687 24.376953 11.429688 C 24.316953 10.339688 25.797422 10.280781 26.107422 10.300781 C 27.357422 10.280781 27.976406 10.749297 28.316406 10.779297 C 28.466406 10.779297 28.537109 10.690234 28.537109 10.490234 L 28.537109 10.029297 C 28.547109 9.9192969 28.507266 9.8107031 28.447266 9.7207031 C 28.047266 9.2007031 26.517031 9.0097656 25.957031 9.0097656 z M 10.777344 9.2597656 C 10.667344 9.2797656 10.587422 9.39 10.607422 9.5 C 10.627422 9.63 10.647266 9.760625 10.697266 9.890625 L 12.9375 17.279297 C 12.9875 17.519297 13.146094 17.780234 13.496094 17.740234 L 14.316406 17.740234 C 14.816406 17.790234 14.886484 17.309766 14.896484 17.259766 L 16.367188 11.099609 L 17.857422 17.269531 C 17.867422 17.319531 17.937734 17.8 18.427734 17.75 L 19.257812 17.75 C 19.617812 17.79 19.787891 17.529062 19.837891 17.289062 C 22.357891 9.1790625 22.187031 9.7303906 22.207031 9.6503906 C 22.247031 9.2303906 22.006797 9.2595313 21.966797 9.2695312 L 21.076172 9.2695312 C 20.626172 9.2195313 20.537578 9.6304688 20.517578 9.7304688 L 18.857422 16.140625 L 17.357422 9.7304688 C 17.287422 9.2404687 16.887109 9.2595313 16.787109 9.2695312 L 16.017578 9.2695312 C 15.577578 9.2295313 15.4675 9.5804687 15.4375 9.7304688 L 13.947266 16.050781 L 12.347656 9.7304688 C 12.307656 9.5304687 12.177109 9.2197656 11.787109 9.2597656 L 10.777344 9.2597656 z M 6.5234375 13.890625 C 7.2434375 13.900625 7.8649219 14.009375 8.2949219 14.109375 C 8.2949219 14.609375 8.313125 14.889844 8.203125 15.339844 C 8.063125 15.819844 7.444375 16.690937 5.984375 16.710938 C 5.144375 16.750937 4.5945313 16.089844 4.6445312 15.339844 C 4.5945313 14.139844 5.8334375 13.840625 6.5234375 13.890625 z M 29.041016 20.001953 C 28.107641 20.014953 27.005922 20.224047 26.169922 20.810547 C 25.911922 20.989547 25.957141 21.238078 26.244141 21.205078 C 27.184141 21.092078 29.276391 20.838406 29.650391 21.316406 C 30.025391 21.794406 29.235719 23.766437 28.886719 24.648438 C 28.778719 24.911437 29.007047 25.020312 29.248047 24.820312 C 30.812047 23.510312 31.218438 20.764141 30.898438 20.369141 C 30.737937 20.171641 29.974391 19.988953 29.041016 20.001953 z M 1.2167969 21.001953 C 0.99873437 21.031953 0.9048125 21.308344 1.1328125 21.527344 C 5.0498125 25.201344 10.225656 27 15.972656 27 C 20.071656 27 24.830234 25.662578 28.115234 23.142578 C 28.658234 22.723578 28.195672 22.09575 27.638672 22.34375 C 23.955672 23.96875 19.955453 24.751953 16.314453 24.751953 C 10.918453 24.751953 5.69475 23.625406 1.46875 21.066406 C 1.37625 21.010406 1.2894844 20.991953 1.2167969 21.001953 z' />
+                                            <path
+                                                d='M 6.5839844 9.0097656 C 5.2239844 9.0097656 3.8432813 9.5400781 3.6132812 9.8300781 C 3.5532812 9.9500781 3.4141406 10.919922 3.7441406 10.919922 C 3.8541406 10.919922 3.9046094 10.939062 4.2246094 10.789062 C 5.4246094 10.319062 6.1849219 10.330078 6.2949219 10.330078 C 7.6449219 10.200078 8.4246875 11.120547 8.3046875 12.310547 L 8.3046875 13.009766 C 7.1646875 12.739766 6.5133594 12.730469 6.1933594 12.730469 C 4.5333594 12.630469 3 13.505688 3 15.429688 C 3 17.539687 4.8832812 17.990937 5.6132812 17.960938 C 6.7032812 17.970938 7.7435937 17.480859 8.4335938 16.630859 C 8.9835938 17.860859 9.33375 17.779297 9.34375 17.779297 C 9.44375 17.779297 9.5235156 17.739453 9.6035156 17.689453 L 10.173828 17.289062 C 10.273828 17.229063 10.353281 17.129766 10.363281 17.009766 C 10.353281 16.719766 9.8330469 16.269766 9.8730469 15.259766 L 9.8730469 12.140625 C 9.9330469 11.280625 9.6542187 10.439062 9.0742188 9.7890625 C 8.3842188 9.2090625 7.4739844 8.9297656 6.5839844 9.0097656 z M 25.957031 9.0097656 C 23.957031 9.0097656 22.807891 10.259297 22.837891 11.529297 C 22.837891 13.269297 24.596875 13.820859 24.796875 13.880859 C 26.486875 14.410859 26.7175 14.430078 27.1875 14.830078 C 27.5875 15.240078 27.537266 16.040625 26.947266 16.390625 C 26.777266 16.490625 26.046484 16.929844 24.396484 16.589844 C 23.846484 16.479844 23.557422 16.350156 23.107422 16.160156 C 22.987422 16.120156 22.707031 16.049922 22.707031 16.419922 L 22.707031 16.910156 C 22.707031 17.140156 22.846641 17.349219 23.056641 17.449219 C 24.106641 17.979219 25.366719 18 25.636719 18 C 25.676719 18 27.976094 18.001219 28.746094 16.449219 C 28.905094 16.129219 29.316875 14.960937 28.546875 13.960938 C 27.906875 13.210938 27.356797 13.130859 25.716797 12.630859 C 25.576797 12.590859 24.366953 12.279687 24.376953 11.429688 C 24.316953 10.339688 25.797422 10.280781 26.107422 10.300781 C 27.357422 10.280781 27.976406 10.749297 28.316406 10.779297 C 28.466406 10.779297 28.537109 10.690234 28.537109 10.490234 L 28.537109 10.029297 C 28.547109 9.9192969 28.507266 9.8107031 28.447266 9.7207031 C 28.047266 9.2007031 26.517031 9.0097656 25.957031 9.0097656 z M 10.777344 9.2597656 C 10.667344 9.2797656 10.587422 9.39 10.607422 9.5 C 10.627422 9.63 10.647266 9.760625 10.697266 9.890625 L 12.9375 17.279297 C 12.9875 17.519297 13.146094 17.780234 13.496094 17.740234 L 14.316406 17.740234 C 14.816406 17.790234 14.886484 17.309766 14.896484 17.259766 L 16.367188 11.099609 L 17.857422 17.269531 C 17.867422 17.319531 17.937734 17.8 18.427734 17.75 L 19.257812 17.75 C 19.617812 17.79 19.787891 17.529062 19.837891 17.289062 C 22.357891 9.1790625 22.187031 9.7303906 22.207031 9.6503906 C 22.247031 9.2303906 22.006797 9.2595313 21.966797 9.2695312 L 21.076172 9.2695312 C 20.626172 9.2195313 20.537578 9.6304688 20.517578 9.7304688 L 18.857422 16.140625 L 17.357422 9.7304688 C 17.287422 9.2404687 16.887109 9.2595313 16.787109 9.2695312 L 16.017578 9.2695312 C 15.577578 9.2295313 15.4675 9.5804687 15.4375 9.7304688 L 13.947266 16.050781 L 12.347656 9.7304688 C 12.307656 9.5304687 12.177109 9.2197656 11.787109 9.2597656 L 10.777344 9.2597656 z M 6.5234375 13.890625 C 7.2434375 13.900625 7.8649219 14.009375 8.2949219 14.109375 C 8.2949219 14.609375 8.313125 14.889844 8.203125 15.339844 C 8.063125 15.819844 7.444375 16.690937 5.984375 16.710938 C 5.144375 16.750937 4.5945313 16.089844 4.6445312 15.339844 C 4.5945313 14.139844 5.8334375 13.840625 6.5234375 13.890625 z M 29.041016 20.001953 C 28.107641 20.014953 27.005922 20.224047 26.169922 20.810547 C 25.911922 20.989547 25.957141 21.238078 26.244141 21.205078 C 27.184141 21.092078 29.276391 20.838406 29.650391 21.316406 C 30.025391 21.794406 29.235719 23.766437 28.886719 24.648438 C 28.778719 24.911437 29.007047 25.020312 29.248047 24.820312 C 30.812047 23.510312 31.218438 20.764141 30.898438 20.369141 C 30.737937 20.171641 29.974391 19.988953 29.041016 20.001953 z M 1.2167969 21.001953 C 0.99873437 21.031953 0.9048125 21.308344 1.1328125 21.527344 C 5.0498125 25.201344 10.225656 27 15.972656 27 C 20.071656 27 24.830234 25.662578 28.115234 23.142578 C 28.658234 22.723578 28.195672 22.09575 27.638672 22.34375 C 23.955672 23.96875 19.955453 24.751953 16.314453 24.751953 C 10.918453 24.751953 5.69475 23.625406 1.46875 21.066406 C 1.37625 21.010406 1.2894844 20.991953 1.2167969 21.001953 z'/>
                                         </svg>
 
                                         <h5> AWS DevOps</h5>
                                     </div>
                                 </div>
 
-                                <div className='hover:bg-gray-700/40 cursor-pointer select-none duration-500 text-gray-500 hover:text-gray-200  rounded-md relative flex   max-w-[125] min-w-[100px] sm:min-w-[125px] text-center justify-center min-h-[125px]'>
+                                <div
+                                    className='hover:bg-gray-700/40 cursor-pointer select-none duration-500 text-gray-500 hover:text-gray-200  rounded-md relative flex   max-w-[125] min-w-[100px] sm:min-w-[125px] text-center justify-center min-h-[125px]'>
                                     <div className=' m-auto '>
                                         <svg
                                             className='m-auto mb-2'
@@ -1531,7 +1584,8 @@ c29 0 31 -2 36 -52z m-786 -350 c7 -7 12 -32 12 -57 0 -26 12 -161 25 -301 38
                                         <h5>Gradle</h5>
                                     </div>
                                 </div>
-                                <div className='hover:bg-gray-700/40 cursor-pointer select-none duration-500 text-gray-500 hover:text-gray-200  rounded-md relative flex   max-w-[125] min-w-[100px] sm:min-w-[125px] text-center justify-center min-h-[125px]'>
+                                <div
+                                    className='hover:bg-gray-700/40 cursor-pointer select-none duration-500 text-gray-500 hover:text-gray-200  rounded-md relative flex   max-w-[125] min-w-[100px] sm:min-w-[125px] text-center justify-center min-h-[125px]'>
                                     <div className=' m-auto '>
                                         <svg
                                             className='m-auto mb-2'
@@ -1540,13 +1594,14 @@ c29 0 31 -2 36 -52z m-786 -350 c7 -7 12 -32 12 -57 0 -26 12 -161 25 -301 38
                                             viewBox='0 0 512 512'
                                             fill='#dbd9d9'
                                             xmlns='http://www.w3.org/2000/svg'>
-                                            <path fillRule='evenodd' d='M256,48,496,464H16Z' />
+                                            <path fillRule='evenodd' d='M256,48,496,464H16Z'/>
                                         </svg>
 
                                         <h5>Vercel</h5>
                                     </div>
                                 </div>
-                                <div className='hover:bg-gray-700/40 cursor-pointer select-none duration-500 text-gray-500 hover:text-gray-200  rounded-md relative flex   max-w-[125] min-w-[100px] sm:min-w-[125px] text-center justify-center min-h-[125px]'>
+                                <div
+                                    className='hover:bg-gray-700/40 cursor-pointer select-none duration-500 text-gray-500 hover:text-gray-200  rounded-md relative flex   max-w-[125] min-w-[100px] sm:min-w-[125px] text-center justify-center min-h-[125px]'>
                                     <div className=' m-auto '>
                                         <svg
                                             className='m-auto mb-2'
@@ -1556,13 +1611,15 @@ c29 0 31 -2 36 -52z m-786 -350 c7 -7 12 -32 12 -57 0 -26 12 -161 25 -301 38
                                             role='img'
                                             fill='#dbd9d9'
                                             xmlns='http://www.w3.org/2000/svg'>
-                                            <path d='M23.546 10.93 13.067.452a1.55 1.55 0 0 0-2.188 0L8.708 2.627l2.76 2.76a1.838 1.838 0 0 1 2.327 2.341l2.658 2.66a1.838 1.838 0 0 1 1.9 3.039 1.837 1.837 0 0 1-2.6 0 1.846 1.846 0 0 1-.404-1.996L12.86 8.955v6.525c.176.086.342.203.488.348a1.848 1.848 0 0 1 0 2.6 1.844 1.844 0 0 1-2.609 0 1.834 1.834 0 0 1 0-2.598c.182-.18.387-.316.605-.406V8.835a1.834 1.834 0 0 1-.996-2.41L7.636 3.7.45 10.881c-.6.605-.6 1.584 0 2.189l10.48 10.477a1.545 1.545 0 0 0 2.186 0l10.43-10.43a1.544 1.544 0 0 0 0-2.187' />
+                                            <path
+                                                d='M23.546 10.93 13.067.452a1.55 1.55 0 0 0-2.188 0L8.708 2.627l2.76 2.76a1.838 1.838 0 0 1 2.327 2.341l2.658 2.66a1.838 1.838 0 0 1 1.9 3.039 1.837 1.837 0 0 1-2.6 0 1.846 1.846 0 0 1-.404-1.996L12.86 8.955v6.525c.176.086.342.203.488.348a1.848 1.848 0 0 1 0 2.6 1.844 1.844 0 0 1-2.609 0 1.834 1.834 0 0 1 0-2.598c.182-.18.387-.316.605-.406V8.835a1.834 1.834 0 0 1-.996-2.41L7.636 3.7.45 10.881c-.6.605-.6 1.584 0 2.189l10.48 10.477a1.545 1.545 0 0 0 2.186 0l10.43-10.43a1.544 1.544 0 0 0 0-2.187'/>
                                         </svg>
 
                                         <h5>Git</h5>
                                     </div>
                                 </div>
-                                <div className='hover:bg-gray-700/40 cursor-pointer select-none duration-500 text-gray-500 hover:text-gray-200  rounded-md relative flex   max-w-[125] min-w-[100px] sm:min-w-[125px] text-center justify-center min-h-[125px]'>
+                                <div
+                                    className='hover:bg-gray-700/40 cursor-pointer select-none duration-500 text-gray-500 hover:text-gray-200  rounded-md relative flex   max-w-[125] min-w-[100px] sm:min-w-[125px] text-center justify-center min-h-[125px]'>
                                     <div className=' m-auto '>
                                         <svg
                                             className='m-auto mb-2'
@@ -1573,13 +1630,15 @@ c29 0 31 -2 36 -52z m-786 -350 c7 -7 12 -32 12 -57 0 -26 12 -161 25 -301 38
                                             fill='#dbd9d9'
                                             xmlns='http://www.w3.org/2000/svg'>
                                             <title>Docker icon</title>
-                                            <path d='M13.983 11.078h2.119a.186.186 0 00.186-.185V9.006a.186.186 0 00-.186-.186h-2.119a.185.185 0 00-.185.185v1.888c0 .102.083.185.185.185m-2.954-5.43h2.118a.186.186 0 00.186-.186V3.574a.186.186 0 00-.186-.185h-2.118a.185.185 0 00-.185.185v1.888c0 .102.082.185.185.185m0 2.716h2.118a.187.187 0 00.186-.186V6.29a.186.186 0 00-.186-.185h-2.118a.185.185 0 00-.185.185v1.887c0 .102.082.185.185.186m-2.93 0h2.12a.186.186 0 00.184-.186V6.29a.185.185 0 00-.185-.185H8.1a.185.185 0 00-.185.185v1.887c0 .102.083.185.185.186m-2.964 0h2.119a.186.186 0 00.185-.186V6.29a.185.185 0 00-.185-.185H5.136a.186.186 0 00-.186.185v1.887c0 .102.084.185.186.186m5.893 2.715h2.118a.186.186 0 00.186-.185V9.006a.186.186 0 00-.186-.186h-2.118a.185.185 0 00-.185.185v1.888c0 .102.082.185.185.185m-2.93 0h2.12a.185.185 0 00.184-.185V9.006a.185.185 0 00-.184-.186h-2.12a.185.185 0 00-.184.185v1.888c0 .102.083.185.185.185m-2.964 0h2.119a.185.185 0 00.185-.185V9.006a.185.185 0 00-.184-.186h-2.12a.186.186 0 00-.186.186v1.887c0 .102.084.185.186.185m-2.92 0h2.12a.185.185 0 00.184-.185V9.006a.185.185 0 00-.184-.186h-2.12a.185.185 0 00-.184.185v1.888c0 .102.082.185.185.185M23.763 9.89c-.065-.051-.672-.51-1.954-.51-.338.001-.676.03-1.01.087-.248-1.7-1.653-2.53-1.716-2.566l-.344-.199-.226.327c-.284.438-.49.922-.612 1.43-.23.97-.09 1.882.403 2.661-.595.332-1.55.413-1.744.42H.751a.751.751 0 00-.75.748 11.376 11.376 0 00.692 4.062c.545 1.428 1.355 2.48 2.41 3.124 1.18.723 3.1 1.137 5.275 1.137.983.003 1.963-.086 2.93-.266a12.248 12.248 0 003.823-1.389c.98-.567 1.86-1.288 2.61-2.136 1.252-1.418 1.998-2.997 2.553-4.4h.221c1.372 0 2.215-.549 2.68-1.009.309-.293.55-.65.707-1.046l.098-.288Z' />
+                                            <path
+                                                d='M13.983 11.078h2.119a.186.186 0 00.186-.185V9.006a.186.186 0 00-.186-.186h-2.119a.185.185 0 00-.185.185v1.888c0 .102.083.185.185.185m-2.954-5.43h2.118a.186.186 0 00.186-.186V3.574a.186.186 0 00-.186-.185h-2.118a.185.185 0 00-.185.185v1.888c0 .102.082.185.185.185m0 2.716h2.118a.187.187 0 00.186-.186V6.29a.186.186 0 00-.186-.185h-2.118a.185.185 0 00-.185.185v1.887c0 .102.082.185.185.186m-2.93 0h2.12a.186.186 0 00.184-.186V6.29a.185.185 0 00-.185-.185H8.1a.185.185 0 00-.185.185v1.887c0 .102.083.185.185.186m-2.964 0h2.119a.186.186 0 00.185-.186V6.29a.185.185 0 00-.185-.185H5.136a.186.186 0 00-.186.185v1.887c0 .102.084.185.186.186m5.893 2.715h2.118a.186.186 0 00.186-.185V9.006a.186.186 0 00-.186-.186h-2.118a.185.185 0 00-.185.185v1.888c0 .102.082.185.185.185m-2.93 0h2.12a.185.185 0 00.184-.185V9.006a.185.185 0 00-.184-.186h-2.12a.185.185 0 00-.184.185v1.888c0 .102.083.185.185.185m-2.964 0h2.119a.185.185 0 00.185-.185V9.006a.185.185 0 00-.184-.186h-2.12a.186.186 0 00-.186.186v1.887c0 .102.084.185.186.185m-2.92 0h2.12a.185.185 0 00.184-.185V9.006a.185.185 0 00-.184-.186h-2.12a.185.185 0 00-.184.185v1.888c0 .102.082.185.185.185M23.763 9.89c-.065-.051-.672-.51-1.954-.51-.338.001-.676.03-1.01.087-.248-1.7-1.653-2.53-1.716-2.566l-.344-.199-.226.327c-.284.438-.49.922-.612 1.43-.23.97-.09 1.882.403 2.661-.595.332-1.55.413-1.744.42H.751a.751.751 0 00-.75.748 11.376 11.376 0 00.692 4.062c.545 1.428 1.355 2.48 2.41 3.124 1.18.723 3.1 1.137 5.275 1.137.983.003 1.963-.086 2.93-.266a12.248 12.248 0 003.823-1.389c.98-.567 1.86-1.288 2.61-2.136 1.252-1.418 1.998-2.997 2.553-4.4h.221c1.372 0 2.215-.549 2.68-1.009.309-.293.55-.65.707-1.046l.098-.288Z'/>
                                         </svg>
 
                                         <h5>Docker</h5>
                                     </div>
                                 </div>
-                                <div className='hover:bg-gray-700/40 cursor-pointer select-none duration-500 text-gray-500 hover:text-gray-200  rounded-md relative flex   max-w-[125] min-w-[100px] sm:min-w-[125px] text-center justify-center min-h-[125px]'>
+                                <div
+                                    className='hover:bg-gray-700/40 cursor-pointer select-none duration-500 text-gray-500 hover:text-gray-200  rounded-md relative flex   max-w-[125] min-w-[100px] sm:min-w-[125px] text-center justify-center min-h-[125px]'>
                                     <div className=' m-auto '>
                                         <svg
                                             className='m-auto mb-2'
@@ -1590,12 +1649,14 @@ c29 0 31 -2 36 -52z m-786 -350 c7 -7 12 -32 12 -57 0 -26 12 -161 25 -301 38
                                             fill='#dbd9d9'
                                             xmlns='http://www.w3.org/2000/svg'>
                                             <title>Kubernetes icon</title>
-                                            <path d='M10.204 14.35l.007.01-.999 2.413a5.171 5.171 0 0 1-2.075-2.597l2.578-.437.004.005a.44.44 0 0 1 .484.606zm-.833-2.129a.44.44 0 0 0 .173-.756l.002-.011L7.585 9.7a5.143 5.143 0 0 0-.73 3.255l2.514-.725.002-.009zm1.145-1.98a.44.44 0 0 0 .699-.337l.01-.005.15-2.62a5.144 5.144 0 0 0-3.01 1.442l2.147 1.523.004-.002zm.76 2.75l.723.349.722-.347.18-.78-.5-.623h-.804l-.5.623.179.779zm1.5-3.095a.44.44 0 0 0 .7.336l.008.003 2.134-1.513a5.188 5.188 0 0 0-2.992-1.442l.148 2.615.002.001zm10.876 5.97l-5.773 7.181a1.6 1.6 0 0 1-1.248.594l-9.261.003a1.6 1.6 0 0 1-1.247-.596l-5.776-7.18a1.583 1.583 0 0 1-.307-1.34L2.1 5.573c.108-.47.425-.864.863-1.073L11.305.513a1.606 1.606 0 0 1 1.385 0l8.345 3.985c.438.209.755.604.863 1.073l2.062 8.955c.108.47-.005.963-.308 1.34zm-3.289-2.057c-.042-.01-.103-.026-.145-.034-.174-.033-.315-.025-.479-.038-.35-.037-.638-.067-.895-.148-.105-.04-.18-.165-.216-.216l-.201-.059a6.45 6.45 0 0 0-.105-2.332 6.465 6.465 0 0 0-.936-2.163c.052-.047.15-.133.177-.159.008-.09.001-.183.094-.282.197-.185.444-.338.743-.522.142-.084.273-.137.415-.242.032-.024.076-.062.11-.089.24-.191.295-.52.123-.736-.172-.216-.506-.236-.745-.045-.034.027-.08.062-.111.088-.134.116-.217.23-.33.35-.246.25-.45.458-.673.609-.097.056-.239.037-.303.033l-.19.135a6.545 6.545 0 0 0-4.146-2.003l-.012-.223c-.065-.062-.143-.115-.163-.25-.022-.268.015-.557.057-.905.023-.163.061-.298.068-.475.001-.04-.001-.099-.001-.142 0-.306-.224-.555-.5-.555-.275 0-.499.249-.499.555l.001.014c0 .041-.002.092 0 .128.006.177.044.312.067.475.042.348.078.637.056.906a.545.545 0 0 1-.162.258l-.012.211a6.424 6.424 0 0 0-4.166 2.003 8.373 8.373 0 0 1-.18-.128c-.09.012-.18.04-.297-.029-.223-.15-.427-.358-.673-.608-.113-.12-.195-.234-.329-.349-.03-.026-.077-.062-.111-.088a.594.594 0 0 0-.348-.132.481.481 0 0 0-.398.176c-.172.216-.117.546.123.737l.007.005.104.083c.142.105.272.159.414.242.299.185.546.338.743.522.076.082.09.226.1.288l.16.143a6.462 6.462 0 0 0-1.02 4.506l-.208.06c-.055.072-.133.184-.215.217-.257.081-.546.11-.895.147-.164.014-.305.006-.48.039-.037.007-.09.02-.133.03l-.004.002-.007.002c-.295.071-.484.342-.423.608.061.267.349.429.645.365l.007-.001.01-.003.129-.029c.17-.046.294-.113.448-.172.33-.118.604-.217.87-.256.112-.009.23.069.288.101l.217-.037a6.5 6.5 0 0 0 2.88 3.596l-.09.218c.033.084.069.199.044.282-.097.252-.263.517-.452.813-.091.136-.185.242-.268.399-.02.037-.045.095-.064.134-.128.275-.034.591.213.71.248.12.556-.007.69-.282v-.002c.02-.039.046-.09.062-.127.07-.162.094-.301.144-.458.132-.332.205-.68.387-.897.05-.06.13-.082.215-.105l.113-.205a6.453 6.453 0 0 0 4.609.012l.106.192c.086.028.18.042.256.155.136.232.229.507.342.84.05.156.074.295.145.457.016.037.043.09.062.129.133.276.442.402.69.282.247-.118.341-.435.213-.71-.02-.039-.045-.096-.065-.134-.083-.156-.177-.261-.268-.398-.19-.296-.346-.541-.443-.793-.04-.13.007-.21.038-.294-.018-.022-.059-.144-.083-.202a6.499 6.499 0 0 0 2.88-3.622c.064.01.176.03.213.038.075-.05.144-.114.28-.104.266.039.54.138.87.256.154.06.277.128.448.173.036.01.088.019.13.028l.009.003.007.001c.297.064.584-.098.645-.365.06-.266-.128-.537-.423-.608zM16.4 9.701l-1.95 1.746v.005a.44.44 0 0 0 .173.757l.003.01 2.526.728a5.199 5.199 0 0 0-.108-1.674A5.208 5.208 0 0 0 16.4 9.7zm-4.013 5.325a.437.437 0 0 0-.404-.232.44.44 0 0 0-.372.233h-.002l-1.268 2.292a5.164 5.164 0 0 0 3.326.003l-1.27-2.296h-.01zm1.888-1.293a.44.44 0 0 0-.27.036.44.44 0 0 0-.214.572l-.003.004 1.01 2.438a5.15 5.15 0 0 0 2.081-2.615l-2.6-.44-.004.005z' />
+                                            <path
+                                                d='M10.204 14.35l.007.01-.999 2.413a5.171 5.171 0 0 1-2.075-2.597l2.578-.437.004.005a.44.44 0 0 1 .484.606zm-.833-2.129a.44.44 0 0 0 .173-.756l.002-.011L7.585 9.7a5.143 5.143 0 0 0-.73 3.255l2.514-.725.002-.009zm1.145-1.98a.44.44 0 0 0 .699-.337l.01-.005.15-2.62a5.144 5.144 0 0 0-3.01 1.442l2.147 1.523.004-.002zm.76 2.75l.723.349.722-.347.18-.78-.5-.623h-.804l-.5.623.179.779zm1.5-3.095a.44.44 0 0 0 .7.336l.008.003 2.134-1.513a5.188 5.188 0 0 0-2.992-1.442l.148 2.615.002.001zm10.876 5.97l-5.773 7.181a1.6 1.6 0 0 1-1.248.594l-9.261.003a1.6 1.6 0 0 1-1.247-.596l-5.776-7.18a1.583 1.583 0 0 1-.307-1.34L2.1 5.573c.108-.47.425-.864.863-1.073L11.305.513a1.606 1.606 0 0 1 1.385 0l8.345 3.985c.438.209.755.604.863 1.073l2.062 8.955c.108.47-.005.963-.308 1.34zm-3.289-2.057c-.042-.01-.103-.026-.145-.034-.174-.033-.315-.025-.479-.038-.35-.037-.638-.067-.895-.148-.105-.04-.18-.165-.216-.216l-.201-.059a6.45 6.45 0 0 0-.105-2.332 6.465 6.465 0 0 0-.936-2.163c.052-.047.15-.133.177-.159.008-.09.001-.183.094-.282.197-.185.444-.338.743-.522.142-.084.273-.137.415-.242.032-.024.076-.062.11-.089.24-.191.295-.52.123-.736-.172-.216-.506-.236-.745-.045-.034.027-.08.062-.111.088-.134.116-.217.23-.33.35-.246.25-.45.458-.673.609-.097.056-.239.037-.303.033l-.19.135a6.545 6.545 0 0 0-4.146-2.003l-.012-.223c-.065-.062-.143-.115-.163-.25-.022-.268.015-.557.057-.905.023-.163.061-.298.068-.475.001-.04-.001-.099-.001-.142 0-.306-.224-.555-.5-.555-.275 0-.499.249-.499.555l.001.014c0 .041-.002.092 0 .128.006.177.044.312.067.475.042.348.078.637.056.906a.545.545 0 0 1-.162.258l-.012.211a6.424 6.424 0 0 0-4.166 2.003 8.373 8.373 0 0 1-.18-.128c-.09.012-.18.04-.297-.029-.223-.15-.427-.358-.673-.608-.113-.12-.195-.234-.329-.349-.03-.026-.077-.062-.111-.088a.594.594 0 0 0-.348-.132.481.481 0 0 0-.398.176c-.172.216-.117.546.123.737l.007.005.104.083c.142.105.272.159.414.242.299.185.546.338.743.522.076.082.09.226.1.288l.16.143a6.462 6.462 0 0 0-1.02 4.506l-.208.06c-.055.072-.133.184-.215.217-.257.081-.546.11-.895.147-.164.014-.305.006-.48.039-.037.007-.09.02-.133.03l-.004.002-.007.002c-.295.071-.484.342-.423.608.061.267.349.429.645.365l.007-.001.01-.003.129-.029c.17-.046.294-.113.448-.172.33-.118.604-.217.87-.256.112-.009.23.069.288.101l.217-.037a6.5 6.5 0 0 0 2.88 3.596l-.09.218c.033.084.069.199.044.282-.097.252-.263.517-.452.813-.091.136-.185.242-.268.399-.02.037-.045.095-.064.134-.128.275-.034.591.213.71.248.12.556-.007.69-.282v-.002c.02-.039.046-.09.062-.127.07-.162.094-.301.144-.458.132-.332.205-.68.387-.897.05-.06.13-.082.215-.105l.113-.205a6.453 6.453 0 0 0 4.609.012l.106.192c.086.028.18.042.256.155.136.232.229.507.342.84.05.156.074.295.145.457.016.037.043.09.062.129.133.276.442.402.69.282.247-.118.341-.435.213-.71-.02-.039-.045-.096-.065-.134-.083-.156-.177-.261-.268-.398-.19-.296-.346-.541-.443-.793-.04-.13.007-.21.038-.294-.018-.022-.059-.144-.083-.202a6.499 6.499 0 0 0 2.88-3.622c.064.01.176.03.213.038.075-.05.144-.114.28-.104.266.039.54.138.87.256.154.06.277.128.448.173.036.01.088.019.13.028l.009.003.007.001c.297.064.584-.098.645-.365.06-.266-.128-.537-.423-.608zM16.4 9.701l-1.95 1.746v.005a.44.44 0 0 0 .173.757l.003.01 2.526.728a5.199 5.199 0 0 0-.108-1.674A5.208 5.208 0 0 0 16.4 9.7zm-4.013 5.325a.437.437 0 0 0-.404-.232.44.44 0 0 0-.372.233h-.002l-1.268 2.292a5.164 5.164 0 0 0 3.326.003l-1.27-2.296h-.01zm1.888-1.293a.44.44 0 0 0-.27.036.44.44 0 0 0-.214.572l-.003.004 1.01 2.438a5.15 5.15 0 0 0 2.081-2.615l-2.6-.44-.004.005z'/>
                                         </svg>
                                         <h5>Kubernetes</h5>
                                     </div>
                                 </div>
-                                <div className='hover:bg-gray-700/40 cursor-pointer select-none duration-500 text-gray-500 hover:text-gray-200  rounded-md relative flex   max-w-[125] min-w-[100px] sm:min-w-[125px] text-center justify-center min-h-[125px]'>
+                                <div
+                                    className='hover:bg-gray-700/40 cursor-pointer select-none duration-500 text-gray-500 hover:text-gray-200  rounded-md relative flex   max-w-[125] min-w-[100px] sm:min-w-[125px] text-center justify-center min-h-[125px]'>
                                     <div className=' m-auto '>
                                         <svg
                                             className='m-auto mb-2'
@@ -1606,7 +1667,8 @@ c29 0 31 -2 36 -52z m-786 -350 c7 -7 12 -32 12 -57 0 -26 12 -161 25 -301 38
                                             role='img'
                                             xmlns='http://www.w3.org/2000/svg'>
                                             <title>Netlify icon</title>
-                                            <path d='M16.934 8.519a1.044 1.044 0 0 1 .303.23l2.349-1.045-2.192-2.171-.491 2.954zM12.06 6.546a1.305 1.305 0 0 1 .209.574l3.497 1.482a1.044 1.044 0 0 1 .355-.177l.574-3.55-2.13-2.234-2.505 3.852v.053zm11.933 5.491l-3.748-3.748-2.548 1.044 6.264 2.662s.053.042.032.042zm-.627.606l-6.013-2.569a1.044 1.044 0 0 1-.7.407l-.647 3.957a1.044 1.044 0 0 1 .303.731l3.633.762 3.33-3.31v-.062zM15.4 9.25L12.132 7.86a1.2 1.2 0 0 1-1.044.543h-.199L8.185 12.58l7.225-3.132v.01a.887.887 0 0 1 0-.167.052.052 0 0 0-.01-.041zm3.967 7.308l-3.195-.658a1.096 1.096 0 0 1-.46.344l-.761 4.72 4.437-4.396s-.01.02-.021.02zm-4.469-.324a1.044 1.044 0 0 1-.616-.71l-5.95-1.222-.084.136 5.398 7.81.323-.324.919-5.67s.031.022.01.011zm-6.441-2.652l5.878 1.211a1.044 1.044 0 0 1 .824-.522l.637-3.894-.135-.115-7.308 3.132a1.817 1.817 0 0 1 .104.188zm-2.464.981l-.125-.125-2.537 1.044 1.232 1.222 1.399-2.172zm1.67.397a1.368 1.368 0 0 1-.563.125 1.389 1.389 0 0 1-.45-.073l-1.544 2.245 6.765 6.702 1.19-1.18zm-.95-2.641a1.702 1.702 0 0 1 .314 0 1.378 1.378 0 0 1 .344 0l2.735-4.25a1.19 1.19 0 0 1-.334-.824 1.242 1.242 0 0 1 0-.271l-3.32-1.535-2.672 2.6zm.303-7.402l3.237 1.378a1.242 1.242 0 0 1 .835-.282 1.357 1.357 0 0 1 .397.063l2.526-3.947L11.923.041 7.016 4.854s-.01.052 0 .063zm-1.21 8.164a1.566 1.566 0 0 1 .24-.334L3.278 8.613 0 11.797l5.804 1.284zm-.262.7L.533 12.735l2.203 2.235 2.777-1.18z' />
+                                            <path
+                                                d='M16.934 8.519a1.044 1.044 0 0 1 .303.23l2.349-1.045-2.192-2.171-.491 2.954zM12.06 6.546a1.305 1.305 0 0 1 .209.574l3.497 1.482a1.044 1.044 0 0 1 .355-.177l.574-3.55-2.13-2.234-2.505 3.852v.053zm11.933 5.491l-3.748-3.748-2.548 1.044 6.264 2.662s.053.042.032.042zm-.627.606l-6.013-2.569a1.044 1.044 0 0 1-.7.407l-.647 3.957a1.044 1.044 0 0 1 .303.731l3.633.762 3.33-3.31v-.062zM15.4 9.25L12.132 7.86a1.2 1.2 0 0 1-1.044.543h-.199L8.185 12.58l7.225-3.132v.01a.887.887 0 0 1 0-.167.052.052 0 0 0-.01-.041zm3.967 7.308l-3.195-.658a1.096 1.096 0 0 1-.46.344l-.761 4.72 4.437-4.396s-.01.02-.021.02zm-4.469-.324a1.044 1.044 0 0 1-.616-.71l-5.95-1.222-.084.136 5.398 7.81.323-.324.919-5.67s.031.022.01.011zm-6.441-2.652l5.878 1.211a1.044 1.044 0 0 1 .824-.522l.637-3.894-.135-.115-7.308 3.132a1.817 1.817 0 0 1 .104.188zm-2.464.981l-.125-.125-2.537 1.044 1.232 1.222 1.399-2.172zm1.67.397a1.368 1.368 0 0 1-.563.125 1.389 1.389 0 0 1-.45-.073l-1.544 2.245 6.765 6.702 1.19-1.18zm-.95-2.641a1.702 1.702 0 0 1 .314 0 1.378 1.378 0 0 1 .344 0l2.735-4.25a1.19 1.19 0 0 1-.334-.824 1.242 1.242 0 0 1 0-.271l-3.32-1.535-2.672 2.6zm.303-7.402l3.237 1.378a1.242 1.242 0 0 1 .835-.282 1.357 1.357 0 0 1 .397.063l2.526-3.947L11.923.041 7.016 4.854s-.01.052 0 .063zm-1.21 8.164a1.566 1.566 0 0 1 .24-.334L3.278 8.613 0 11.797l5.804 1.284zm-.262.7L.533 12.735l2.203 2.235 2.777-1.18z'/>
                                         </svg>
 
                                         <h5>Netlify </h5>
@@ -1622,8 +1684,10 @@ c29 0 31 -2 36 -52z m-786 -350 c7 -7 12 -32 12 -57 0 -26 12 -161 25 -301 38
                                 : "contentTechstack"
                         }>
                         <div className='justify-center flex'>
-                            <div className='grid grid-cols-3 duration-500 md:grid-cols-4 lg:grid-cols-6 max-w-[1000px]   gap-2 items-center justify-center  '>
-                                <div className='hover:bg-gray-700/40 cursor-pointer select-none duration-500 text-gray-500 hover:text-gray-200  rounded-md relative flex   max-w-[125] min-w-[100px] sm:min-w-[125px] text-center justify-center min-h-[125px]'>
+                            <div
+                                className='grid grid-cols-3 duration-500 md:grid-cols-4 lg:grid-cols-6 max-w-[1000px]   gap-2 items-center justify-center  '>
+                                <div
+                                    className='hover:bg-gray-700/40 cursor-pointer select-none duration-500 text-gray-500 hover:text-gray-200  rounded-md relative flex   max-w-[125] min-w-[100px] sm:min-w-[125px] text-center justify-center min-h-[125px]'>
                                     <div className=' m-auto '>
                                         <svg
                                             className='m-auto mb-2'
@@ -1648,7 +1712,8 @@ c29 0 31 -2 36 -52z m-786 -350 c7 -7 12 -32 12 -57 0 -26 12 -161 25 -301 38
                                         <h5>Jest</h5>
                                     </div>
                                 </div>
-                                <div className='hover:bg-gray-700/40 cursor-pointer select-none duration-500 text-gray-500 hover:text-gray-200  rounded-md relative flex   max-w-[125] min-w-[100px] sm:min-w-[125px] text-center justify-center min-h-[125px]'>
+                                <div
+                                    className='hover:bg-gray-700/40 cursor-pointer select-none duration-500 text-gray-500 hover:text-gray-200  rounded-md relative flex   max-w-[125] min-w-[100px] sm:min-w-[125px] text-center justify-center min-h-[125px]'>
                                     <div className=' m-auto '>
                                         <svg
                                             className='m-auto mb-2'
@@ -1669,13 +1734,13 @@ c29 0 31 -2 36 -52z m-786 -350 c7 -7 12 -32 12 -57 0 -26 12 -161 25 -301 38
                                                     r='50.334%'
                                                     gradientTransform='translate(0.502790,0.498469),scale(1.000000,0.992517),translate(-0.502790,-0.498469)'
                                                     id='radialGradient-1'>
-                                                    <stop stopColor='#dbd9d9' offset='0%' />
-                                                    <stop stopColor='#dbd9d9' offset='20%' />
-                                                    <stop stopColor='#dbd9d9' offset='38%' />
-                                                    <stop stopColor='#dbd9d9' offset='54%' />
-                                                    <stop stopColor='#dbd9d9' offset='71%' />
-                                                    <stop stopColor='#dbd9d9' offset='86%' />
-                                                    <stop stopColor='#dbd9d9' offset='100%' />
+                                                    <stop stopColor='#dbd9d9' offset='0%'/>
+                                                    <stop stopColor='#dbd9d9' offset='20%'/>
+                                                    <stop stopColor='#dbd9d9' offset='38%'/>
+                                                    <stop stopColor='#dbd9d9' offset='54%'/>
+                                                    <stop stopColor='#dbd9d9' offset='71%'/>
+                                                    <stop stopColor='#dbd9d9' offset='86%'/>
+                                                    <stop stopColor='#dbd9d9' offset='100%'/>
                                                 </radialGradient>
                                                 <linearGradient
                                                     x1='0.003%'
@@ -1683,13 +1748,13 @@ c29 0 31 -2 36 -52z m-786 -350 c7 -7 12 -32 12 -57 0 -26 12 -161 25 -301 38
                                                     x2='100%'
                                                     y2='49.969%'
                                                     id='linearGradient-2'>
-                                                    <stop stopColor='#dbd9d9' offset='0%' />
-                                                    <stop stopColor='#dbd9d9' offset='19%' />
-                                                    <stop stopColor='#dbd9d9' offset='38%' />
-                                                    <stop stopColor='#dbd9d9' offset='58%' />
-                                                    <stop stopColor='#dbd9d9' offset='79%' />
-                                                    <stop stopColor='#dbd9d9' offset='99%' />
-                                                    <stop stopColor='#dbd9d9' offset='100%' />
+                                                    <stop stopColor='#dbd9d9' offset='0%'/>
+                                                    <stop stopColor='#dbd9d9' offset='19%'/>
+                                                    <stop stopColor='#dbd9d9' offset='38%'/>
+                                                    <stop stopColor='#dbd9d9' offset='58%'/>
+                                                    <stop stopColor='#dbd9d9' offset='79%'/>
+                                                    <stop stopColor='#dbd9d9' offset='99%'/>
+                                                    <stop stopColor='#dbd9d9' offset='100%'/>
                                                 </linearGradient>
                                                 <linearGradient
                                                     x1='0.025%'
@@ -1697,13 +1762,13 @@ c29 0 31 -2 36 -52z m-786 -350 c7 -7 12 -32 12 -57 0 -26 12 -161 25 -301 38
                                                     x2='100.015%'
                                                     y2='26.463%'
                                                     id='linearGradient-3'>
-                                                    <stop stopColor='#dbd9d9' offset='0%' />
-                                                    <stop stopColor='#dbd9d9' offset='19%' />
-                                                    <stop stopColor='#dbd9d9' offset='38%' />
-                                                    <stop stopColor='#dbd9d9' offset='58%' />
-                                                    <stop stopColor='#dbd9d9' offset='79%' />
-                                                    <stop stopColor='#dbd9d9' offset='99%' />
-                                                    <stop stopColor='#dbd9d9' offset='100%' />
+                                                    <stop stopColor='#dbd9d9' offset='0%'/>
+                                                    <stop stopColor='#dbd9d9' offset='19%'/>
+                                                    <stop stopColor='#dbd9d9' offset='38%'/>
+                                                    <stop stopColor='#dbd9d9' offset='58%'/>
+                                                    <stop stopColor='#dbd9d9' offset='79%'/>
+                                                    <stop stopColor='#dbd9d9' offset='99%'/>
+                                                    <stop stopColor='#dbd9d9' offset='100%'/>
                                                 </linearGradient>
                                                 <radialGradient
                                                     cx='50.879%'
@@ -1713,13 +1778,13 @@ c29 0 31 -2 36 -52z m-786 -350 c7 -7 12 -32 12 -57 0 -26 12 -161 25 -301 38
                                                     r='91.636%'
                                                     gradientTransform='translate(0.508790,0.495849),scale(1.000000,0.419379),translate(-0.508790,-0.495849)'
                                                     id='radialGradient-4'>
-                                                    <stop stopColor='#dbd9d9' offset='0%' />
-                                                    <stop stopColor='#dbd9d9' offset='19%' />
-                                                    <stop stopColor='#dbd9d9' offset='38%' />
-                                                    <stop stopColor='#dbd9d9' offset='58%' />
-                                                    <stop stopColor='#dbd9d9' offset='79%' />
-                                                    <stop stopColor='#dbd9d9' offset='99%' />
-                                                    <stop stopColor='#dbd9d9' offset='100%' />
+                                                    <stop stopColor='#dbd9d9' offset='0%'/>
+                                                    <stop stopColor='#dbd9d9' offset='19%'/>
+                                                    <stop stopColor='#dbd9d9' offset='38%'/>
+                                                    <stop stopColor='#dbd9d9' offset='58%'/>
+                                                    <stop stopColor='#dbd9d9' offset='79%'/>
+                                                    <stop stopColor='#dbd9d9' offset='99%'/>
+                                                    <stop stopColor='#dbd9d9' offset='100%'/>
                                                 </radialGradient>
                                                 <radialGradient
                                                     cx='50.5432107%'
@@ -1729,13 +1794,13 @@ c29 0 31 -2 36 -52z m-786 -350 c7 -7 12 -32 12 -57 0 -26 12 -161 25 -301 38
                                                     r='56.1219498%'
                                                     gradientTransform='translate(0.505432,0.497420),scale(0.815587,1.000000),translate(-0.505432,-0.497420)'
                                                     id='radialGradient-5'>
-                                                    <stop stopColor='#dbd9d9' offset='0%' />
-                                                    <stop stopColor='#dbd9d9' offset='19%' />
-                                                    <stop stopColor='#dbd9d9' offset='38%' />
-                                                    <stop stopColor='#dbd9d9' offset='58%' />
-                                                    <stop stopColor='#dbd9d9' offset='79%' />
-                                                    <stop stopColor='#dbd9d9' offset='99%' />
-                                                    <stop stopColor='#dbd9d9' offset='100%' />
+                                                    <stop stopColor='#dbd9d9' offset='0%'/>
+                                                    <stop stopColor='#dbd9d9' offset='19%'/>
+                                                    <stop stopColor='#dbd9d9' offset='38%'/>
+                                                    <stop stopColor='#dbd9d9' offset='58%'/>
+                                                    <stop stopColor='#dbd9d9' offset='79%'/>
+                                                    <stop stopColor='#dbd9d9' offset='99%'/>
+                                                    <stop stopColor='#dbd9d9' offset='100%'/>
                                                 </radialGradient>
                                                 <linearGradient
                                                     x1='0%'
@@ -1743,13 +1808,13 @@ c29 0 31 -2 36 -52z m-786 -350 c7 -7 12 -32 12 -57 0 -26 12 -161 25 -301 38
                                                     x2='99.996%'
                                                     y2='49.997%'
                                                     id='linearGradient-6'>
-                                                    <stop stopColor='#dbd9d9' offset='0%' />
-                                                    <stop stopColor='#dbd9d9' offset='1%' />
-                                                    <stop stopColor='#dbd9d9' offset='21%' />
-                                                    <stop stopColor='#dbd9d9' offset='42%' />
-                                                    <stop stopColor='#dbd9d9' offset='62%' />
-                                                    <stop stopColor='#dbd9d9' offset='81%' />
-                                                    <stop stopColor='#dbd9d9' offset='100%' />
+                                                    <stop stopColor='#dbd9d9' offset='0%'/>
+                                                    <stop stopColor='#dbd9d9' offset='1%'/>
+                                                    <stop stopColor='#dbd9d9' offset='21%'/>
+                                                    <stop stopColor='#dbd9d9' offset='42%'/>
+                                                    <stop stopColor='#dbd9d9' offset='62%'/>
+                                                    <stop stopColor='#dbd9d9' offset='81%'/>
+                                                    <stop stopColor='#dbd9d9' offset='100%'/>
                                                 </linearGradient>
                                                 <linearGradient
                                                     x1='-0.004%'
@@ -1757,13 +1822,13 @@ c29 0 31 -2 36 -52z m-786 -350 c7 -7 12 -32 12 -57 0 -26 12 -161 25 -301 38
                                                     x2='99.975%'
                                                     y2='26.478%'
                                                     id='linearGradient-7'>
-                                                    <stop stopColor='#dbd9d9' offset='0%' />
-                                                    <stop stopColor='#dbd9d9' offset='1%' />
-                                                    <stop stopColor='#dbd9d9' offset='21%' />
-                                                    <stop stopColor='#dbd9d9' offset='42%' />
-                                                    <stop stopColor='#dbd9d9' offset='62%' />
-                                                    <stop stopColor='#dbd9d9' offset='81%' />
-                                                    <stop stopColor='#dbd9d9' offset='100%' />
+                                                    <stop stopColor='#dbd9d9' offset='0%'/>
+                                                    <stop stopColor='#dbd9d9' offset='1%'/>
+                                                    <stop stopColor='#dbd9d9' offset='21%'/>
+                                                    <stop stopColor='#dbd9d9' offset='42%'/>
+                                                    <stop stopColor='#dbd9d9' offset='62%'/>
+                                                    <stop stopColor='#dbd9d9' offset='81%'/>
+                                                    <stop stopColor='#dbd9d9' offset='100%'/>
                                                 </linearGradient>
                                                 <radialGradient
                                                     cx='51.992%'
@@ -1773,13 +1838,13 @@ c29 0 31 -2 36 -52z m-786 -350 c7 -7 12 -32 12 -57 0 -26 12 -161 25 -301 38
                                                     r='91.664%'
                                                     gradientTransform='translate(0.519920,0.495818),scale(1.000000,0.419250),translate(-0.519920,-0.495818)'
                                                     id='radialGradient-8'>
-                                                    <stop stopColor='#dbd9d9' offset='0%' />
-                                                    <stop stopColor='#dbd9d9' offset='19%' />
-                                                    <stop stopColor='#dbd9d9' offset='38%' />
-                                                    <stop stopColor='#dbd9d9' offset='58%' />
-                                                    <stop stopColor='#dbd9d9' offset='79%' />
-                                                    <stop stopColor='#dbd9d9' offset='99%' />
-                                                    <stop stopColor='#dbd9d9' offset='100%' />
+                                                    <stop stopColor='#dbd9d9' offset='0%'/>
+                                                    <stop stopColor='#dbd9d9' offset='19%'/>
+                                                    <stop stopColor='#dbd9d9' offset='38%'/>
+                                                    <stop stopColor='#dbd9d9' offset='58%'/>
+                                                    <stop stopColor='#dbd9d9' offset='79%'/>
+                                                    <stop stopColor='#dbd9d9' offset='99%'/>
+                                                    <stop stopColor='#dbd9d9' offset='100%'/>
                                                 </radialGradient>
                                             </defs>
                                             <g>
@@ -2650,7 +2715,8 @@ c29 0 31 -2 36 -52z m-786 -350 c7 -7 12 -32 12 -57 0 -26 12 -161 25 -301 38
                                     </div>
                                 </div>
 
-                                <div className='hover:bg-gray-700/40 cursor-pointer select-none duration-500 text-gray-500 hover:text-gray-200  rounded-md relative flex   max-w-[125] min-w-[100px] sm:min-w-[125px] text-center justify-center min-h-[125px]'>
+                                <div
+                                    className='hover:bg-gray-700/40 cursor-pointer select-none duration-500 text-gray-500 hover:text-gray-200  rounded-md relative flex   max-w-[125] min-w-[100px] sm:min-w-[125px] text-center justify-center min-h-[125px]'>
                                     <div className=' m-auto '>
                                         <svg
                                             className='m-auto mb-2'
@@ -2667,42 +2733,50 @@ c29 0 31 -2 36 -52z m-786 -350 c7 -7 12 -32 12 -57 0 -26 12 -161 25 -301 38
                                                     fill='#dbd9d9'
                                                 />
                                                 <g transform='translate(50.181225, 45.198924)'>
-                                                    <path d='M124.018448,36.9853339 L70.012182,90.9916 L54.7829269,75.7623449 C107.893354,22.6519173 113.140409,27.2590869 124.018448,36.9853339 L124.018448,36.9853339 Z' />
+                                                    <path
+                                                        d='M124.018448,36.9853339 L70.012182,90.9916 L54.7829269,75.7623449 C107.893354,22.6519173 113.140409,27.2590869 124.018448,36.9853339 L124.018448,36.9853339 Z'/>
                                                     <path
                                                         d='M70.012182,92.2713693 C69.6282512,92.2713693 69.3722974,92.1433924 69.1163435,91.8874385 L53.7591114,76.6581834 C53.2472037,76.1462757 53.2472037,75.3784141 53.7591114,74.8665063 C107.765378,20.8602402 113.396363,25.9793176 124.78631,36.2174723 C125.042264,36.4734262 125.170241,36.72938 125.170241,37.1133108 C125.170241,37.4972416 125.042264,37.7531955 124.78631,38.0091494 L70.7800436,91.8874385 C70.6520667,92.1433924 70.2681359,92.2713693 70.012182,92.2713693 Z M56.574604,75.7623449 L70.012182,89.1999229 L122.098794,37.1133108 C112.628501,28.6668332 106.229654,26.1072945 56.574604,75.7623449 L56.574604,75.7623449 Z'
                                                         fill='#dbd9d9'
                                                     />
-                                                    <path d='M85.497391,106.476809 L70.7800436,91.7594616 L124.78631,37.7531955 C139.247703,52.342566 117.619601,76.0182987 85.497391,106.476809 Z' />
+                                                    <path
+                                                        d='M85.497391,106.476809 L70.7800436,91.7594616 L124.78631,37.7531955 C139.247703,52.342566 117.619601,76.0182987 85.497391,106.476809 Z'/>
                                                     <path
                                                         d='M85.497391,107.756578 C85.1134602,107.756578 84.8575064,107.628601 84.6015525,107.372648 L69.8842051,92.6553001 C69.6282512,92.3993463 69.6282512,92.1433924 69.6282512,91.7594616 C69.6282512,91.3755308 69.7562282,91.1195769 70.012182,90.8636231 L124.018448,36.857357 C124.530356,36.3454492 125.298217,36.3454492 125.810125,36.857357 C129.137525,39.9288034 130.929203,44.2800191 130.801226,48.7592118 C130.545272,62.9646515 114.420178,81.0093992 86.5212065,107.372648 C86.1372757,107.628601 85.7533449,107.756578 85.497391,107.756578 L85.497391,107.756578 Z M72.5717207,91.7594616 C80.7622445,100.077962 84.2176217,103.405363 85.497391,104.685132 C106.997516,84.2088225 127.857756,63.2206053 127.985733,48.7592118 C128.11371,45.4318115 126.833941,42.1044113 124.658333,39.5448726 L72.5717207,91.7594616 Z'
                                                         fill='#dbd9d9'
                                                     />
-                                                    <path d='M55.0388808,76.1462757 L65.9169201,87.024315 C66.172874,87.2802689 66.172874,87.5362228 65.9169201,87.7921767 C65.7889432,87.9201536 65.7889432,87.9201536 65.6609663,87.9201536 L43.1370259,92.7832771 C41.9852335,92.911254 40.961418,92.1433924 40.7054642,90.9916 C40.5774872,90.3517153 40.8334411,89.7118307 41.2173719,89.3278999 L54.2710192,76.2742526 C54.526973,76.0182987 54.9109038,75.8903218 55.0388808,76.1462757 Z' />
+                                                    <path
+                                                        d='M55.0388808,76.1462757 L65.9169201,87.024315 C66.172874,87.2802689 66.172874,87.5362228 65.9169201,87.7921767 C65.7889432,87.9201536 65.7889432,87.9201536 65.6609663,87.9201536 L43.1370259,92.7832771 C41.9852335,92.911254 40.961418,92.1433924 40.7054642,90.9916 C40.5774872,90.3517153 40.8334411,89.7118307 41.2173719,89.3278999 L54.2710192,76.2742526 C54.526973,76.0182987 54.9109038,75.8903218 55.0388808,76.1462757 Z'/>
                                                     <path
                                                         d='M42.7530951,94.0630464 C40.8334411,94.0630464 39.4256948,92.5273232 39.4256948,90.6076692 C39.4256948,89.7118307 39.8096256,88.8159921 40.4495103,88.1761075 L53.5031576,75.1224602 C54.2710192,74.4825755 55.2948346,74.4825755 56.0626962,75.1224602 L66.9407356,86.0004996 C67.7085972,86.6403842 67.7085972,87.7921767 66.9407356,88.5600383 C66.6847817,88.8159921 66.4288279,88.9439691 66.0448971,89.071946 L43.5209567,93.9350695 C43.2650028,93.9350695 43.009049,94.0630464 42.7530951,94.0630464 L42.7530951,94.0630464 Z M54.65495,77.5540219 L42.1132104,90.0957615 C41.8572566,90.3517153 41.7292796,90.7356461 41.9852335,91.1195769 C42.1132104,91.5035077 42.4971412,91.6314847 42.881072,91.5035077 L63.9972661,86.8963381 L54.65495,77.5540219 Z'
                                                         fill='#dbd9d9'
                                                     />
-                                                    <path d='M152.557304,7.03873136 C144.366781,-0.895838537 131.185156,-0.639884669 123.250587,7.67861603 C115.316017,15.9971167 115.57197,29.050764 123.890471,36.9853339 C130.673249,43.5121575 140.911403,44.6639499 148.97395,39.8008264 L134.38458,25.211456 L152.557304,7.03873136 Z' />
+                                                    <path
+                                                        d='M152.557304,7.03873136 C144.366781,-0.895838537 131.185156,-0.639884669 123.250587,7.67861603 C115.316017,15.9971167 115.57197,29.050764 123.890471,36.9853339 C130.673249,43.5121575 140.911403,44.6639499 148.97395,39.8008264 L134.38458,25.211456 L152.557304,7.03873136 Z'/>
                                                     <path
                                                         d='M138.223888,44.0240653 C126.066079,44.0240653 116.211855,34.1698413 116.211855,22.0120326 C116.211855,9.85422391 126.066079,-1.81866161e-14 138.223888,-1.81866161e-14 C143.854873,-1.81866161e-14 149.357881,2.17560788 153.453143,6.14289283 C153.709097,6.39884669 153.837074,6.65480056 153.837074,7.03873136 C153.837074,7.42266217 153.709097,7.67861603 153.453143,7.9345699 L136.176257,25.211456 L149.741812,38.777011 C150.25372,39.2889187 150.25372,40.0567803 149.741812,40.568688 C149.613835,40.696665 149.613835,40.696665 149.485858,40.8246419 C146.158458,42.8722729 142.191173,44.0240653 138.223888,44.0240653 Z M138.223888,2.68751561 C127.473825,2.68751561 118.771394,11.3899471 118.899371,22.1400096 C118.899371,32.890072 127.601802,41.5925035 138.351865,41.4645266 C141.295334,41.4645266 144.238804,40.8246419 146.926319,39.4168956 L133.488741,26.1072945 C133.232787,25.8513406 133.10481,25.5953868 133.10481,25.211456 C133.10481,24.8275252 133.232787,24.5715713 133.488741,24.3156174 L150.63765,7.1667083 C147.182273,4.22323882 142.831057,2.68751561 138.223888,2.68751561 L138.223888,2.68751561 Z'
                                                         fill='#dbd9d9'
                                                     />
-                                                    <path d='M152.941235,7.42266217 L152.685281,7.1667083 L134.38458,25.211456 L148.845973,39.6728495 C150.25372,38.777011 151.661466,37.7531955 152.813258,36.6014031 C161.003782,28.5388563 161.003782,15.485209 152.941235,7.42266217 L152.941235,7.42266217 Z' />
+                                                    <path
+                                                        d='M152.941235,7.42266217 L152.685281,7.1667083 L134.38458,25.211456 L148.845973,39.6728495 C150.25372,38.777011 151.661466,37.7531955 152.813258,36.6014031 C161.003782,28.5388563 161.003782,15.485209 152.941235,7.42266217 L152.941235,7.42266217 Z'/>
                                                     <path
                                                         d='M148.97395,41.0805958 C148.590019,41.0805958 148.334066,40.9526188 148.078112,40.696665 L133.488741,26.1072945 C133.232787,25.8513406 133.10481,25.5953868 133.10481,25.211456 C133.10481,24.8275252 133.232787,24.5715713 133.488741,24.3156174 L151.661466,6.14289283 C152.173374,5.63098509 152.941235,5.63098509 153.453143,6.14289283 L153.837074,6.39884669 C162.411528,14.9733013 162.411528,28.7948101 153.965051,37.4972416 C152.685281,38.777011 151.277535,39.9288034 149.741812,40.8246419 C149.357881,40.9526188 149.101927,41.0805958 148.97395,41.0805958 L148.97395,41.0805958 Z M136.176257,25.211456 L149.101927,38.1371263 C150.125743,37.4972416 151.149558,36.6014031 151.91742,35.8335415 C159.212105,28.5388563 159.596036,16.6370014 152.557304,8.95838537 L136.176257,25.211456 Z'
                                                         fill='#dbd9d9'
                                                     />
-                                                    <path d='M126.194056,39.2889187 C123.12261,36.2174723 118.131509,36.2174723 115.060063,39.2889187 L66.8127587,87.5362228 L74.8753055,95.5987696 L125.938102,50.8068428 C129.265502,47.9913502 129.521456,43.0002498 126.705964,39.6728495 C126.45001,39.5448726 126.322033,39.4168956 126.194056,39.2889187 L126.194056,39.2889187 Z' />
+                                                    <path
+                                                        d='M126.194056,39.2889187 C123.12261,36.2174723 118.131509,36.2174723 115.060063,39.2889187 L66.8127587,87.5362228 L74.8753055,95.5987696 L125.938102,50.8068428 C129.265502,47.9913502 129.521456,43.0002498 126.705964,39.6728495 C126.45001,39.5448726 126.322033,39.4168956 126.194056,39.2889187 L126.194056,39.2889187 Z'/>
                                                     <path
                                                         d='M74.7473286,96.878539 C74.3633978,96.878539 74.1074439,96.750562 73.85149,96.4946082 L65.7889432,88.4320613 C65.2770355,87.9201536 65.2770355,87.152292 65.7889432,86.6403842 L114.036247,38.3930802 C117.619601,34.809726 123.378563,34.809726 126.961918,38.3930802 C130.545272,41.9764343 130.545272,47.7353963 126.961918,51.3187505 C126.833941,51.4467274 126.705964,51.5747044 126.577987,51.7026813 L75.5151902,96.4946082 C75.3872133,96.750562 75.1312594,96.878539 74.7473286,96.878539 L74.7473286,96.878539 Z M68.6044358,87.5362228 L74.8753055,93.8070925 L125.042264,49.7830273 C127.857756,47.4794425 128.11371,43.2562037 125.810125,40.4407111 C123.50654,37.6252186 119.283302,37.3692647 116.467809,39.6728495 C116.339832,39.8008264 116.211855,39.9288034 115.955901,40.0567803 L68.6044358,87.5362228 Z'
                                                         fill='#dbd9d9'
                                                     />
-                                                    <path d='M29.8274248,142.438327 C29.3155171,142.694281 29.0595632,143.206189 29.1875401,143.718097 L31.363148,152.932436 C31.8750557,154.212205 31.1071941,155.747929 29.6994479,156.131859 C28.6756324,156.51579 27.52384,156.131859 26.8839553,155.363998 L12.8064926,141.414512 L58.7502118,95.4707927 L74.6193516,95.7267466 L85.3694141,106.476809 C82.8098754,108.652417 67.3246664,123.625718 29.8274248,142.438327 L29.8274248,142.438327 Z' />
+                                                    <path
+                                                        d='M29.8274248,142.438327 C29.3155171,142.694281 29.0595632,143.206189 29.1875401,143.718097 L31.363148,152.932436 C31.8750557,154.212205 31.1071941,155.747929 29.6994479,156.131859 C28.6756324,156.51579 27.52384,156.131859 26.8839553,155.363998 L12.8064926,141.414512 L58.7502118,95.4707927 L74.6193516,95.7267466 L85.3694141,106.476809 C82.8098754,108.652417 67.3246664,123.625718 29.8274248,142.438327 L29.8274248,142.438327 Z'/>
                                                     <path
                                                         d='M28.8036093,157.411629 C27.7797938,157.411629 26.7559784,157.027698 26.1160937,156.259836 L12.1666079,142.31035 C11.910654,142.054397 11.7826771,141.798443 11.7826771,141.414512 C11.7826771,141.030581 11.910654,140.774627 12.1666079,140.518673 L58.1103272,94.5749541 C58.366281,94.3190003 58.7502118,94.1910233 59.0061657,94.1910233 L74.8753055,94.4469772 C75.2592363,94.4469772 75.5151902,94.5749541 75.7711441,94.830908 L86.5212065,105.58097 C86.7771604,105.836924 86.9051373,106.220855 86.9051373,106.604786 C86.9051373,106.988717 86.7771604,107.244671 86.3932296,107.500624 L85.497391,108.268486 C71.931836,120.170341 53.5031576,132.072196 30.5952864,143.462143 L32.7708943,152.548505 C33.1548251,154.212205 32.3869635,156.003882 30.8512403,156.899721 C30.0833787,157.283652 29.443494,157.411629 28.8036093,157.411629 Z M14.7261466,141.414512 L27.9077708,154.468159 C28.2917016,155.108044 29.0595632,155.363998 29.6994479,154.980067 C30.3393325,154.596136 30.5952864,153.828275 30.2113556,153.18839 L28.0357477,143.974051 C27.7797938,142.822258 28.2917016,141.798443 29.3155171,141.286535 C51.9674343,129.896588 70.2681359,118.12271 83.705714,106.476809 L74.2354208,97.0065159 L59.5180734,96.750562 L14.7261466,141.414512 Z'
                                                         fill='#dbd9d9'
                                                     />
-                                                    <path d='M1.9284532,152.420528 L12.9344695,141.414512 L29.3155171,157.795559 L3.20822254,156.003882 C2.05643013,155.875905 1.28856853,154.85209 1.41654546,153.700298 C1.41654546,153.18839 1.5445224,152.676482 1.9284532,152.420528 L1.9284532,152.420528 Z' />
+                                                    <path
+                                                        d='M1.9284532,152.420528 L12.9344695,141.414512 L29.3155171,157.795559 L3.20822254,156.003882 C2.05643013,155.875905 1.28856853,154.85209 1.41654546,153.700298 C1.41654546,153.18839 1.5445224,152.676482 1.9284532,152.420528 L1.9284532,152.420528 Z'/>
                                                     <path
                                                         d='M29.3155171,158.947352 L3.0802456,157.155675 C1.16059159,157.027698 -0.119177745,155.363998 0.00879918845,153.444344 C0.136776122,152.676482 0.39272999,151.908621 1.03261466,151.396713 L12.038631,140.390696 C12.5505387,139.878789 13.3184003,139.878789 13.830308,140.390696 L30.2113556,156.771744 C30.5952864,157.155675 30.7232633,157.667583 30.4673095,158.17949 C30.2113556,158.691398 29.8274248,158.947352 29.3155171,158.947352 L29.3155171,158.947352 Z M12.9344695,143.206189 L2.82429173,153.316367 C2.44036093,153.572321 2.44036093,154.212205 2.82429173,154.468159 C2.95226867,154.596136 3.0802456,154.724113 3.33619947,154.724113 L25.9881168,156.259836 L12.9344695,143.206189 Z'
                                                         fill='#dbd9d9'
@@ -2711,7 +2785,8 @@ c29 0 31 -2 36 -52z m-786 -350 c7 -7 12 -32 12 -57 0 -26 12 -161 25 -301 38
                                                         d='M54.2710192,101.357732 C53.5031576,101.357732 52.9912498,100.717847 52.9912498,100.077962 C52.9912498,99.6940315 53.1192268,99.4380776 53.3751806,99.1821238 L65.7889432,86.7683612 C66.3008509,86.2564534 67.0687125,86.2564534 67.5806203,86.7683612 L75.6431671,94.830908 C76.0270979,95.2148388 76.1550749,95.5987696 76.0270979,96.1106774 C75.899121,96.4946082 75.5151902,96.878539 75.0032825,97.0065159 L54.526973,101.357732 C54.3989961,101.357732 54.2710192,101.357732 54.2710192,101.357732 L54.2710192,101.357732 Z M66.6847817,89.4558768 L58.2383041,97.9023544 L72.059813,94.9588849 L66.6847817,89.4558768 Z'
                                                         fill='#dbd9d9'
                                                     />
-                                                    <path d='M74.6193516,95.7267466 L60.5418889,98.798193 C59.5180734,99.0541468 58.494258,98.4142622 58.2383041,97.3904467 C58.1103272,96.750562 58.2383041,96.1106774 58.7502118,95.5987696 L66.5568048,87.7921767 L74.6193516,95.7267466 Z' />
+                                                    <path
+                                                        d='M74.6193516,95.7267466 L60.5418889,98.798193 C59.5180734,99.0541468 58.494258,98.4142622 58.2383041,97.3904467 C58.1103272,96.750562 58.2383041,96.1106774 58.7502118,95.5987696 L66.5568048,87.7921767 L74.6193516,95.7267466 Z'/>
                                                     <path
                                                         d='M60.2859351,100.077962 C58.494258,100.077962 57.0865117,98.670216 57.0865117,96.878539 C57.0865117,95.9827004 57.4704425,95.2148388 57.9823502,94.5749541 L65.7889432,86.7683612 C66.3008509,86.2564534 67.0687125,86.2564534 67.5806203,86.7683612 L75.6431671,94.830908 C76.0270979,95.2148388 76.1550749,95.5987696 76.0270979,96.1106774 C75.899121,96.4946082 75.5151902,96.878539 75.0032825,97.0065159 L60.9258197,100.077962 C60.6698659,100.077962 60.413912,100.077962 60.2859351,100.077962 L60.2859351,100.077962 Z M66.6847817,89.4558768 L59.7740273,96.3666312 C59.5180734,96.6225851 59.5180734,96.878539 59.6460504,97.1344928 C59.7740273,97.3904467 60.0299812,97.5184236 60.413912,97.5184236 L72.1877899,94.9588849 L66.6847817,89.4558768 Z'
                                                         fill='#dbd9d9'
@@ -2722,11 +2797,13 @@ c29 0 31 -2 36 -52z m-786 -350 c7 -7 12 -32 12 -57 0 -26 12 -161 25 -301 38
                                                     />
                                                 </g>
                                             </g>
-                                        </svg>{" "}
+                                        </svg>
+                                        {" "}
                                         <h5>Postman</h5>
                                     </div>
                                 </div>
-                                <div className='hover:bg-gray-700/40 cursor-pointer select-none duration-500 text-gray-500 hover:text-gray-200  rounded-md relative flex   max-w-[125] min-w-[100px] sm:min-w-[125px] text-center justify-center min-h-[125px]'>
+                                <div
+                                    className='hover:bg-gray-700/40 cursor-pointer select-none duration-500 text-gray-500 hover:text-gray-200  rounded-md relative flex   max-w-[125] min-w-[100px] sm:min-w-[125px] text-center justify-center min-h-[125px]'>
                                     <div className=' m-auto '>
                                         <svg
                                             className='m-auto mb-2'
@@ -2735,13 +2812,15 @@ c29 0 31 -2 36 -52z m-786 -350 c7 -7 12 -32 12 -57 0 -26 12 -161 25 -301 38
                                             fill='#dbd9d9'
                                             viewBox='0 0 32 32'
                                             xmlns='http://www.w3.org/2000/svg'>
-                                            <path d='M3.828 32h-1.297c-0.036-0.088-0.067-0.177-0.093-0.26-0.287-0.891-0.792-1.991-0.921-2.876-0.199-1.312 1.036-1.385 1.833-1.952 1.219-0.881 2.177-1.365 3.5-2.163 0.396-0.233 1.577-0.828 1.708-1.104 0.265-0.541-0.459-1.307-0.651-1.733-0.303-0.672-0.464-1.251-0.505-1.912-1.099-0.177-1.937-0.839-2.459-1.579-0.839-1.233-1.421-3.515-0.697-5.249 0.057-0.136 0.339-0.407 0.38-0.62 0.077-0.412-0.141-0.959-0.161-1.396-0.084-2.255 0.38-4.197 1.9-4.88 0.615-2.453 2.819-3.271 4.896-4.489 0.776-0.459 1.636-0.751 2.521-1.079 3.161-1.167 8.036-0.948 10.661 1.047 1.115 0.844 2.901 2.625 3.541 3.917 1.683 3.407 1.557 9.104 0.38 13.249-0.161 0.557-0.385 1.376-0.708 2.043-0.224 0.463-0.921 1.4-0.833 1.812 0.084 0.421 1.584 1.563 1.907 1.86 0.577 0.561 1.683 1.301 1.765 2 0.093 0.744-0.328 1.78-0.547 2.5-0.287 0.963-0.579 1.921-0.869 2.843h-25.251zM18.636 27.281c-0.724-0.401-1.813-0.828-2.756-1.011-1.156-0.219-1.036 1.584-1 2.656 0.041 0.86 0.484 1.756 0.683 2.328 0.099 0.261 0.12 0.548 0.344 0.6 0.396 0.088 1.719-0.439 2.099-0.641 0.797-0.437 1.416-1.125 2.099-1.583 0.021-0.229 0.021-0.453 0.041-0.677-0.4-0.199-0.859-0.344-1.463-0.369 0.416-0.204 1-0.204 1.38-0.444l0.020-0.26c-0.661-0.036-0.916-0.339-1.359-0.577zM28.579 31.193c0.255-0.824 0.473-1.625 0.619-2.333 0.079-0.387 0.287-1.224 0.235-1.568-0.077-0.615-0.911-1.068-1.339-1.448-0.776-0.704-1.265-1.303-2.077-1.964-0.333 0.5-1.043 0.823-1.313 1.219 1.933-0.916 2.281 3.5 1.521 4.923 0.12 0.437 0.521 0.599 0.688 0.979l-0.115 0.224h1.719c0.015 0 0.041 0 0.057 0.016zM19.729 31.177c-0.068-0.099-0.136-0.183-0.199-0.276l-0.4 0.255h0.599zM23.421 31.177c0.011-0.276 0.027-0.537 0.043-0.797-0.709 0.036-1.1-0.64-1.595-0.703-0.432-0.057-0.801 0.479-1.359 0.26-0.131 0.141-0.245 0.303-0.38 0.423 0.203 0.239 0.391 0.5 0.563 0.776h1.088c0.021-0.219 0.183-0.381 0.401-0.381s0.38 0.163 0.38 0.365h0.88zM26.245 31.177c-0.417-0.641-1.261-1.199-2.24-0.74l-0.041 0.719h2.281zM14.901 31.177l-0.141-0.459c-0.301-0.964-0.479-1.683-0.541-2.24-1.219-0.583-2.5-1.161-3.536-1.9-0.204-0.141-1.48-1.803-1.641-1.74-2.323 0.901-4.479 2.479-6.421 3.979 0.344 0.74 0.64 1.521 0.921 2.319h11.339zM25.917 28.36c-0.037-0.683-0.22-2.079-0.636-2.319-0.88-0.52-2.464 1.037-3.125 1.256 0.063 0.197 0.183 0.359 0.204 0.64 0.38-0.099 0.859-0.036 1.197 0.125-0.401 0.036-0.839 0.036-1.099 0.219-0.099 0.255 0.020 0.636-0.043 1.016 0.923 0.265 2 0.405 3.183 0.443 0.219-0.303 0.303-0.86 0.281-1.443zM20.479 27.88c-0.063 0.5 0.057 0.683 0.157 1.256 1.681 0.52 1.38-2.319-0.177-1.276zM11.683 26c-0.6 0.609 1.692 1.443 2.416 1.484 0-0.385 0.219-0.749 0.183-1.025-0.865-0.156-2.005-0.052-2.593-0.464zM19.099 26.287c0 0.057-0.077 0.036-0.088 0.083 0.776 0.604 1.353 0.729 2.405 0.683 0.469-0.349 0.891-0.749 1.391-1.079-1.14 0.1-2.577 0.813-3.703 0.308zM23.661 2.651c-2.14-1.208-5.801-2.12-8.099-0.973-1.844 0.921-4.365 2.453-5.203 4.391 0.801 1.864-0.22 3.577-0.297 5.473-0.027 1.011 0.479 1.896 0.521 2.995-0.272 0.448-1.105 0.505-1.683 0.475-0.193-0.975-0.537-2.068-1.541-2.177-1.417-0.151-2.459 1.021-2.521 2.245-0.079 1.443 1.115 3.823 2.781 3.661 0.651-0.063 0.812-0.719 1.52-0.719 0.381 0.76-0.593 1-0.697 1.536-0.021 0.14 0.079 0.683 0.141 0.943 0.307 1.255 0.989 2.875 1.656 3.839 0.848 1.197 2.515 1.401 4.307 1.521 0.317-0.699 1.5-0.641 2.276-0.459-0.921-0.365-1.781-1.261-2.5-2.041-0.823-0.901-1.64-1.881-1.683-3.043 1.543 2.141 2.797 4 5.6 4.943 2.12 0.699 4.599-0.339 6.219-1.479 0.681-0.479 1.083-1.24 1.563-1.921 1.796-2.579 2.64-6.276 2.457-9.86-0.077-1.479-0.077-2.959-0.577-3.937-0.521-1.041-2.261-1.964-3.303-1.041-0.197-1.021 0.839-1.641 2.063-1.281-0.88-1.141-1.781-2.48-3.021-3.177zM18.109 19.86c0.817 2.061 3.636 1.817 6.011 1.765-0.115 0.26-0.344 0.577-0.625 0.687-0.755 0.308-2.859 0.543-3.916-0.015-0.672-0.365-1.1-1.167-1.469-1.636-0.183-0.229-1.057-0.812-0.016-0.812zM18.328 18.697c1.193 0.62 3.36 0.693 4.975 0.641 0.088 0.359 0.088 0.792 0.093 1.219-2.068 0.109-4.516-0.407-5.063-1.86zM27.229 17.921c-0.631 1.199-1.527 2.527-3.385 2.568-0.032-0.375-0.057-0.979 0-1.203 1.416-0.141 2.301-0.865 3.391-1.36zM26.364 17.031c-1.359 0.881-2.875 1.833-5.099 1.615-0.468-0.416-0.645-1.339-0.187-1.948 0.239 0.423 0.077 1.183 0.76 1.292 1.26 0.224 2.719-0.771 3.64-1.12 0.557-0.948-0.063-1.296-0.561-1.905-1.043-1.245-2.439-2.803-2.401-4.683 0.416-0.297 0.463 0.464 0.52 0.599 0.543 1.281 1.901 2.901 2.901 4 0.24 0.281 0.641 0.521 0.677 0.704 0.125 0.515-0.339 1.135-0.276 1.479zM8.443 16.131c-0.416-0.245-0.521-1.319-1.021-1.344-0.713-0.041-0.583 1.396-0.583 2.235-0.495-0.437-0.579-1.819-0.219-2.516-0.412-0.203-0.593 0.219-0.823 0.375 0.291-2.12 3.12-0.973 2.651 1.281zM6.287 7.989c-0.917 1.011-0.719 2.901-0.615 4.256 1.661-1.048 3.864 0.077 3.844 1.859 0.796-0.021 0.296-0.995 0.156-1.62-0.475-2.041 0.787-4.249 0.052-6.12-1.417 0.109-2.584 0.688-3.437 1.615zM18.448 9.473c0.407 0.751 0.536 1.532 1.12 2.095 0.255 0.255 0.76 0.568 0.515 1.271-0.061 0.161-0.489 0.521-0.733 0.599-0.901 0.26-3.005 0.041-2.297-1.077 0.751 0.015 1.751 0.479 2.308-0.063-0.417-0.699-1.177-2.043-0.896-2.839zM26.708 9.459h0.095c0.437 0.891 0.796 1.833 1.337 2.62-0.359 0.839-2.739 1.588-2.697 0.077 0.521-0.229 1.401-0.047 1.86-0.333-0.256-0.744-0.641-1.344-0.579-2.364zM17.473 7.303c-1.895-0.439-2.843 0.791-3.411 2.072-0.516-0.124-0.313-0.823-0.183-1.177 0.339-0.937 1.708-2.176 2.823-2.009 0.48 0.077 1.136 0.515 0.771 1.115zM12.86 2.125c-2.084 0.583-4.751 2.093-5.605 3.963 0.663-0.093 1.12-0.427 1.776-0.468 0.251-0.021 0.568 0.099 0.855 0.020 0.568-0.14 1.041-1.421 1.469-1.88 0.416-0.457 0.911-0.661 1.255-1.077 0.219-0.12 0.541-0.099 0.563-0.443-0.099-0.1-0.203-0.177-0.312-0.141z' />
+                                            <path
+                                                d='M3.828 32h-1.297c-0.036-0.088-0.067-0.177-0.093-0.26-0.287-0.891-0.792-1.991-0.921-2.876-0.199-1.312 1.036-1.385 1.833-1.952 1.219-0.881 2.177-1.365 3.5-2.163 0.396-0.233 1.577-0.828 1.708-1.104 0.265-0.541-0.459-1.307-0.651-1.733-0.303-0.672-0.464-1.251-0.505-1.912-1.099-0.177-1.937-0.839-2.459-1.579-0.839-1.233-1.421-3.515-0.697-5.249 0.057-0.136 0.339-0.407 0.38-0.62 0.077-0.412-0.141-0.959-0.161-1.396-0.084-2.255 0.38-4.197 1.9-4.88 0.615-2.453 2.819-3.271 4.896-4.489 0.776-0.459 1.636-0.751 2.521-1.079 3.161-1.167 8.036-0.948 10.661 1.047 1.115 0.844 2.901 2.625 3.541 3.917 1.683 3.407 1.557 9.104 0.38 13.249-0.161 0.557-0.385 1.376-0.708 2.043-0.224 0.463-0.921 1.4-0.833 1.812 0.084 0.421 1.584 1.563 1.907 1.86 0.577 0.561 1.683 1.301 1.765 2 0.093 0.744-0.328 1.78-0.547 2.5-0.287 0.963-0.579 1.921-0.869 2.843h-25.251zM18.636 27.281c-0.724-0.401-1.813-0.828-2.756-1.011-1.156-0.219-1.036 1.584-1 2.656 0.041 0.86 0.484 1.756 0.683 2.328 0.099 0.261 0.12 0.548 0.344 0.6 0.396 0.088 1.719-0.439 2.099-0.641 0.797-0.437 1.416-1.125 2.099-1.583 0.021-0.229 0.021-0.453 0.041-0.677-0.4-0.199-0.859-0.344-1.463-0.369 0.416-0.204 1-0.204 1.38-0.444l0.020-0.26c-0.661-0.036-0.916-0.339-1.359-0.577zM28.579 31.193c0.255-0.824 0.473-1.625 0.619-2.333 0.079-0.387 0.287-1.224 0.235-1.568-0.077-0.615-0.911-1.068-1.339-1.448-0.776-0.704-1.265-1.303-2.077-1.964-0.333 0.5-1.043 0.823-1.313 1.219 1.933-0.916 2.281 3.5 1.521 4.923 0.12 0.437 0.521 0.599 0.688 0.979l-0.115 0.224h1.719c0.015 0 0.041 0 0.057 0.016zM19.729 31.177c-0.068-0.099-0.136-0.183-0.199-0.276l-0.4 0.255h0.599zM23.421 31.177c0.011-0.276 0.027-0.537 0.043-0.797-0.709 0.036-1.1-0.64-1.595-0.703-0.432-0.057-0.801 0.479-1.359 0.26-0.131 0.141-0.245 0.303-0.38 0.423 0.203 0.239 0.391 0.5 0.563 0.776h1.088c0.021-0.219 0.183-0.381 0.401-0.381s0.38 0.163 0.38 0.365h0.88zM26.245 31.177c-0.417-0.641-1.261-1.199-2.24-0.74l-0.041 0.719h2.281zM14.901 31.177l-0.141-0.459c-0.301-0.964-0.479-1.683-0.541-2.24-1.219-0.583-2.5-1.161-3.536-1.9-0.204-0.141-1.48-1.803-1.641-1.74-2.323 0.901-4.479 2.479-6.421 3.979 0.344 0.74 0.64 1.521 0.921 2.319h11.339zM25.917 28.36c-0.037-0.683-0.22-2.079-0.636-2.319-0.88-0.52-2.464 1.037-3.125 1.256 0.063 0.197 0.183 0.359 0.204 0.64 0.38-0.099 0.859-0.036 1.197 0.125-0.401 0.036-0.839 0.036-1.099 0.219-0.099 0.255 0.020 0.636-0.043 1.016 0.923 0.265 2 0.405 3.183 0.443 0.219-0.303 0.303-0.86 0.281-1.443zM20.479 27.88c-0.063 0.5 0.057 0.683 0.157 1.256 1.681 0.52 1.38-2.319-0.177-1.276zM11.683 26c-0.6 0.609 1.692 1.443 2.416 1.484 0-0.385 0.219-0.749 0.183-1.025-0.865-0.156-2.005-0.052-2.593-0.464zM19.099 26.287c0 0.057-0.077 0.036-0.088 0.083 0.776 0.604 1.353 0.729 2.405 0.683 0.469-0.349 0.891-0.749 1.391-1.079-1.14 0.1-2.577 0.813-3.703 0.308zM23.661 2.651c-2.14-1.208-5.801-2.12-8.099-0.973-1.844 0.921-4.365 2.453-5.203 4.391 0.801 1.864-0.22 3.577-0.297 5.473-0.027 1.011 0.479 1.896 0.521 2.995-0.272 0.448-1.105 0.505-1.683 0.475-0.193-0.975-0.537-2.068-1.541-2.177-1.417-0.151-2.459 1.021-2.521 2.245-0.079 1.443 1.115 3.823 2.781 3.661 0.651-0.063 0.812-0.719 1.52-0.719 0.381 0.76-0.593 1-0.697 1.536-0.021 0.14 0.079 0.683 0.141 0.943 0.307 1.255 0.989 2.875 1.656 3.839 0.848 1.197 2.515 1.401 4.307 1.521 0.317-0.699 1.5-0.641 2.276-0.459-0.921-0.365-1.781-1.261-2.5-2.041-0.823-0.901-1.64-1.881-1.683-3.043 1.543 2.141 2.797 4 5.6 4.943 2.12 0.699 4.599-0.339 6.219-1.479 0.681-0.479 1.083-1.24 1.563-1.921 1.796-2.579 2.64-6.276 2.457-9.86-0.077-1.479-0.077-2.959-0.577-3.937-0.521-1.041-2.261-1.964-3.303-1.041-0.197-1.021 0.839-1.641 2.063-1.281-0.88-1.141-1.781-2.48-3.021-3.177zM18.109 19.86c0.817 2.061 3.636 1.817 6.011 1.765-0.115 0.26-0.344 0.577-0.625 0.687-0.755 0.308-2.859 0.543-3.916-0.015-0.672-0.365-1.1-1.167-1.469-1.636-0.183-0.229-1.057-0.812-0.016-0.812zM18.328 18.697c1.193 0.62 3.36 0.693 4.975 0.641 0.088 0.359 0.088 0.792 0.093 1.219-2.068 0.109-4.516-0.407-5.063-1.86zM27.229 17.921c-0.631 1.199-1.527 2.527-3.385 2.568-0.032-0.375-0.057-0.979 0-1.203 1.416-0.141 2.301-0.865 3.391-1.36zM26.364 17.031c-1.359 0.881-2.875 1.833-5.099 1.615-0.468-0.416-0.645-1.339-0.187-1.948 0.239 0.423 0.077 1.183 0.76 1.292 1.26 0.224 2.719-0.771 3.64-1.12 0.557-0.948-0.063-1.296-0.561-1.905-1.043-1.245-2.439-2.803-2.401-4.683 0.416-0.297 0.463 0.464 0.52 0.599 0.543 1.281 1.901 2.901 2.901 4 0.24 0.281 0.641 0.521 0.677 0.704 0.125 0.515-0.339 1.135-0.276 1.479zM8.443 16.131c-0.416-0.245-0.521-1.319-1.021-1.344-0.713-0.041-0.583 1.396-0.583 2.235-0.495-0.437-0.579-1.819-0.219-2.516-0.412-0.203-0.593 0.219-0.823 0.375 0.291-2.12 3.12-0.973 2.651 1.281zM6.287 7.989c-0.917 1.011-0.719 2.901-0.615 4.256 1.661-1.048 3.864 0.077 3.844 1.859 0.796-0.021 0.296-0.995 0.156-1.62-0.475-2.041 0.787-4.249 0.052-6.12-1.417 0.109-2.584 0.688-3.437 1.615zM18.448 9.473c0.407 0.751 0.536 1.532 1.12 2.095 0.255 0.255 0.76 0.568 0.515 1.271-0.061 0.161-0.489 0.521-0.733 0.599-0.901 0.26-3.005 0.041-2.297-1.077 0.751 0.015 1.751 0.479 2.308-0.063-0.417-0.699-1.177-2.043-0.896-2.839zM26.708 9.459h0.095c0.437 0.891 0.796 1.833 1.337 2.62-0.359 0.839-2.739 1.588-2.697 0.077 0.521-0.229 1.401-0.047 1.86-0.333-0.256-0.744-0.641-1.344-0.579-2.364zM17.473 7.303c-1.895-0.439-2.843 0.791-3.411 2.072-0.516-0.124-0.313-0.823-0.183-1.177 0.339-0.937 1.708-2.176 2.823-2.009 0.48 0.077 1.136 0.515 0.771 1.115zM12.86 2.125c-2.084 0.583-4.751 2.093-5.605 3.963 0.663-0.093 1.12-0.427 1.776-0.468 0.251-0.021 0.568 0.099 0.855 0.020 0.568-0.14 1.041-1.421 1.469-1.88 0.416-0.457 0.911-0.661 1.255-1.077 0.219-0.12 0.541-0.099 0.563-0.443-0.099-0.1-0.203-0.177-0.312-0.141z'/>
                                         </svg>
 
                                         <h5>Jenkins </h5>
                                     </div>
                                 </div>
-                                <div className='hover:bg-gray-700/40 cursor-pointer select-none duration-500 text-gray-500 hover:text-gray-200  rounded-md relative flex   max-w-[125] min-w-[100px] sm:min-w-[125px] text-center justify-center min-h-[125px]'>
+                                <div
+                                    className='hover:bg-gray-700/40 cursor-pointer select-none duration-500 text-gray-500 hover:text-gray-200  rounded-md relative flex   max-w-[125] min-w-[100px] sm:min-w-[125px] text-center justify-center min-h-[125px]'>
                                     <div className=' m-auto '>
                                         <svg
                                             className='m-auto mb-2'
@@ -2751,7 +2830,8 @@ c29 0 31 -2 36 -52z m-786 -350 c7 -7 12 -32 12 -57 0 -26 12 -161 25 -301 38
                                             viewBox='0 0 24 24'
                                             role='img'
                                             xmlns='http://www.w3.org/2000/svg'>
-                                            <path d='M11.998 0C5.366 0 0 5.367 0 12a11.992 11.992 0 0 0 12 12c6.633 0 12-5.367 12-12-.001-6.633-5.412-12-12.002-12zM6.37 14.575c.392.523.916.742 1.657.742.35 0 .699-.044 1.004-.175.306-.13.655-.306 1.09-.567l1.223 1.745c-1.003.83-2.138 1.222-3.447 1.222-1.048 0-1.92-.218-2.705-.654a4.393 4.393 0 0 1-1.746-1.92c-.392-.83-.611-1.79-.611-2.925 0-1.09.219-2.094.61-2.923a4.623 4.623 0 0 1 1.748-2.007c.741-.48 1.657-.698 2.661-.698.699 0 1.353.087 1.877.305a5.64 5.64 0 0 1 1.614.96l-1.222 1.658A4.786 4.786 0 0 0 9.12 8.77c-.305-.13-.698-.174-1.048-.174-1.483 0-2.225 1.134-2.225 3.446-.043 1.18.175 2.008.524 2.532H6.37zm12 2.705c-.436 1.353-1.091 2.357-2.008 3.098-.916.743-2.138 1.135-3.665 1.266l-.305-2.05c1.003-.132 1.745-.35 2.225-.7.174-.13.524-.523.524-.523L11.519 6.764h3.01l2.095 8.683 2.226-8.683h2.923L18.37 17.28z' />
+                                            <path
+                                                d='M11.998 0C5.366 0 0 5.367 0 12a11.992 11.992 0 0 0 12 12c6.633 0 12-5.367 12-12-.001-6.633-5.412-12-12.002-12zM6.37 14.575c.392.523.916.742 1.657.742.35 0 .699-.044 1.004-.175.306-.13.655-.306 1.09-.567l1.223 1.745c-1.003.83-2.138 1.222-3.447 1.222-1.048 0-1.92-.218-2.705-.654a4.393 4.393 0 0 1-1.746-1.92c-.392-.83-.611-1.79-.611-2.925 0-1.09.219-2.094.61-2.923a4.623 4.623 0 0 1 1.748-2.007c.741-.48 1.657-.698 2.661-.698.699 0 1.353.087 1.877.305a5.64 5.64 0 0 1 1.614.96l-1.222 1.658A4.786 4.786 0 0 0 9.12 8.77c-.305-.13-.698-.174-1.048-.174-1.483 0-2.225 1.134-2.225 3.446-.043 1.18.175 2.008.524 2.532H6.37zm12 2.705c-.436 1.353-1.091 2.357-2.008 3.098-.916.743-2.138 1.135-3.665 1.266l-.305-2.05c1.003-.132 1.745-.35 2.225-.7.174-.13.524-.523.524-.523L11.519 6.764h3.01l2.095 8.683 2.226-8.683h2.923L18.37 17.28z'/>
                                         </svg>
 
                                         <h5>Cypress</h5>

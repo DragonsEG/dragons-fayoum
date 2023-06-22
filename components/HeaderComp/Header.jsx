@@ -17,9 +17,10 @@ function Header(props) {
                     src="/Identity/logotext.png"
                     alt="logo"
                     className={`${" h-[20px] "}`}
-
+                    priority={true}
                     width={100}
                     height={20}
+                    
                 />
               </span>
             </div>

@@ -13,7 +13,6 @@ import {VideoSection} from "../components/VideoSection/VideoSection";
 import {TrustedSection} from "../components/Trusted/TrustedSection";
 import TracksSection from "../components/TechStack/TracksSection";
 import {Numbers} from "../components/Numbers/Numbers";
-import SliderTrustedImages from "../components/Trusted/SliderTrustedImages";
 
 export default function Home() {
     const [EmpState, setEmpState] = useState(teamData)
@@ -33,7 +32,7 @@ export default function Home() {
     useEffect(() => (
         setEmpState(randomArrayShuffle(teamData).slice(0, 4))
 
-    ), [])
+    ), [teamData])
 
     const {scrollYProgress} = useScroll();
     const scale = useTransform(scrollYProgress, [0, 1], [0.6, 1]);
@@ -82,6 +81,8 @@ export default function Home() {
                               work={index.work}
                               image={index.image}
                               Pos={index.Pos}
+                              isMaintainer={index.isMaintainer}
+
                     />
 
                 ))}

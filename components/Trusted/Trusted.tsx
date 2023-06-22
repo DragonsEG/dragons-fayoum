@@ -1,4 +1,5 @@
 import React from 'react';
+// @ts-ignore
 import Styles from './Trusted.module.css';
 import Image from "next/image";
 
@@ -31,6 +32,18 @@ const Trusted = () => {
             name: "WP",
             img: "/Brands/WP-2.svg"
         },
+        {
+            id: 7,
+            name: "udacity",
+            img: "/Brands/udacity.svg"
+        }
+        ,
+        {
+            id: 8,
+            name: "Namecheap",
+            img: "/Brands/Namecheap.svg"
+
+        }
 
     ]
     return (
@@ -47,7 +60,7 @@ const Trusted = () => {
                         {SVG_Brands.map((brand) => (
                             <div key={brand.id} className={"flex"}>
                                 <Image className={"svg_property"} src={brand.img} alt={brand.name}
-                                       width={100} height={100}/>
+                                       width={400} height={400}/>
                             </div>
                         ))}
                     </div>

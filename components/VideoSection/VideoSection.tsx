@@ -1,6 +1,8 @@
 import Image from "next/image";
 
 export const VideoSection = () => {
+    // @ts-ignore
+
     return (
         <>
             <div className={"relative"}>
@@ -50,14 +52,14 @@ export const VideoSection = () => {
                      className={"absolute z-20 pb-4  px-7 font-thin hover:animate-pulse select-none bg-amber-50/20 rounded-b-full cursor-pointer"}>Don&apos;t
                     Speak Arabic?
                 </div>
-                <iframe type="text/partytown" data-allowfullscreen="true"
-                        data-autoplay="true" className={"z-10 h-full w-full"}
+                <iframe data-allowfullscreen="true"
+                        className={"z-10 h-full w-full"}
                         style={{border: "none", overflow: "hidden"}}
-                        src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2FDragons.Egypt%2Fvideos%2F229997402815626%2F&show_text=false&width=560&t=0&mute=0&autoplay=1"
+                        src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2FDragons.Egypt%2Fvideos%2F229997402815626%2F&show_text=false&width=560&t=0&mute=0&autoplay=0"
                         width="560" height="314"
                         data-lazy={true}
                         allowFullScreen={true}
-                        allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+                        allow="clipboard-write; encrypted-media; picture-in-picture; "
                 >
 
 

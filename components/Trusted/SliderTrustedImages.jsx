@@ -56,34 +56,34 @@ export default function App() {
 
     return (
         <div className={" shadow-[inset_0_10px_204px_rgba(3,0,20,0.1)] relative w-full"}>
-            <Swiper
-                effect={"coverflow"}
-                grabCursor={true}
-                centeredSlides={true}
-                slidesPerView={"auto"}
-                coverflowEffect={{
-                    rotate: 50,
-                    stretch: 10,
-                    depth: 100,
-                    modifier: 2,
+            <Swiper type="text/partytown"
+                    effect={"coverflow"}
+                    grabCursor={true}
+                    centeredSlides={true}
+                    slidesPerView={"auto"}
+                    coverflowEffect={{
+                        rotate: 50,
+                        stretch: 10,
+                        depth: 100,
+                        modifier: 2,
 
-                    slideShadows: true,
+                        slideShadows: true,
 
-                }}
-
-
-                autoplay={{
-                    delay: 2500,
-                    disableOnInteraction: false,
-
-                }
-                }
+                    }}
 
 
-                lazy="true"
-                pagination={true}
-                modules={[EffectCoverflow, Pagination]}
-                className="mySwiper shadow-none  backdrop-blur-2xl max-w-7xl z-40 md:h-[600px] h-[500px] relative"
+                    autoplay={{
+                        delay: 2500,
+                        disableOnInteraction: false,
+
+                    }
+                    }
+
+
+                    lazy="true"
+                    pagination={true}
+                    modules={[EffectCoverflow, Pagination]}
+                    className="mySwiper shadow-none  backdrop-blur-2xl max-w-7xl z-40 md:h-[600px] h-[500px] relative"
             >
                 {
                     ImagesArray.map((item, index) => {

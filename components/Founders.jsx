@@ -4,7 +4,7 @@ import Styles from "../styles/Team.module.css";
 
 import Image from "next/image"
 import FoundersCard from './FoundersCard';
-import foundersArr from "./JSON/founders"
+import foundersArr from "./JSON/founders.ts"
 
 function founders() {
     return (
@@ -48,6 +48,7 @@ function founders() {
                                           name={index.name}
                                           image={index.image}
                                           Pos={index.Pos}
+                                          isMaintainer={index.isMaintainer}
                             />
 
                         ))}
