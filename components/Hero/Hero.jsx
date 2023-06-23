@@ -60,7 +60,7 @@ function Hero() {
 
                     </div>
                 </div>
-
+                <video autoPlay loop muted src="/Hero/q-c3d7becf.webm"/>
             </div>
         </div>
     )
