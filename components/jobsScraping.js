@@ -1,41 +1,46 @@
-import {MongoClient, ServerApiVersion} from 'mongodb';
-
-export default function JobsScraping({message}) {
-    return (
-        <div>
-            <h1>{message}</h1>
-        </div>
-    );
-}
-
-export async function getServerSideProps() {
-    const uri = "mongodb+srv://dragonsbootcamp:dragonsbootcamp@cluster0.1qz8rl6.mongodb.net/?retryWrites=true&w=majority";
-
-    // Create a MongoClient with a MongoClientOptions object to set the Stable API version
-    const client = new MongoClient(uri, {
-        serverApi: {
-            version: ServerApiVersion.v1,
-            strict: true,
-            deprecationErrors: true,
-        }
-    });
-
-    try {
-        // Connect the client to the server	(optional starting in v4.7)
-        await client.connect();
-        // Send a ping to confirm a successful connection
-        await client.db("admin").command({ping: 1});
-        console.log("Pinged your deployment. You successfully connected to MongoDB!");
-        return {
-            props: {message: 'Scraping is running'},
-        };
-    } catch (error) {
-        console.error(error);
-        return {
-            props: {message: 'Error running scraping'},
-        };
-    } finally {
-        // Ensures that the client will close when you finish/error
-        await client.close();
-    }
-}
+// import linkedIn from 'linkedin-jobs-api';
+// import jsdom from 'jsdom';
+//
+// async function getJobs() {
+//     /*
+//      const queryOptions = {
+//         keyword: text ,
+//         location: text ,
+//         dateSincePosted: [past month, past week, 24hr],
+//         jobType: [full time, part time, contract, temporary, volunteer, internship],
+//         remoteFilter: [on site, remote, hybrid],
+//         salary: [40000, 60000, 80000, 100000, 120000],
+//         experienceLevel: [internship, entry level, associate, senior, director, executive],
+//         limit: ['1', '10', '100',... etc]
+//         sorted by: [recent, relevant]
+//     };
+//     */
+//
+//     const queryOptions = {
+//         keyword: 'software engineer',
+//         location: 'Egypt',
+//         dateSincePosted: 'past Week',
+//         jobType: 'full time',
+//         remoteFilter: 'hybrid',
+//         salary: '40000',
+//         experienceLevel: 'entry level',
+//         limit: '10'
+//     };
+//     let data;
+//
+//
+//     linkedIn.query(queryOptions).then(async response => {
+//         data = await response
+//         console.log(response);
+//
+//         const dom = new jsdom.JSDOM(response);
+//
+//         console.log(dom);
+//         console.log("done");
+//         // An array of Job objects
+//     });
+//
+//     return data
+// }
+//
+// export default getJobs

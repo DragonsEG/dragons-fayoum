@@ -14,6 +14,15 @@ const nextConfig = {
     images: {
         domains: ['i.ibb.co'],
     },
+    async rewrites() {
+        return [
+            {
+                source: '/api/linkedin',
+                destination: '/api/linkedin.js',
+            },
+        ]
+    },
+
 };
 
 export default million.next(nextConfig);
